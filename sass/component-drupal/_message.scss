@@ -1,0 +1,64 @@
+/*
+Drupal messages
+=============================
+
+Drupal messages
+===================================
+Drupals standard messages
+
+classes
+------------------------------------
+.messages  
+.status  
+.warning  
+.messages  
+
+    <div class="drupal-messages">
+      <div class="messages error">
+        <h2 class="element-invisible">Error message</h2>
+        Utrum quia ut verto nimis. <a href="#">Vestibulum sed magna</a>. Neque neo rusticus abdo te refoveo os refero adipiscing praemitto genitus aliquam dolus at. 
+      </div>
+      <div class="messages status">
+        <h2 class="element-invisible">Status message</h2>
+        Quibus nunc inhibeo. <a href="#">Vestibulum sed magna</a>. Diam ullamcorper nunc ibidem. 
+      </div>
+      <div class="messages warning">
+        <h2 class="element-invisible">Warning message</h2>
+        Saluto torqueo defui persto minim rusticus vereor dignissim. <a href="#">Vestibulum sed magna</a>. Pecus nobis qui damnum ad commoveo aliquip vero sed iaceo. Velit tincidunt immitto melior dignissim ibidem blandit te. Abbas sit. 
+      </div>
+    </div>
+*/
+
+.messages {
+  padding:1rem;
+  margin: 1rem;
+  border: 1px solid black;
+  li{
+    margin: 0 0 1 1.5rem;
+    list-style: none;
+  }
+}
+
+.messages.status {
+  @extend .messages;
+  border-color:#be7;
+  background-color: #f8fff0;
+  color: #234600;
+  @include linkcolor(red,blue);
+}
+
+.messages.warning {
+  @extend .messages;
+  border-color: #ed5;
+  background-color: #fffce5;
+  color: #840;
+  @include linkcolor(red,blue);
+}
+
+.messages.error {
+  @extend .messages;
+  border-color: #ed541d;
+  background-color: #fef5f1;
+  color: #8c2e0b;
+  @include linkcolor(red,blue);  
+}

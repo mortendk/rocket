@@ -1,0 +1,44 @@
+/*
+Video
+=========================
+
+Video
+------------------------
+Test for vimoe & youtube that both are using an iframe
+
+Vimeo
+-----------------------
+
+    <iframe width="560" height="315" src="//www.youtube.com/embed/M7FIvfx5J10" frameborder="0" allowfullscreen>
+    </iframe>
+
+    <hr>
+    <div class="shadow">
+      <iframe width="560" height="315" src="//www.youtube.com/embed/M7FIvfx5J10" frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+
+    <hr>
+    
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+    <iframe src="//www.youtube.com/embed/M7FIvfx5J10" frameborder="0" allowfullscreen>
+    </iframe>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+*/
+
+/*
+ youtube
+ -------------------
+
+    <iframe src="//player.vimeo.com/video/79649212" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <p><a href="http://vimeo.com/79649212">NECRONOMICA</a> from <a href="http://vimeo.com/user21204606">Kyle Bogart</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+ */
+video {
+  max-width: 100%;
+  height: auto;
+}
+iframe{
+  max-width: 100%;
+}
+
+

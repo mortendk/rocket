@@ -1,0 +1,72 @@
+/*
+base
+================
+
+base.scss
+================
+
+Documentation
+-----------------------
+base styles & 
+[smacss: base](https://smacss.com/book/type-base)
+
+Reset html & body
+-------------------------------
+Body is set to 62.5 to force the font sizing to be easy to be calculated with
+1em = 10px - body margin & padding is resetted
+
+    <html>
+    <body>
+      lorem ipsum
+    </body>
+    </html>
+*/
+html {
+  font-size: 62.5%; // 1em = 10px
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: #f3f5f6;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/*
+boxsizing
+-------------
+All elements are set to use the border-box, cause were tired of bs.
+   
+
+    <!--
+    *{  
+      -moz-box-sizing: border-box;  
+      -webkit-box-sizing: border-box;  
+      -ms-box-sizing: border-box;  
+      box-sizing: border-box;  
+      word-wrap: break-word;  
+     }
+    --> 
+*/
+
+*{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/*
+rulers
+===================
+    <hr>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+
+*/
+
+hr{ border-top:1px solid black; }
+

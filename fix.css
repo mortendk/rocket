@@ -1,0 +1,12 @@
+/**
+ * Small CSS Fix outside of SASS compilations
+ * Should be moved into the SASS files afterwards
+ * this is for the small  quick n dirty fixes
+ */
+
+.filter-guidelines{ display:none }
+/*
+.vertical-tabs{ display:none }
+*/
+.page-user .tabs {display:none}
+.password-suggestions{display:none!important}

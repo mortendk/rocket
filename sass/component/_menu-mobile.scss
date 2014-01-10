@@ -1,0 +1,83 @@
+/*
+
+# Mobile Menu
+--------------------------------------------------------------------------------
+file: allerbase/sass/component/_menu-mobile.scss
+--------------------------------------
+
+Sets the mobile menu
+
+--------------------------------------
+mixin properties:
+$foo - foo is
+$foo - foo is
+
+--------------------------------------
+Markup:
+<div class="mobilemenu">
+  <a href="/"><div class="mobilemenu-logo"><?php print $sitename ?></div></a>
+  <div class="mobilemenu-icon"> = </div>
+</div>
+
+--------------------------------------
+example:
+.foo{
+
+}
+
+--------------------------------------
+Drupal templates:
+allerbase/templates/panes/panels-pane--system-main-menu.tpl.php
+
+@todo: add breakpoints
+ */
+
+@media screen and (max-width: 600px) {
+  //-- mobile menu Structure
+  .mobilemenu {
+    display: block;
+    width: 100%;
+  }
+
+  //-- mobile menu skin---------------------------------------
+  .mobilemenu {
+    padding:10px;
+    height:60px;
+  }
+
+  .mobilemenu-logo{
+    float:left;
+    overflow:hidden;
+    width:230px;
+    height:40px;
+    background: transparent url(../images/mobile-logo.png) no-repeat center center;
+    text-indent:-999px;
+  }
+
+  .mobilemenu-icon{
+    display: block;
+    float:right;
+    margin-top:20px;
+    padding-right:50px;
+    width:20%;
+    height:24px;
+    background: transparent url(../images/mobile-menu.svg) no-repeat center center;
+    background-size: 100% 70%;
+    text-indent:-999px;
+    cursor: pointer;
+  }
+
+  .mobilemenu-icon-active{ } // anything sexy when icon is active
+
+  .menu_i_hazcontent > a{ } //test if child has any content
+
+  li.active > a, li.active-trail > a, li.active-hover > a{
+    font-weight:bold;
+  }
+
+
+}
+
+@media screen and (min-width: 601px) {
+  .mobilemenu { display: none; }
+}

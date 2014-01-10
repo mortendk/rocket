@@ -1,0 +1,59 @@
+name = buildontopofthis
+description = 
+screenshot = screenshot.png
+engine = phptemplate
+core = 7.x
+php = 5.2
+base theme = mothership
+
+;-------------- F E A T U R E S -------------
+;features[] = logo
+features[] = favicon
+features[] = name
+;features[] = slogan
+;features[] = node_user_picture
+;features[] = comment_user_picture
+;features[] = comment_user_verification
+;features[] = main_menu
+;features[] = secondary_menu
+
+;-------------- R E G I O N S -------------
+;regions_hidden[] = im_a_hidden_but_visibel_for_a_module
+
+;-- Required Regions
+regions[page_top] = Page Top
+regions[page_bottom] = Page Bottom
+
+;-- Core Regions
+regions[top_left] = Top Left
+regions[top_right] = Top right
+regions[header] = Header
+regions[login] = Login
+regions[content_pre] = Content Pre
+regions[content] = Content
+regions[content_post] = Content Post
+regions[footer] = Footer
+
+regions[sidebar] = Sidebar
+regions[help] = Help
+regions[highlighted] = Highlighted
+
+;-------------- C S S -------------
+stylesheets[all][] = css/style.css
+stylesheets[all][] = fix.css
+
+;-------------- CSS FOAD -------------
+;stylesheets[all][] = donteverloadmeagain.css
+
+;-------------- JS -------------
+scripts[] = js/script.js
+scripts[] = js/grid.js
+
+;-------------- BREAKPOINTS -------------
+breakpoints[mobile] = (min-width: 320px)
+;breakpoints[mobile_only] = (min-width: 320px) and (max-width: 767px)
+;breakpoints[mobile_landscape] = (min-width: 480px)
+breakpoints[mobile_landscape_only] = (min-width: 480px) and (max-width: 767px)
+breakpoints[tablet] = (min-width: 768px)
+;breakpoints[tablet_only] = (min-width: 768px) and (max-width: 979px)
+breakpoints[desktop] = (min-width: 980px)

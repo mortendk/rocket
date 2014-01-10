@@ -1,0 +1,113 @@
+/*
+Images
+==========================
+
+Images.scss
+======================================
+   
+Documentation
+---------------------------------------
+
+    <img src="../../styleguide-theme/coffee-120.jpg" alt="vuf">
+*/    
+
+/*
+Figure
+------------------------
+
+    <figure>
+      <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+      <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</figcaption>
+    </figure>
+   
+*/
+
+img {
+  max-width: 100%;
+  height:auto;
+  border: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+// ie8 hack
+@media \0screen {
+  img { width: auto; }
+}
+figure {
+  width:auto; 
+  margin:0;
+  padding:0;
+  display:inline-block;
+}
+figcaption {
+  text-align: left;
+  word-wrap: break-word;
+}
+
+figcaption{
+  font-size:1.2rem
+}
+
+
+
+
+/*
+Images Inline
+================================
+
+image inline
+---------------------------
+
+    <p class="content">
+      <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+    </p>
+*/
+
+/*
+figure inline 
+-----------------------------
+
+    <div class="content">
+      <figure class="lovelypink">
+        <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+        <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</figcaption>
+      </figure>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+    </div>
+ */
+.content img{
+  float:left;
+  padding:0 1rem 1rem 0
+}
+
+.content figure{
+  padding:0 1rem 1rem 0;
+  float:left;
+}
+.content figure img{
+  float:none;
+}
+/*
+images inline right aligned
+---------------------------
+    <p class="content">
+      <img src="../../styleguide-theme/coffee-120.jpg" alt="vuf" class="right">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+    </p>
+    
+    <hr>
+    
+    <p class="content">
+      <span class="right"><img src="../../styleguide-theme/coffee-120.jpg" alt="vuf" class="right"></span>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+    </p>
+
+*/
+
+
+.content img.right,
+.content .right img{
+  float:right;
+  padding:0 1rem 1rem 0
+}

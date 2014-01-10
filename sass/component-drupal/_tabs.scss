@@ -1,0 +1,72 @@
+/*
+Tabs
+==============================
+navigation tabs
+
+    <nav class="tabs">
+  
+      <h2 class="element-invisible">Primary tabs</h2>
+      <ul class="tabs primary">
+        <li><a href="#">tabs can</a></li>
+        <li class="active">
+          <a href="#" class="active">be pretty awesome<span class="element-invisible">(active tab)</span></a>
+        </li>
+        <li><a href="#">and a pita</a></li>
+      </ul>
+
+      <h2 class="element-invisible">Secondary tabs</h2>
+      <ul class="tabs secondary">
+        <li><a href="#">Secondary tabs</a></li>
+        <li><a href="#">is right here</a></li>
+        <li class="active">
+          <a href="#" class="active">baby<span class="element-invisible">(active tab)</span></a>
+        </li>
+      </ul>
+    </nav>
+
+ */
+.tabs{
+  ul{
+    @include remfix(padding-bottom,1);
+  }
+  li{display: inline-block;}
+  a{ display:block; }
+}
+
+.primary{
+   @include linkcolor(#666,#666,none);
+   
+    a{
+      @include border-top-right-radius(6px);
+      @include border-top-left-radius(6px);
+      @include remfix(padding-left,1.5);
+      @include remfix(padding-right,1.5);
+      @include remfix(padding-top,1);
+      @include remfix(padding-bottom,0.5);
+      border:1px solid #aaa;
+      border-bottom: none;
+    }
+   a.active{background:#ddd;}
+}
+
+.tabs-secondary{
+  @include linkcolor(#666,#666,none);
+  ul{
+    @include remfix(margin-top,0.5);
+  }
+  a{@include remfix(padding,0.5);}
+  a.active{ border-bottom: 2px solid #999;}
+}
+
+
+
+/*
+Action links
+--------------------------------
+
+    <ul class="action-links">
+      <li><a href="#">Mothership</a></li>
+      <li><a href="#">Seven</a></li>
+    </ul>
+
+ */

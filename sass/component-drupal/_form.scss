@@ -1,0 +1,412 @@
+/*
+Drupal Forms
+==============
+
+Drupal Forms
+==============
+All the forms based on Druapls & motherships markup
+
+*/
+
+
+/*
+textfield
+------------------
+
+    <div class="form-item form-type-textfield">
+      <label for="foo">Machine name source</label>
+      
+      <input type="text" id="foo" value="" size="30" maxlength="128"> 
+    </div>
+
+    <div class="form-item form-type-textfield">
+      <label for="foo">Machine name source</label>
+      
+      <input type="text" id="foo" value="" size="30" maxlength="128"> 
+    </div>
+*/
+
+/*
+textfield required
+------------------
+    <div class="form-item form-type-machine-name form-required">
+      <label class="required" for="foo">Machine-readable name</label>
+      
+      <input type="text" id="foo" value="" size="30" maxlength="64" required="">
+      
+      <small>A unique machine-readable name. Can only contain lowercase letters, numbers, and underscores.</small>
+    </div>
+
+    <div class="form-item form-type-machine-name form-required">
+      <label class="required" for="foo">Machine-readable name</label>
+      
+      <input type="text" id="foo" value="" size="30" maxlength="64" required="">
+      
+      <small>A unique machine-readable name. Can only contain lowercase letters, numbers, and underscores.</small>
+    </div>
+*/
+
+
+/*
+textfield disabled
+------------------------
+
+    <div class="form-item form-type-textfield">
+      <label for="foo">Machine name source</label>
+      
+      <input disabled="disabled" type="text" id="foo" value="" size="30" maxlength="128"> 
+    </div>
+
+    <div class="form-item form-type-textfield">
+      <label for="foo">Machine name source</label>
+      
+      <input disabled="disabled" type="text" id="foo" value="" size="30" maxlength="128"> 
+    </div>
+ */
+
+
+/*
+checkbox
+-----------------------------
+
+    <div class="form-item form-type-checkbox">
+      <input type="checkbox" id="foo" name="checkbox" value="1">
+      <label for="foo">Checkbox</label>
+      <small>Quia ymo loquor pertineo zelus exerci. </small>
+    </div>
+
+*/
+
+/*
+Checkboxes
+------------------------------------------------------------------------------
+
+    <div class="form-item form-type-checkboxes">
+      <label for="foo">Checkboxes</label>
+      <div id="foo" class="form-checkboxes">
+        
+        <div class="form-item form-type-checkbox">
+          <input type="checkbox" id="foo" name="checkboxes[one]" value="one">
+          <label for="foo">Qui oppeto decet</label>
+        </div>
+
+        <div class="form-item  form-type-checkbox">
+          <input type="checkbox" id="bar" name="checkboxes[two]" value="two">
+          <label for="bar">Quadrum exerci lobortis</label>
+          <small>Roto mos secundum si quadrum nutus. </small>
+        </div>
+
+        <div class="form-item  form-type-checkbox">
+          <input type="checkbox" id="baz" name="checkboxes[three]" value="three">
+          <label for="baz">Praemitto humo adipiscing</label>
+        </div>
+
+      </div>
+      <small>In venio oppeto iaceo vereor damnum. </small>
+    </div>
+
+*/
+
+
+/*
+checkbox disabled
+
+    <div class="form-item form-type-checkbox">
+      <input disabled="disabled" type="checkbox" id="foo" name="checkbox" value="1">
+      <label for="foo">Checkbox</label>
+      <small>Quia ymo loquor pertineo zelus exerci. </small>
+    </div>
+
+ */
+
+/*
+radio
+-------------------------------
+
+
+    <div class="form-item  form-type-radio">
+      <input type="radio" id="foo" name="radio">  
+      <label for="foo">Radio</label>
+      <small>Meus hos aptent dolor gemino plaga. But why would you ever use a single radio?</small>
+    </div>
+ */
+
+
+/*
+Radios
+-------------------------------
+
+
+    <div class="form-item form-type-radios">
+      <label for="edit-radios">Radios</label>
+      <div id="edit-radios" class="form-radios">
+       
+        <div class="form-item form-type-radio">
+          <input type="radio" id="edit-radios-one" name="radios" value="one">  
+          <label for="edit-radios-one">Pagus iriure sit</label>
+        </div>
+        
+        <div class="form-item form-type-radio">
+          <input type="radio" id="edit-radios-two" name="radios" value="two"> 
+          <label for="edit-radios-two">Brevitas quidem pertineo</label>
+          <small>Ut exerci voco autem immitto tego. </small>
+        </div>
+        
+        <div class="form-item form-type-radio">
+          <input type="radio" id="edit-radios-three" name="radios" value="three">  
+          <label for="edit-radios-three">Refoveo duis wisi</label>
+        </div>
+      
+      </div>
+
+        <small>Jumentum ibidem erat importunus wisi causa. </small>
+      </div>
+
+*/
+
+
+/*
+Radio disabled
+-------------------------------
+
+
+    <div class="form-item  form-type-radio">
+      <input disabled="disabled" type="radio" id="foo" name="radio">  
+      <label for="foo">Radio</label>
+      <small>Meus hos aptent dolor gemino plaga. But why would you ever use a single radio?</small>
+    </div>
+ */
+
+
+
+
+/*
+Select
+------------------------
+
+    <div class="form-item form-type-select">
+      <label for="edit-select">Select</label>
+      <select id="edit-select" name="select">
+       <option value="one">Cogo proprius valde</option>
+       <option value="two">Consectetuer roto ibidem</option>
+       <option value="three">Dignissim verto odio</option>
+      </select>
+
+      <small>Humo defui damnum defui secundum gemino. </small>
+    </div>
+
+ */
+
+/*
+Select disabled
+------------------------
+
+    <div class="form-item form-type-select">
+      <label for="edit-select">Select</label>
+      <select disabled="disabled" id="edit-select" name="select">
+       <option value="one">Cogo proprius valde</option>
+       <option value="two">Consectetuer roto ibidem</option>
+       <option value="three">Dignissim verto odio</option>
+      </select>
+
+      <small>Humo defui damnum defui secundum gemino. </small>
+    </div>
+
+ */
+
+
+
+
+/*
+Select multiple
+-------------------------
+
+    <div class="form-item form-type-select">
+      <label for="edit-select-multiple">Select (multiple)</label>
+      <select multiple="multiple" name="select_multiple[]" id="edit-select-multiple">
+        <option value="one">Qui gravis nulla</option>
+        <option value="two">Nutus luctus genitus</option>
+        <option value="three">Wisi scisco nibh</option>
+      </select>
+      <small>Et fere antehabeo fere quae velit. </small>
+    </div>
+
+ */
+
+
+/*
+Select multiple disabled
+-------------------------
+
+    <div class="form-item form-type-select">
+      <label for="edit-select-multiple">Select (multiple)</label>
+      <select disabled="disabled" multiple="multiple" name="select_multiple[]" id="edit-select-multiple">
+        <option value="one">Qui gravis nulla</option>
+        <option value="two">Nutus luctus genitus</option>
+        <option value="three">Wisi scisco nibh</option>
+      </select>
+      <small>Et fere antehabeo fere quae velit. </small>
+    </div>
+
+ */
+
+
+
+
+/*
+Textarea
+------------------------------
+
+    <div class="form-item form-type-textarea">
+      <label for="edit-textarea">Textarea</label>
+    
+      <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
+        <textarea id="edit-textarea" name="textarea" cols="60" rows="5">
+        Neo camur cogo antehabeo saepius roto lobortis verto aliquip typicus roto camur quidem vulputate ea obruo lenis os antehabeo comis suscipere virtus nisl gravis. Eros abluo lenis esca abbas commodo abico illum abdo si capto in erat adipiscing typicus suscipit. 
+        </textarea>
+      
+        <div class="grippie"></div>
+      </div>
+
+    <small>Praemitto dignissim abigo usitas refero iustum. </small>
+    </div>
+
+ */
+
+
+
+
+/*
+Textarea
+------------------------------
+
+    <div class="form-item form-type-textarea">
+      <label for="edit-textarea">Textarea</label>
+    
+      <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
+        <textarea disabled="disabled" id="edit-textarea" name="textarea" cols="60" rows="5">
+        Neo camur cogo antehabeo saepius roto lobortis verto aliquip typicus roto camur quidem vulputate ea obruo lenis os antehabeo comis suscipere virtus nisl gravis. Eros abluo lenis esca abbas commodo abico illum abdo si capto in erat adipiscing typicus suscipit. 
+        </textarea>
+      
+        <div class="grippie"></div>
+      </div>
+
+    <small>Praemitto dignissim abigo usitas refero iustum. </small>
+    </div>
+
+ */
+
+
+/*
+inline elements
+----------------------------------------------
+
+
+    <div id="edit-inline" class="form-item form-type-item">
+      <label for="edit-inline">Inline elements</label>
+      
+      <div class="container-inline form-wrapper" id="edit-container">
+        <div class="form-item form-type-select">
+          <label for="edit-select--3">Select</label>
+          <select id="edit-select--3" name="select">
+            <option value="one">Qui gravis nulla</option>
+            <option value="two">Nutus luctus genitus</option>
+            <option value="three">Wisi scisco nibh</option>
+          </select>
+        </div>
+        <div class="form-item form-type-textfield">
+          <label for="edit-textfield--3">Textfield</label>
+          <input type="text" id="edit-textfield--3" name="textfield" value="" size="30" maxlength="128">
+        </div>
+      </div>
+    </div>
+*/
+
+
+/*
+Fieldset 
+-------------------------
+
+    <fieldset class="collapsible collapse-processed" id="edit-collapsible">
+      <legend>
+        <span class="fieldset-legend">
+          <a class="fieldset-title" href="#">
+            <span class="fieldset-legend-prefix element-invisible">Hide</span>
+            Collapsible fieldset
+          </a>
+          <span class="summary">
+          </span>
+        </span>
+      </legend>
+
+      <div class="fieldset-wrapper">
+        <div class="fieldset-description">Fieldset description</div>
+      </div>
+    </fieldset>
+
+ */
+
+
+/*
+Fieldset collapsed
+-------------------------
+
+    <fieldset class="collapsible collapsed collapse-processed" id="edit-collapsible">
+      <legend>
+        <span class="fieldset-legend">
+          <a class="fieldset-title" href="#">
+            <span class="fieldset-legend-prefix element-invisible">Hide</span>
+            Collapsible fieldset
+          </a>
+          <span class="summary">
+          </span>
+        </span>
+      </legend>
+
+      <div class="fieldset-wrapper">
+        <div class="fieldset-description">Fieldset description</div>
+      </div>
+    </fieldset>
+
+ */
+ 
+
+
+/*
+file
+==================
+    
+
+    <div class="form-type-file">
+      <label for="edit-file">File</label>
+      <input type="file" id="edit-file" name="files[file]">
+    </div>
+
+*/
+
+
+
+/*
+ajax wrapper file
+---------------------------
+
+
+    <div id="edit-managed-file-ajax-wrapper">
+      <div class="form-type-managed-file">
+        <label for="edit-managed-file">Managed file</label>
+        
+        <div id="edit-managed-file" class="form-managed-file">
+          <input type="file" id="edit-managed-file-upload" name="files[managed_file]">
+          <input type="submit" id="edit-managed-file-upload-button" 
+          name="managed_file_upload_button" value="Upload" class="ajax-processed">
+          
+          <input type="hidden" name="managed_file[fid]" value="0">
+        </div>
+
+      </div>
+    </div>
+
+ */
+
+
+

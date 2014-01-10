@@ -1,0 +1,82 @@
+/*
+effects
+=============================
+
+Effects
+-----------------------------
+Different grafic effects for design elements shadings, circles etc
+
+circle
+----------------------------
+
+    <div class="circle">
+      <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+    </div>
+
+    <div class="circle">
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+      </p>
+    </div>
+
+
+*/
+
+/*
+    <div class="content">
+      <div class="circle">
+        <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+      </div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+    </div>
+*/
+  
+/*
+    <div class="circle">
+      <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+    </div>
+    <div class="circle">
+      <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+    </div>
+    <div class="circle">
+      <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+    </div>
+*/
+
+.circle img{
+  width: 10rem;
+  height: 10rem;
+  @include border-radius(5rem);
+  border:4px dotted $gray;
+  
+}
+ 
+.content .circle img{   
+  padding: 0;
+  margin-right: 1rem;
+}
+
+/*
+shadow
+---------------------------
+Shade for elements
+  
+    <div  class="shadow">
+      <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+    </div>
+*/
+
+/*
+figure
+-------------------------
+
+    <figure class="shadow">
+      <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+      <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</figcaption>
+    </figure>
+
+*/
+
+.shadow > * {
+   @include box-shadow(#000 3px 3px 8px -4px);
+}

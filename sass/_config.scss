@@ -1,0 +1,129 @@
+/*
+config
+================================
+This file contains all the variables that can be used 
+
+* Gridsystem  
+* breakpoints
+* colors
+* fonts
+
+*/
+
+/* 
+grid setup
+----------------------------------------------------------------
+build on singualritygs
+*/
+$grids: 4;
+$grids: add-grid(6 at 30em);
+$grids: add-grid(9 at 40em);
+$grids: add-grid(12 at 50em);
+
+//toggle g key for grid testing
+$background-grid-color:gray;
+@include grid-toggle;
+
+
+/*
+breakpoints
+--------------------------------------------------------------------------------
+Sets the default breakpoints for us in the build of the layout file.
+
+Documentation can be found at 
+* http://breakpoint-sass.com 
+* https://github.com/team-sass/breakpoint
+
+    @include breakpoint($mobile) {
+      .foo{ background:blue}
+    }
+    @include breakpoint($handheld) {
+      .foo{ background:black}
+    }
+*/
+
+$mobile: (max-device-width 767px);
+$mobile-up:(min-device-width 768px);
+  $mobile-portrait: (max-device-width 480px) (orientation portrait);
+  $mobile-landscape: (max-device-width 767px) (orientation landscape);
+$mobile-retina: (max-device-width 480px) (-webkit-min-device-pixel-ratio 2);
+  $mobile-retina-portrait: (max-device-width 480px) (-webkit-min-device-pixel-ratio 2) (orientation portrait);
+  $mobile-retina-landscape: (max-device-width 480px) (-webkit-min-device-pixel-ratio 2) (orientation landscape);
+
+$tablet: (min-device-width 768px) (max-device-width 1024px);
+  $tablet-portrait: (min-device-width 768px) (max-device-width 1024px)  (orientation portrait);
+  $tablet-landscape: (min-device-width 768px) (max-device-width 1024px) (orientation landscape);
+
+$handheld:(max-device-width 1024px);
+$desktop: (min-width 960px);
+$desktop-huge: (min-width 1025px);
+
+
+/* 
+colors
+----------------------------------------------------------------
+*/
+$fontcolor     : #000;
+$titlecolor    : #000;
+
+$linkcolor     : #d72751;
+$linkcolorhover: #666666;
+
+$selectioncolor: #d72751;
+$selectioncolor-bg: #ffffff;
+
+$gray: #ccc; 
+
+
+/*
+Fontstack
+--------------------------------------------------------------------------------
+This file defines our font stacks and sitespecific stacks
+uses the fontsize mixin:
+
+import the font
+note we use "//"" cause something is retarded in browsers 
+    .foo{
+      @include fontsize($size:1.6, $line: $size * 1.5);  
+    }
+    
+    @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+    @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+    
+
+*/
+
+/*
+generel fontstacks
+---------------------
+$sans-serif : "Helvetica Neue", Helvetica, Arial, sans-serif;  
+$serif: "Droid Serif", Georgia, serif;  
+$monospace  : "Monaco", "Courier New", monospace;  
+
+Sitespecific fontstacks
+---------------------------
+$foo: "foo", $sans-serif;  
+Fontstack Placeholders
+
+    .bar{
+      @extend %foo;
+    } 
+    
+*/
+
+%uppercase{
+  text-transform: uppercase;
+}
+
+%normalcase{
+  text-transform: none;
+}
+
+/*
+basefont size & lineheight
+----------------------
+ */
+
+$fontsize: 1.4rem;
+$lineheight: $fontsize * 1.5;
+

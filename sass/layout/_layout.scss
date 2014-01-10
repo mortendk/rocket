@@ -1,0 +1,90 @@
+/*
+Layout
+=========
+
+Layout
+=========
+the basic design of the page
+
+The grids settings are created in _config.scsss
+*/
+
+
+.page{ 
+
+}
+main{ 
+
+}
+
+/*
+Container
+===========
+
+    <div class="l-container">
+    </div>
+ */
+
+.l-container{
+  width:80%;
+  margin:0 auto
+}
+
+
+/*
+Header
+--------------------------------------
+templates:  
+  
+    <header role="banner">
+        <a href="/" class="logo"><h2> sitename </h2></a>
+    </header>
+ */
+
+header[role="banner"]{
+ .logo{
+   
+ }
+}
+
+
+/*
+Footer
+------------------------------
+
+    <footer role="contentinfo">
+      <div>
+        <span>Powered by <a href="http://drupal.org">Drupal</a></span>
+      </div>
+    </footer>
+*/
+
+
+
+
+
+
+
+/*
+all together now:
+------------------------
+
+
+    <div class="l-container">
+      <header role="banner">
+      </header>
+    
+      <main>
+
+      </main>
+    
+      <footer role="contentinfo">
+        <div>
+          <span>Powered by <a href="http://drupal.org">Drupal</a></span>
+        </div>
+      </footer>
+    </div>
+
+
+
+ */

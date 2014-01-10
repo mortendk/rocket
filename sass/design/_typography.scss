@@ -1,0 +1,124 @@
+/*
+Typography
+===========================
+
+Typography
+===========================
+Fonts & colors for text 
+Fontstacks are all defined in **sass/_config.scss**
+
+    <body>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, quae, eos incidunt nisi architecto molestiae consequuntur laborum veritatis necessitatibus nostrum provident a doloribus id. Itaque dignissimos architecto debitis vitae dicta.
+    <body>
+*/
+
+body{
+  color: $fontcolor;
+  font-size: $fontsize;
+}
+
+/*
+content
+---------------------------
+basic content 
+    <div class="content">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      <a href="#">read more</a>  Lorem ipsum dolor sit amet, consectetur adipisicing elit.  
+    </div>  
+ */
+.content{ 
+  
+}
+
+
+/*
+links
+-----------------------------------------
+mixin: linkcolor($linkcolor, $linkcolorhover, underline);
+     
+    <a href="#">foo</a>
+    
+    <hr>
+
+    <div class="content">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      <a href="#">read more</a>  Lorem ipsum dolor sit amet, consectetur adipisicing elit.  
+    </div>  
+
+ */
+
+@include linkcolor($linkcolor, $linkcolorhover, underline);
+
+.content{
+  @include linkcolor($linkcolor, $linkcolorhover, underline);
+}
+
+:focus{outline:0;}
+
+
+/*
+Headings
+==========
+
+    <h1>h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+    <h2>h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+    <h3>h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+    <h4>h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+    <h5>h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+    <h6>h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+
+*/
+
+/*
+Headings links
+==========
+
+    <h1><a href="foo">h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h1>
+    <h2><a href="foo">h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+    <h3><a href="foo">h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+    <h4><a href="foo">h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+    <h5><a href="foo">h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h5>
+    <h6><a href="foo">h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h6>
+
+*/
+
+
+h1,h2, h3, h4, h5, h6{
+  @include linkcolor($titlecolor, $linkcolorhover);
+  line-height:1;
+  margin:0 0 2rem 0;
+  color:$titlecolor;
+}
+h1{
+  font-size:4.5rem;
+}
+h2{
+  font-size:3.5rem;
+}
+h3{
+  font-size:3rem;
+}
+h4 {
+ font-size:2.5rem;
+}
+h5 {
+ font-size:2rem;
+}
+h6 {
+ font-size:1.6rem;
+}
+
+/*
+Selection colors
+========================================
+
+ */
+
+// -- Selection colors
+::-moz-selection { background: #d72751; color: #fff;}
+::selection      { background: #d72751; color: #fff;}
+
+// -- placeholder colors
+:-moz-placeholder { color: #ccc;}
+::-webkit-input-placeholder { color: #ccc;}
+
