@@ -1,0 +1,176 @@
+body{
+   // background: $backgroundcolor;  
+}
+
+header[role="banner"]{
+  border-top:5px solid #ededed;
+}
+
+footer[role="contentinfo"]{
+  min-height:400px;
+  background: $black;
+  border-top: 4px solid #eee;
+
+}
+
+
+//TODO: move outta rocket
+.lead {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 30px;
+  color: $textgray;
+}
+
+/* 
+Featured box
+------------------------------------
+    <section class="l-fourth">
+
+    <div class="featurebox c-1">
+      <div>
+        <i class="icon icon-laptop"></i>
+        <h2>Lorem ipsum dolor sit amet </h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+    
+    <div class="featurebox c-2">
+      <div>
+        <i class="icon icon-laptop"></i>
+        <h2>Lorem ipsum dolor sit amet </h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+
+    <div class="featurebox c-3">
+      <div>
+        <i class="icon icon-laptop"></i>
+        <h2>Lorem ipsum dolor sit amet </h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+
+    <div class="featurebox c-4">
+      <div>
+        <i class="icon icon-laptop"></i>
+        <h2>Lorem ipsum dolor sit amet </h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+
+
+    </section>
+*/
+%featurebox,
+.featurebox{
+  @include border-radius(8px);
+  border-bottom: 1px solid #DFDFDF; //@todo: define as color var
+  border-left:  1px solid #ECECEC;  //@todo: define as color var
+  border-right: 1px solid #ECECEC;//@todo: define as color var
+  background:#fff;
+  @include box-shadow(0 1px 5px 0 rgba(0, 0, 0, 0.04));
+  @include background-image(linear-gradient(center top, #fff, #f9f9f9 98%));
+  margin:2rem 0;
+  text-align:center;  
+
+  > div{
+    @include border-radius(8px);
+    border-top: 3px solid #666;
+    border-top-width: 4px;
+    padding: 3rem 1rem;
+  }
+  .icon{
+    @extend .fa;
+    background-color: #666;
+    color:#fff;
+    font-size: 4rem;
+    line-height:4rem;
+    @include border-radius(5rem);
+    padding:2.5rem; //50% of border-radius
+
+  }
+  h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top:1rem;
+  }  
+  p{
+    text-align: left;
+  }
+}
+
+//colors
+.featurebox.c-1{ 
+  & > div{ border-top-color: $red;}
+  h2{ color:$red; }
+  .icon{ 
+    @extend .fa-laptop;
+    background-color: $red;
+  }
+}
+
+.featurebox.c-2{ 
+  & > div{ border-top-color: $blue;}
+  h2{ color:$blue; }
+  .icon{ 
+    @extend .fa-thumbs-up;
+    background-color: $blue;
+  }
+}
+.featurebox.c-3{ 
+  & > div{ border-top-color: $green;}
+  h2{ color:$green; }
+  .icon{ 
+    @extend .fa-envelope;
+    background-color: $green;
+  }
+}
+.featurebox.c-4{ 
+  & > div{ border-top-color: $purple;}
+  h2{ color:$purple; }
+  .icon{ 
+    @extend .fa-check-square-o;
+    background-color: $purple;
+  }
+}
+
+
+/*
+Belt
+
+
+ */  
+.belt{
+  width:100%;
+  background:$black;
+  padding:3rem;
+}
+
+.btn { 
+  @include sassy-button("shiny", 6px, 2rem, $blue, lighten($blue, 10%), #fff);
+  @include a-linkcolor(#fff,#fff,none);
+  // @include sassy-button(gradient-style, border-radius, font-size, first-color, second-color, text-color, text-style, auto-states)
+ }

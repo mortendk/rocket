@@ -10,12 +10,6 @@ The grids settings are created in _config.scsss
 */
 
 
-.page{ 
-
-}
-main{ 
-
-}
 
 /*
 Container
@@ -25,10 +19,7 @@ Container
     </div>
  */
 
-.l-container{
-  width:80%;
-  margin:0 auto
-}
+.l-container{ }
 
 
 /*
@@ -42,10 +33,51 @@ templates:
  */
 
 header[role="banner"]{
- .logo{
-   
- }
+  margin:0 auto;
+  @extend %cf;
+  
+  @include breakpoint($mobile) {width: 100%}
+  @include breakpoint($tablet) {width: 90%}
+  @include breakpoint($desktop){width: 1200px} 
+
+  #logo{ //@todo: logo needs to be a class ... were not barbarians
+    @include breakpoint($mobile) {@include grid-span(4,1,4);}
+    @include breakpoint($tablet) {@include grid-span(4,1,8);}
+    @include breakpoint($desktop){@include grid-span(4,1,12);} 
+  }
+  nav.mainmenu{
+    @include breakpoint($mobile) {@include grid-span(4,1,4);}
+    @include breakpoint($tablet) {@include grid-span(2,5,8);}
+    @include breakpoint($desktop){@include grid-span(4,5,12);} 
+  }
+  nav.usermenu{
+    @include breakpoint($mobile) {@include grid-span(4,1,4);}
+    @include breakpoint($tablet) {@include grid-span(2,7,8);}
+    @include breakpoint($desktop){@include grid-span(2,9,12);} 
+  }
 }
+
+main{
+  margin:0 auto;
+  @include breakpoint($mobile) {width: 100%}
+  @include breakpoint($tablet) {width: 90%}
+  @include breakpoint($desktop){width: 1200px} 
+}  
+
+footer[role="contentinfo"]{
+  width:100%
+}
+
+
+/*
+Main
+--------------------------------------------
+    
+    <main>
+      <div> lorem ipsum ...</div>
+    </main>
+ */
+main{  }
 
 
 /*
@@ -58,7 +90,10 @@ Footer
       </div>
     </footer>
 */
-
+footer[role="contentinfo"]{
+  width:100%;
+  margin:0 auto;
+}
 
 
 
@@ -75,7 +110,7 @@ all together now:
       </header>
     
       <main>
-
+        <h1> Main content
       </main>
     
       <footer role="contentinfo">
@@ -88,3 +123,25 @@ all together now:
 
 
  */
+
+
+.l-hero{
+
+}
+
+.economic-splash{
+  @extend %cf;
+  // @include breakpoint($mobile) {@include grid-span(3);}
+  // @include breakpoint($tablet) {@include grid-span(6);}
+  // @include breakpoint($desktop){@include grid-span(12);}    
+}
+
+
+
+
+
+//default hide drupals admin-menu on smaller devices
+#admin-menu{
+  display:none;
+  @include breakpoint($desktop) {display:block}
+}

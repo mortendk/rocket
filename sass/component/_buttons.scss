@@ -1,7 +1,52 @@
 /*
 Buttons
--------------------------
+===========================
 
-    <button class="button">Button (button.button)</button>
-    <a href="#" class="button">Button (a.button)</a>
+Buttons
+---------------------------
+Buttons for us for links and 
+
+Buttons
+--------------------------------------------------------------------------------
+
+Documentation for sassy buttonshttp://jaredhardy.com/sassy-buttons/    
+*/
+
+/*
+Form buttons
+--------------------------
+
+    <button>click me</button>
+
+    <div class="form-actions form-wrapper" id="edit-actions">
+      <input type="submit" id="edit-submit" name="op" value="Save" class="form-submit">
+      <input type="submit" id="edit-delete" name="op" value="Delete" class="form-submit">
+    </div>
+
+
+ */
+
+button{
+  @include sassy-button("simple", 4px, 15px, #fff , #e6e6e6, #333);
+}
+input[type="submit"]{
+  @include sassy-button("simple", 4px, 15px, #fff , #e6e6e6, #333);
+}
+
+
+/*
+    <div>
+      <label>foo</label>
+      <input type="text">
+    </div>
+    <button class="btn">Button (button.btn)</button>
+    <br><br><br>
+    <a href="#" class="btn">Button (a.btn)</a>
 */    
+
+.btn { 
+  @include sassy-button("shiny", 6px, 2rem, $blue, lighten($blue, 10%), #fff);
+  @include a-linkcolor(#fff,#fff,none);
+  // @include sassy-button(gradient-style, border-radius, font-size, first-color, second-color, text-color, text-style, auto-states)
+}
+

@@ -4,9 +4,19 @@ Cause im lazy and forgets stuff
 
 
 
+### resources
+* rocket icon: http://www.endlessicons.com/free-icons/rocket-icon-2/
+* ionicons http://ionicons.com
 
 
-# Styleguide
+# css
+sassdown:
+https://npmjs.org/package/sassdown
+
+$ cd [path]/themes/contrib/rocket 
+$ grunt 
+
+## Styleguide
 ==========
 config.scss
 _dragon.scss

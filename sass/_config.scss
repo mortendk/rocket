@@ -16,12 +16,12 @@ grid setup
 build on singualritygs
 */
 $grids: 4;
-$grids: add-grid(6 at 30em);
-$grids: add-grid(9 at 40em);
-$grids: add-grid(12 at 50em);
+$grids: add-grid(8 at 768px);
+$grids: add-grid(12 at 960px);
+$gutters: 1/3;
 
 //toggle g key for grid testing
-$background-grid-color:gray;
+$background-grid-color:teal;
 @include grid-toggle;
 
 
@@ -42,37 +42,98 @@ Documentation can be found at
     }
 */
 
-$mobile: (max-device-width 767px);
-$mobile-up:(min-device-width 768px);
-  $mobile-portrait: (max-device-width 480px) (orientation portrait);
-  $mobile-landscape: (max-device-width 767px) (orientation landscape);
-$mobile-retina: (max-device-width 480px) (-webkit-min-device-pixel-ratio 2);
-  $mobile-retina-portrait: (max-device-width 480px) (-webkit-min-device-pixel-ratio 2) (orientation portrait);
-  $mobile-retina-landscape: (max-device-width 480px) (-webkit-min-device-pixel-ratio 2) (orientation landscape);
+$small: (max-width 480px);
+$medium: (min-width 600px);
+$large: (min-width 768px);
+$xlarge: (min-width 992px);
 
-$tablet: (min-device-width 768px) (max-device-width 1024px);
-  $tablet-portrait: (min-device-width 768px) (max-device-width 1024px)  (orientation portrait);
-  $tablet-landscape: (min-device-width 768px) (max-device-width 1024px) (orientation landscape);
 
-$handheld:(max-device-width 1024px);
+$mobile: (max-width 480px);
+  $mobile-portrait: (max-width 480px) (orientation portrait);
+  $mobile-landscape: (max-width 767px) (orientation landscape);
+$mobile-retina: (max-width 480px) (-webkit-min-device-pixel-ratio 2);
+  $mobile-retina-portrait: (max-width 480px) (-webkit-min-device-pixel-ratio 2) (orientation portrait);
+  $mobile-retina-landscape: (max-width 480px) (-webkit-min-device-pixel-ratio 2) (orientation landscape);
+$mobile-up:(min-width 768px); //huh rename
+
+$tablet: (min-width 768px) (max-width 1024px);
+  $tablet-portrait: (min-width 768px) (max-width 1024px)  (orientation portrait);
+  $tablet-landscape: (min-width 768px) (max-width 1024px) (orientation landscape);
+
+$handheld:(max-width 1024px);
 $desktop: (min-width 960px);
 $desktop-huge: (min-width 1025px);
+
+
+
+/*
+usage: 
+ 
+body{
+  @include breakpoint($mobile) {background: gray}
+  @include breakpoint($mobile-portrait) {background: blue}
+  @include breakpoint($mobile-landscape) {background: teal}
+  @include breakpoint($mobile-retina) {background: red}
+  @include breakpoint($mobile-retina-portrait) {background: pink}
+  @include breakpoint($mobile-retina-landscape) {background: gold}
+  @include breakpoint($tablet) {background: maroon}
+  // @include breakpoint($tablet-landscape) {background: coral}
+  // @include breakpoint($tablet-portrait) {background: orange}
+  @include breakpoint($desktop) {background: lightgray}
+  @include breakpoint($desktop-huge) {background: white}
+}
+*/
+
+ 
+body{
+  @include breakpoint($mobile) {border-left: 4px solid #ddd}
+  @include breakpoint($tablet) {border-left: 4px solid #0c0}
+  @include breakpoint($desktop) {border-left: 4px solid #ccc}
+}
+
 
 
 /* 
 colors
 ----------------------------------------------------------------
 */
-$fontcolor     : #000;
-$titlecolor    : #000;
+$backgroundcolor: #fff;
 
-$linkcolor     : #d72751;
-$linkcolorhover: #666666;
+$fontcolor     : #777;
+$titlecolor    : #121214;
+
+$linkcolor     : #0088cc;
+$linkcolorhover: #0099e6;
 
 $selectioncolor: #d72751;
 $selectioncolor-bg: #ffffff;
 
-$gray: #ccc; 
+$gray: #666;
+
+
+
+
+
+// sitespecific colors
+
+
+
+$gray-light: #f9f9f9;
+$graylight2: #ededed; 
+$graylight3: #DFDFDF;
+$graylight4:#ECECEC;
+$textgray: #777;
+
+$contractbasecolor: #0088cc;
+$contractbasecolor-border:#0077b3;
+
+//basic colors
+$black: #121214;
+$black-light: #1F1F1F;
+$red:   #E05048;
+$blue:  #0088CC;
+$green: #4EB25C;
+$purple:#734BA9;
 
 
 /*
@@ -89,11 +150,7 @@ note we use "//"" cause something is retarded in browsers
     
     @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
     @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
-    
 
-*/
-
-/*
 generel fontstacks
 ---------------------
 $sans-serif : "Helvetica Neue", Helvetica, Arial, sans-serif;  
@@ -110,6 +167,12 @@ Fontstack Placeholders
     } 
     
 */
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+$sans-serif : "Helvetica Neue", Helvetica, Arial, sans-serif;  
+$serif: "Droid Serif", Georgia, serif;  
+$monospace  : "Monaco", "Courier New", monospace;  
+$fontbase: "Open Sans", $sans-serif;  
 
 %uppercase{
   text-transform: uppercase;
@@ -125,5 +188,5 @@ basefont size & lineheight
  */
 
 $fontsize: 1.4rem;
-$lineheight: $fontsize * 1.5;
+$lineheight: 2.4rem;
 

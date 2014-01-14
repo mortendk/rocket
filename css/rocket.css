@@ -1,0 +1,5970 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+/*
+Style
+==========
+One file to rule em all!  
+*/
+/* line 65, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_clearfix.scss */
+.l-half:after,
+.l-third:after,
+.l-fourth:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+ *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/font-awesome/fonts/fontawesome-webfont.eot?v=4.0.3");
+  src: url("../fonts/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../fonts/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../fonts/font-awesome/fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../fonts/font-awesome/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 4, ../sass/lib/font-awesome/_core.scss */
+.fa,
+.featurebox .icon {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+/* line 5, ../sass/lib/font-awesome/_larger.scss */
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+/* line 10, ../sass/lib/font-awesome/_larger.scss */
+.fa-2x {
+  font-size: 2em;
+}
+
+/* line 11, ../sass/lib/font-awesome/_larger.scss */
+.fa-3x {
+  font-size: 3em;
+}
+
+/* line 12, ../sass/lib/font-awesome/_larger.scss */
+.fa-4x {
+  font-size: 4em;
+}
+
+/* line 13, ../sass/lib/font-awesome/_larger.scss */
+.fa-5x {
+  font-size: 5em;
+}
+
+/* line 3, ../sass/lib/font-awesome/_fixed-width.scss */
+.fa-fw {
+  width: 1.28571em;
+  text-align: center;
+}
+
+/* line 4, ../sass/lib/font-awesome/_list.scss */
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14286em;
+  list-style-type: none;
+}
+/* line 8, ../sass/lib/font-awesome/_list.scss */
+.fa-ul > li {
+  position: relative;
+}
+
+/* line 10, ../sass/lib/font-awesome/_list.scss */
+.fa-li {
+  position: absolute;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
+  text-align: center;
+}
+/* line 16, ../sass/lib/font-awesome/_list.scss */
+.fa-li.fa-lg {
+  left: -1.85714em;
+}
+
+/* line 4, ../sass/lib/font-awesome/_bordered-pulled.scss */
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+
+/* line 10, ../sass/lib/font-awesome/_bordered-pulled.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 11, ../sass/lib/font-awesome/_bordered-pulled.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 14, ../sass/lib/font-awesome/_bordered-pulled.scss */
+.fa.pull-left,
+.featurebox .pull-left.icon {
+  margin-right: .3em;
+}
+/* line 15, ../sass/lib/font-awesome/_bordered-pulled.scss */
+.fa.pull-right,
+.featurebox .pull-right.icon {
+  margin-left: .3em;
+}
+
+/* line 4, ../sass/lib/font-awesome/_spinning.scss */
+.fa-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+@-moz-keyframes spin {
+  /* line 12, ../sass/lib/font-awesome/_spinning.scss */
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 13, ../sass/lib/font-awesome/_spinning.scss */
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  /* line 16, ../sass/lib/font-awesome/_spinning.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 17, ../sass/lib/font-awesome/_spinning.scss */
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes spin {
+  /* line 20, ../sass/lib/font-awesome/_spinning.scss */
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  /* line 21, ../sass/lib/font-awesome/_spinning.scss */
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+
+@-ms-keyframes spin {
+  /* line 24, ../sass/lib/font-awesome/_spinning.scss */
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+
+  /* line 25, ../sass/lib/font-awesome/_spinning.scss */
+  100% {
+    -ms-transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  /* line 28, ../sass/lib/font-awesome/_spinning.scss */
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* line 29, ../sass/lib/font-awesome/_spinning.scss */
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+/* line 4, ../sass/lib/font-awesome/_rotated-flipped.scss */
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 5, ../sass/lib/font-awesome/_rotated-flipped.scss */
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 6, ../sass/lib/font-awesome/_rotated-flipped.scss */
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 8, ../sass/lib/font-awesome/_rotated-flipped.scss */
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/* line 9, ../sass/lib/font-awesome/_rotated-flipped.scss */
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+/* line 4, ../sass/lib/font-awesome/_stacked.scss */
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+/* line 12, ../sass/lib/font-awesome/_stacked.scss */
+.fa-stack-1x, .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 18, ../sass/lib/font-awesome/_stacked.scss */
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+/* line 19, ../sass/lib/font-awesome/_stacked.scss */
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+/* line 20, ../sass/lib/font-awesome/_stacked.scss */
+.fa-inverse {
+  color: white;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+/* line 4, ../sass/lib/font-awesome/_icons.scss */
+.fa-glass:before {
+  content: "\f000";
+}
+
+/* line 5, ../sass/lib/font-awesome/_icons.scss */
+.fa-music:before {
+  content: "\f001";
+}
+
+/* line 6, ../sass/lib/font-awesome/_icons.scss */
+.fa-search:before {
+  content: "\f002";
+}
+
+/* line 7, ../sass/lib/font-awesome/_icons.scss */
+.fa-envelope-o:before {
+  content: "\f003";
+}
+
+/* line 8, ../sass/lib/font-awesome/_icons.scss */
+.fa-heart:before {
+  content: "\f004";
+}
+
+/* line 9, ../sass/lib/font-awesome/_icons.scss */
+.fa-star:before {
+  content: "\f005";
+}
+
+/* line 10, ../sass/lib/font-awesome/_icons.scss */
+.fa-star-o:before {
+  content: "\f006";
+}
+
+/* line 11, ../sass/lib/font-awesome/_icons.scss */
+.fa-user:before {
+  content: "\f007";
+}
+
+/* line 12, ../sass/lib/font-awesome/_icons.scss */
+.fa-film:before {
+  content: "\f008";
+}
+
+/* line 13, ../sass/lib/font-awesome/_icons.scss */
+.fa-th-large:before {
+  content: "\f009";
+}
+
+/* line 14, ../sass/lib/font-awesome/_icons.scss */
+.fa-th:before {
+  content: "\f00a";
+}
+
+/* line 15, ../sass/lib/font-awesome/_icons.scss */
+.fa-th-list:before {
+  content: "\f00b";
+}
+
+/* line 16, ../sass/lib/font-awesome/_icons.scss */
+.fa-check:before {
+  content: "\f00c";
+}
+
+/* line 17, ../sass/lib/font-awesome/_icons.scss */
+.fa-times:before {
+  content: "\f00d";
+}
+
+/* line 18, ../sass/lib/font-awesome/_icons.scss */
+.fa-search-plus:before {
+  content: "\f00e";
+}
+
+/* line 19, ../sass/lib/font-awesome/_icons.scss */
+.fa-search-minus:before {
+  content: "\f010";
+}
+
+/* line 20, ../sass/lib/font-awesome/_icons.scss */
+.fa-power-off:before {
+  content: "\f011";
+}
+
+/* line 21, ../sass/lib/font-awesome/_icons.scss */
+.fa-signal:before {
+  content: "\f012";
+}
+
+/* line 23, ../sass/lib/font-awesome/_icons.scss */
+.fa-gear:before,
+.fa-cog:before {
+  content: "\f013";
+}
+
+/* line 24, ../sass/lib/font-awesome/_icons.scss */
+.fa-trash-o:before {
+  content: "\f014";
+}
+
+/* line 25, ../sass/lib/font-awesome/_icons.scss */
+.fa-home:before {
+  content: "\f015";
+}
+
+/* line 26, ../sass/lib/font-awesome/_icons.scss */
+.fa-file-o:before {
+  content: "\f016";
+}
+
+/* line 27, ../sass/lib/font-awesome/_icons.scss */
+.fa-clock-o:before {
+  content: "\f017";
+}
+
+/* line 28, ../sass/lib/font-awesome/_icons.scss */
+.fa-road:before {
+  content: "\f018";
+}
+
+/* line 29, ../sass/lib/font-awesome/_icons.scss */
+.fa-download:before {
+  content: "\f019";
+}
+
+/* line 30, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-circle-o-down:before {
+  content: "\f01a";
+}
+
+/* line 31, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-circle-o-up:before {
+  content: "\f01b";
+}
+
+/* line 32, ../sass/lib/font-awesome/_icons.scss */
+.fa-inbox:before {
+  content: "\f01c";
+}
+
+/* line 33, ../sass/lib/font-awesome/_icons.scss */
+.fa-play-circle-o:before {
+  content: "\f01d";
+}
+
+/* line 35, ../sass/lib/font-awesome/_icons.scss */
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "\f01e";
+}
+
+/* line 36, ../sass/lib/font-awesome/_icons.scss */
+.fa-refresh:before {
+  content: "\f021";
+}
+
+/* line 37, ../sass/lib/font-awesome/_icons.scss */
+.fa-list-alt:before {
+  content: "\f022";
+}
+
+/* line 38, ../sass/lib/font-awesome/_icons.scss */
+.fa-lock:before {
+  content: "\f023";
+}
+
+/* line 39, ../sass/lib/font-awesome/_icons.scss */
+.fa-flag:before {
+  content: "\f024";
+}
+
+/* line 40, ../sass/lib/font-awesome/_icons.scss */
+.fa-headphones:before {
+  content: "\f025";
+}
+
+/* line 41, ../sass/lib/font-awesome/_icons.scss */
+.fa-volume-off:before {
+  content: "\f026";
+}
+
+/* line 42, ../sass/lib/font-awesome/_icons.scss */
+.fa-volume-down:before {
+  content: "\f027";
+}
+
+/* line 43, ../sass/lib/font-awesome/_icons.scss */
+.fa-volume-up:before {
+  content: "\f028";
+}
+
+/* line 44, ../sass/lib/font-awesome/_icons.scss */
+.fa-qrcode:before {
+  content: "\f029";
+}
+
+/* line 45, ../sass/lib/font-awesome/_icons.scss */
+.fa-barcode:before {
+  content: "\f02a";
+}
+
+/* line 46, ../sass/lib/font-awesome/_icons.scss */
+.fa-tag:before {
+  content: "\f02b";
+}
+
+/* line 47, ../sass/lib/font-awesome/_icons.scss */
+.fa-tags:before {
+  content: "\f02c";
+}
+
+/* line 48, ../sass/lib/font-awesome/_icons.scss */
+.fa-book:before {
+  content: "\f02d";
+}
+
+/* line 49, ../sass/lib/font-awesome/_icons.scss */
+.fa-bookmark:before {
+  content: "\f02e";
+}
+
+/* line 50, ../sass/lib/font-awesome/_icons.scss */
+.fa-print:before {
+  content: "\f02f";
+}
+
+/* line 51, ../sass/lib/font-awesome/_icons.scss */
+.fa-camera:before {
+  content: "\f030";
+}
+
+/* line 52, ../sass/lib/font-awesome/_icons.scss */
+.fa-font:before {
+  content: "\f031";
+}
+
+/* line 53, ../sass/lib/font-awesome/_icons.scss */
+.fa-bold:before {
+  content: "\f032";
+}
+
+/* line 54, ../sass/lib/font-awesome/_icons.scss */
+.fa-italic:before {
+  content: "\f033";
+}
+
+/* line 55, ../sass/lib/font-awesome/_icons.scss */
+.fa-text-height:before {
+  content: "\f034";
+}
+
+/* line 56, ../sass/lib/font-awesome/_icons.scss */
+.fa-text-width:before {
+  content: "\f035";
+}
+
+/* line 57, ../sass/lib/font-awesome/_icons.scss */
+.fa-align-left:before {
+  content: "\f036";
+}
+
+/* line 58, ../sass/lib/font-awesome/_icons.scss */
+.fa-align-center:before {
+  content: "\f037";
+}
+
+/* line 59, ../sass/lib/font-awesome/_icons.scss */
+.fa-align-right:before {
+  content: "\f038";
+}
+
+/* line 60, ../sass/lib/font-awesome/_icons.scss */
+.fa-align-justify:before {
+  content: "\f039";
+}
+
+/* line 61, ../sass/lib/font-awesome/_icons.scss */
+.fa-list:before {
+  content: "\f03a";
+}
+
+/* line 63, ../sass/lib/font-awesome/_icons.scss */
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "\f03b";
+}
+
+/* line 64, ../sass/lib/font-awesome/_icons.scss */
+.fa-indent:before {
+  content: "\f03c";
+}
+
+/* line 65, ../sass/lib/font-awesome/_icons.scss */
+.fa-video-camera:before {
+  content: "\f03d";
+}
+
+/* line 66, ../sass/lib/font-awesome/_icons.scss */
+.fa-picture-o:before {
+  content: "\f03e";
+}
+
+/* line 67, ../sass/lib/font-awesome/_icons.scss */
+.fa-pencil:before {
+  content: "\f040";
+}
+
+/* line 68, ../sass/lib/font-awesome/_icons.scss */
+.fa-map-marker:before {
+  content: "\f041";
+}
+
+/* line 69, ../sass/lib/font-awesome/_icons.scss */
+.fa-adjust:before {
+  content: "\f042";
+}
+
+/* line 70, ../sass/lib/font-awesome/_icons.scss */
+.fa-tint:before {
+  content: "\f043";
+}
+
+/* line 72, ../sass/lib/font-awesome/_icons.scss */
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "\f044";
+}
+
+/* line 73, ../sass/lib/font-awesome/_icons.scss */
+.fa-share-square-o:before {
+  content: "\f045";
+}
+
+/* line 74, ../sass/lib/font-awesome/_icons.scss */
+.fa-check-square-o:before, .featurebox.c-4 .icon:before {
+  content: "\f046";
+}
+
+/* line 75, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrows:before {
+  content: "\f047";
+}
+
+/* line 76, ../sass/lib/font-awesome/_icons.scss */
+.fa-step-backward:before {
+  content: "\f048";
+}
+
+/* line 77, ../sass/lib/font-awesome/_icons.scss */
+.fa-fast-backward:before {
+  content: "\f049";
+}
+
+/* line 78, ../sass/lib/font-awesome/_icons.scss */
+.fa-backward:before {
+  content: "\f04a";
+}
+
+/* line 79, ../sass/lib/font-awesome/_icons.scss */
+.fa-play:before {
+  content: "\f04b";
+}
+
+/* line 80, ../sass/lib/font-awesome/_icons.scss */
+.fa-pause:before {
+  content: "\f04c";
+}
+
+/* line 81, ../sass/lib/font-awesome/_icons.scss */
+.fa-stop:before {
+  content: "\f04d";
+}
+
+/* line 82, ../sass/lib/font-awesome/_icons.scss */
+.fa-forward:before {
+  content: "\f04e";
+}
+
+/* line 83, ../sass/lib/font-awesome/_icons.scss */
+.fa-fast-forward:before {
+  content: "\f050";
+}
+
+/* line 84, ../sass/lib/font-awesome/_icons.scss */
+.fa-step-forward:before {
+  content: "\f051";
+}
+
+/* line 85, ../sass/lib/font-awesome/_icons.scss */
+.fa-eject:before {
+  content: "\f052";
+}
+
+/* line 86, ../sass/lib/font-awesome/_icons.scss */
+.fa-chevron-left:before {
+  content: "\f053";
+}
+
+/* line 87, ../sass/lib/font-awesome/_icons.scss */
+.fa-chevron-right:before {
+  content: "\f054";
+}
+
+/* line 88, ../sass/lib/font-awesome/_icons.scss */
+.fa-plus-circle:before {
+  content: "\f055";
+}
+
+/* line 89, ../sass/lib/font-awesome/_icons.scss */
+.fa-minus-circle:before {
+  content: "\f056";
+}
+
+/* line 90, ../sass/lib/font-awesome/_icons.scss */
+.fa-times-circle:before {
+  content: "\f057";
+}
+
+/* line 91, ../sass/lib/font-awesome/_icons.scss */
+.fa-check-circle:before {
+  content: "\f058";
+}
+
+/* line 92, ../sass/lib/font-awesome/_icons.scss */
+.fa-question-circle:before {
+  content: "\f059";
+}
+
+/* line 93, ../sass/lib/font-awesome/_icons.scss */
+.fa-info-circle:before {
+  content: "\f05a";
+}
+
+/* line 94, ../sass/lib/font-awesome/_icons.scss */
+.fa-crosshairs:before {
+  content: "\f05b";
+}
+
+/* line 95, ../sass/lib/font-awesome/_icons.scss */
+.fa-times-circle-o:before {
+  content: "\f05c";
+}
+
+/* line 96, ../sass/lib/font-awesome/_icons.scss */
+.fa-check-circle-o:before {
+  content: "\f05d";
+}
+
+/* line 97, ../sass/lib/font-awesome/_icons.scss */
+.fa-ban:before {
+  content: "\f05e";
+}
+
+/* line 98, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-left:before {
+  content: "\f060";
+}
+
+/* line 99, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-right:before {
+  content: "\f061";
+}
+
+/* line 100, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-up:before {
+  content: "\f062";
+}
+
+/* line 101, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-down:before {
+  content: "\f063";
+}
+
+/* line 103, ../sass/lib/font-awesome/_icons.scss */
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "\f064";
+}
+
+/* line 104, ../sass/lib/font-awesome/_icons.scss */
+.fa-expand:before {
+  content: "\f065";
+}
+
+/* line 105, ../sass/lib/font-awesome/_icons.scss */
+.fa-compress:before {
+  content: "\f066";
+}
+
+/* line 106, ../sass/lib/font-awesome/_icons.scss */
+.fa-plus:before {
+  content: "\f067";
+}
+
+/* line 107, ../sass/lib/font-awesome/_icons.scss */
+.fa-minus:before {
+  content: "\f068";
+}
+
+/* line 108, ../sass/lib/font-awesome/_icons.scss */
+.fa-asterisk:before {
+  content: "\f069";
+}
+
+/* line 109, ../sass/lib/font-awesome/_icons.scss */
+.fa-exclamation-circle:before {
+  content: "\f06a";
+}
+
+/* line 110, ../sass/lib/font-awesome/_icons.scss */
+.fa-gift:before {
+  content: "\f06b";
+}
+
+/* line 111, ../sass/lib/font-awesome/_icons.scss */
+.fa-leaf:before {
+  content: "\f06c";
+}
+
+/* line 112, ../sass/lib/font-awesome/_icons.scss */
+.fa-fire:before {
+  content: "\f06d";
+}
+
+/* line 113, ../sass/lib/font-awesome/_icons.scss */
+.fa-eye:before {
+  content: "\f06e";
+}
+
+/* line 114, ../sass/lib/font-awesome/_icons.scss */
+.fa-eye-slash:before {
+  content: "\f070";
+}
+
+/* line 116, ../sass/lib/font-awesome/_icons.scss */
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "\f071";
+}
+
+/* line 117, ../sass/lib/font-awesome/_icons.scss */
+.fa-plane:before {
+  content: "\f072";
+}
+
+/* line 118, ../sass/lib/font-awesome/_icons.scss */
+.fa-calendar:before {
+  content: "\f073";
+}
+
+/* line 119, ../sass/lib/font-awesome/_icons.scss */
+.fa-random:before {
+  content: "\f074";
+}
+
+/* line 120, ../sass/lib/font-awesome/_icons.scss */
+.fa-comment:before {
+  content: "\f075";
+}
+
+/* line 121, ../sass/lib/font-awesome/_icons.scss */
+.fa-magnet:before {
+  content: "\f076";
+}
+
+/* line 122, ../sass/lib/font-awesome/_icons.scss */
+.fa-chevron-up:before {
+  content: "\f077";
+}
+
+/* line 123, ../sass/lib/font-awesome/_icons.scss */
+.fa-chevron-down:before {
+  content: "\f078";
+}
+
+/* line 124, ../sass/lib/font-awesome/_icons.scss */
+.fa-retweet:before {
+  content: "\f079";
+}
+
+/* line 125, ../sass/lib/font-awesome/_icons.scss */
+.fa-shopping-cart:before {
+  content: "\f07a";
+}
+
+/* line 126, ../sass/lib/font-awesome/_icons.scss */
+.fa-folder:before {
+  content: "\f07b";
+}
+
+/* line 127, ../sass/lib/font-awesome/_icons.scss */
+.fa-folder-open:before {
+  content: "\f07c";
+}
+
+/* line 128, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrows-v:before {
+  content: "\f07d";
+}
+
+/* line 129, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrows-h:before {
+  content: "\f07e";
+}
+
+/* line 130, ../sass/lib/font-awesome/_icons.scss */
+.fa-bar-chart-o:before {
+  content: "\f080";
+}
+
+/* line 131, ../sass/lib/font-awesome/_icons.scss */
+.fa-twitter-square:before {
+  content: "\f081";
+}
+
+/* line 132, ../sass/lib/font-awesome/_icons.scss */
+.fa-facebook-square:before {
+  content: "\f082";
+}
+
+/* line 133, ../sass/lib/font-awesome/_icons.scss */
+.fa-camera-retro:before {
+  content: "\f083";
+}
+
+/* line 134, ../sass/lib/font-awesome/_icons.scss */
+.fa-key:before {
+  content: "\f084";
+}
+
+/* line 136, ../sass/lib/font-awesome/_icons.scss */
+.fa-gears:before,
+.fa-cogs:before {
+  content: "\f085";
+}
+
+/* line 137, ../sass/lib/font-awesome/_icons.scss */
+.fa-comments:before {
+  content: "\f086";
+}
+
+/* line 138, ../sass/lib/font-awesome/_icons.scss */
+.fa-thumbs-o-up:before {
+  content: "\f087";
+}
+
+/* line 139, ../sass/lib/font-awesome/_icons.scss */
+.fa-thumbs-o-down:before {
+  content: "\f088";
+}
+
+/* line 140, ../sass/lib/font-awesome/_icons.scss */
+.fa-star-half:before {
+  content: "\f089";
+}
+
+/* line 141, ../sass/lib/font-awesome/_icons.scss */
+.fa-heart-o:before {
+  content: "\f08a";
+}
+
+/* line 142, ../sass/lib/font-awesome/_icons.scss */
+.fa-sign-out:before {
+  content: "\f08b";
+}
+
+/* line 143, ../sass/lib/font-awesome/_icons.scss */
+.fa-linkedin-square:before {
+  content: "\f08c";
+}
+
+/* line 144, ../sass/lib/font-awesome/_icons.scss */
+.fa-thumb-tack:before {
+  content: "\f08d";
+}
+
+/* line 145, ../sass/lib/font-awesome/_icons.scss */
+.fa-external-link:before {
+  content: "\f08e";
+}
+
+/* line 146, ../sass/lib/font-awesome/_icons.scss */
+.fa-sign-in:before {
+  content: "\f090";
+}
+
+/* line 147, ../sass/lib/font-awesome/_icons.scss */
+.fa-trophy:before {
+  content: "\f091";
+}
+
+/* line 148, ../sass/lib/font-awesome/_icons.scss */
+.fa-github-square:before {
+  content: "\f092";
+}
+
+/* line 149, ../sass/lib/font-awesome/_icons.scss */
+.fa-upload:before {
+  content: "\f093";
+}
+
+/* line 150, ../sass/lib/font-awesome/_icons.scss */
+.fa-lemon-o:before {
+  content: "\f094";
+}
+
+/* line 151, ../sass/lib/font-awesome/_icons.scss */
+.fa-phone:before {
+  content: "\f095";
+}
+
+/* line 152, ../sass/lib/font-awesome/_icons.scss */
+.fa-square-o:before {
+  content: "\f096";
+}
+
+/* line 153, ../sass/lib/font-awesome/_icons.scss */
+.fa-bookmark-o:before {
+  content: "\f097";
+}
+
+/* line 154, ../sass/lib/font-awesome/_icons.scss */
+.fa-phone-square:before {
+  content: "\f098";
+}
+
+/* line 155, ../sass/lib/font-awesome/_icons.scss */
+.fa-twitter:before {
+  content: "\f099";
+}
+
+/* line 156, ../sass/lib/font-awesome/_icons.scss */
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+/* line 157, ../sass/lib/font-awesome/_icons.scss */
+.fa-github:before {
+  content: "\f09b";
+}
+
+/* line 158, ../sass/lib/font-awesome/_icons.scss */
+.fa-unlock:before {
+  content: "\f09c";
+}
+
+/* line 159, ../sass/lib/font-awesome/_icons.scss */
+.fa-credit-card:before {
+  content: "\f09d";
+}
+
+/* line 160, ../sass/lib/font-awesome/_icons.scss */
+.fa-rss:before {
+  content: "\f09e";
+}
+
+/* line 161, ../sass/lib/font-awesome/_icons.scss */
+.fa-hdd-o:before {
+  content: "\f0a0";
+}
+
+/* line 162, ../sass/lib/font-awesome/_icons.scss */
+.fa-bullhorn:before {
+  content: "\f0a1";
+}
+
+/* line 163, ../sass/lib/font-awesome/_icons.scss */
+.fa-bell:before {
+  content: "\f0f3";
+}
+
+/* line 164, ../sass/lib/font-awesome/_icons.scss */
+.fa-certificate:before {
+  content: "\f0a3";
+}
+
+/* line 165, ../sass/lib/font-awesome/_icons.scss */
+.fa-hand-o-right:before {
+  content: "\f0a4";
+}
+
+/* line 166, ../sass/lib/font-awesome/_icons.scss */
+.fa-hand-o-left:before {
+  content: "\f0a5";
+}
+
+/* line 167, ../sass/lib/font-awesome/_icons.scss */
+.fa-hand-o-up:before {
+  content: "\f0a6";
+}
+
+/* line 168, ../sass/lib/font-awesome/_icons.scss */
+.fa-hand-o-down:before {
+  content: "\f0a7";
+}
+
+/* line 169, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-circle-left:before {
+  content: "\f0a8";
+}
+
+/* line 170, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-circle-right:before {
+  content: "\f0a9";
+}
+
+/* line 171, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-circle-up:before {
+  content: "\f0aa";
+}
+
+/* line 172, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-circle-down:before {
+  content: "\f0ab";
+}
+
+/* line 173, ../sass/lib/font-awesome/_icons.scss */
+.fa-globe:before {
+  content: "\f0ac";
+}
+
+/* line 174, ../sass/lib/font-awesome/_icons.scss */
+.fa-wrench:before {
+  content: "\f0ad";
+}
+
+/* line 175, ../sass/lib/font-awesome/_icons.scss */
+.fa-tasks:before {
+  content: "\f0ae";
+}
+
+/* line 176, ../sass/lib/font-awesome/_icons.scss */
+.fa-filter:before {
+  content: "\f0b0";
+}
+
+/* line 177, ../sass/lib/font-awesome/_icons.scss */
+.fa-briefcase:before {
+  content: "\f0b1";
+}
+
+/* line 178, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrows-alt:before {
+  content: "\f0b2";
+}
+
+/* line 180, ../sass/lib/font-awesome/_icons.scss */
+.fa-group:before,
+.fa-users:before {
+  content: "\f0c0";
+}
+
+/* line 182, ../sass/lib/font-awesome/_icons.scss */
+.fa-chain:before,
+.fa-link:before {
+  content: "\f0c1";
+}
+
+/* line 183, ../sass/lib/font-awesome/_icons.scss */
+.fa-cloud:before {
+  content: "\f0c2";
+}
+
+/* line 184, ../sass/lib/font-awesome/_icons.scss */
+.fa-flask:before {
+  content: "\f0c3";
+}
+
+/* line 186, ../sass/lib/font-awesome/_icons.scss */
+.fa-cut:before,
+.fa-scissors:before {
+  content: "\f0c4";
+}
+
+/* line 188, ../sass/lib/font-awesome/_icons.scss */
+.fa-copy:before,
+.fa-files-o:before {
+  content: "\f0c5";
+}
+
+/* line 189, ../sass/lib/font-awesome/_icons.scss */
+.fa-paperclip:before {
+  content: "\f0c6";
+}
+
+/* line 191, ../sass/lib/font-awesome/_icons.scss */
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "\f0c7";
+}
+
+/* line 192, ../sass/lib/font-awesome/_icons.scss */
+.fa-square:before {
+  content: "\f0c8";
+}
+
+/* line 193, ../sass/lib/font-awesome/_icons.scss */
+.fa-bars:before {
+  content: "\f0c9";
+}
+
+/* line 194, ../sass/lib/font-awesome/_icons.scss */
+.fa-list-ul:before {
+  content: "\f0ca";
+}
+
+/* line 195, ../sass/lib/font-awesome/_icons.scss */
+.fa-list-ol:before {
+  content: "\f0cb";
+}
+
+/* line 196, ../sass/lib/font-awesome/_icons.scss */
+.fa-strikethrough:before {
+  content: "\f0cc";
+}
+
+/* line 197, ../sass/lib/font-awesome/_icons.scss */
+.fa-underline:before {
+  content: "\f0cd";
+}
+
+/* line 198, ../sass/lib/font-awesome/_icons.scss */
+.fa-table:before {
+  content: "\f0ce";
+}
+
+/* line 199, ../sass/lib/font-awesome/_icons.scss */
+.fa-magic:before {
+  content: "\f0d0";
+}
+
+/* line 200, ../sass/lib/font-awesome/_icons.scss */
+.fa-truck:before {
+  content: "\f0d1";
+}
+
+/* line 201, ../sass/lib/font-awesome/_icons.scss */
+.fa-pinterest:before {
+  content: "\f0d2";
+}
+
+/* line 202, ../sass/lib/font-awesome/_icons.scss */
+.fa-pinterest-square:before {
+  content: "\f0d3";
+}
+
+/* line 203, ../sass/lib/font-awesome/_icons.scss */
+.fa-google-plus-square:before {
+  content: "\f0d4";
+}
+
+/* line 204, ../sass/lib/font-awesome/_icons.scss */
+.fa-google-plus:before {
+  content: "\f0d5";
+}
+
+/* line 205, ../sass/lib/font-awesome/_icons.scss */
+.fa-money:before {
+  content: "\f0d6";
+}
+
+/* line 206, ../sass/lib/font-awesome/_icons.scss */
+.fa-caret-down:before {
+  content: "\f0d7";
+}
+
+/* line 207, ../sass/lib/font-awesome/_icons.scss */
+.fa-caret-up:before {
+  content: "\f0d8";
+}
+
+/* line 208, ../sass/lib/font-awesome/_icons.scss */
+.fa-caret-left:before {
+  content: "\f0d9";
+}
+
+/* line 209, ../sass/lib/font-awesome/_icons.scss */
+.fa-caret-right:before {
+  content: "\f0da";
+}
+
+/* line 210, ../sass/lib/font-awesome/_icons.scss */
+.fa-columns:before {
+  content: "\f0db";
+}
+
+/* line 212, ../sass/lib/font-awesome/_icons.scss */
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "\f0dc";
+}
+
+/* line 214, ../sass/lib/font-awesome/_icons.scss */
+.fa-sort-down:before,
+.fa-sort-asc:before {
+  content: "\f0dd";
+}
+
+/* line 216, ../sass/lib/font-awesome/_icons.scss */
+.fa-sort-up:before,
+.fa-sort-desc:before {
+  content: "\f0de";
+}
+
+/* line 217, ../sass/lib/font-awesome/_icons.scss */
+.fa-envelope:before, .featurebox.c-3 .icon:before {
+  content: "\f0e0";
+}
+
+/* line 218, ../sass/lib/font-awesome/_icons.scss */
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+
+/* line 220, ../sass/lib/font-awesome/_icons.scss */
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "\f0e2";
+}
+
+/* line 222, ../sass/lib/font-awesome/_icons.scss */
+.fa-legal:before,
+.fa-gavel:before {
+  content: "\f0e3";
+}
+
+/* line 224, ../sass/lib/font-awesome/_icons.scss */
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "\f0e4";
+}
+
+/* line 225, ../sass/lib/font-awesome/_icons.scss */
+.fa-comment-o:before {
+  content: "\f0e5";
+}
+
+/* line 226, ../sass/lib/font-awesome/_icons.scss */
+.fa-comments-o:before {
+  content: "\f0e6";
+}
+
+/* line 228, ../sass/lib/font-awesome/_icons.scss */
+.fa-flash:before,
+.fa-bolt:before {
+  content: "\f0e7";
+}
+
+/* line 229, ../sass/lib/font-awesome/_icons.scss */
+.fa-sitemap:before {
+  content: "\f0e8";
+}
+
+/* line 230, ../sass/lib/font-awesome/_icons.scss */
+.fa-umbrella:before {
+  content: "\f0e9";
+}
+
+/* line 232, ../sass/lib/font-awesome/_icons.scss */
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "\f0ea";
+}
+
+/* line 233, ../sass/lib/font-awesome/_icons.scss */
+.fa-lightbulb-o:before {
+  content: "\f0eb";
+}
+
+/* line 234, ../sass/lib/font-awesome/_icons.scss */
+.fa-exchange:before {
+  content: "\f0ec";
+}
+
+/* line 235, ../sass/lib/font-awesome/_icons.scss */
+.fa-cloud-download:before {
+  content: "\f0ed";
+}
+
+/* line 236, ../sass/lib/font-awesome/_icons.scss */
+.fa-cloud-upload:before {
+  content: "\f0ee";
+}
+
+/* line 237, ../sass/lib/font-awesome/_icons.scss */
+.fa-user-md:before {
+  content: "\f0f0";
+}
+
+/* line 238, ../sass/lib/font-awesome/_icons.scss */
+.fa-stethoscope:before {
+  content: "\f0f1";
+}
+
+/* line 239, ../sass/lib/font-awesome/_icons.scss */
+.fa-suitcase:before {
+  content: "\f0f2";
+}
+
+/* line 240, ../sass/lib/font-awesome/_icons.scss */
+.fa-bell-o:before {
+  content: "\f0a2";
+}
+
+/* line 241, ../sass/lib/font-awesome/_icons.scss */
+.fa-coffee:before {
+  content: "\f0f4";
+}
+
+/* line 242, ../sass/lib/font-awesome/_icons.scss */
+.fa-cutlery:before {
+  content: "\f0f5";
+}
+
+/* line 243, ../sass/lib/font-awesome/_icons.scss */
+.fa-file-text-o:before {
+  content: "\f0f6";
+}
+
+/* line 244, ../sass/lib/font-awesome/_icons.scss */
+.fa-building-o:before {
+  content: "\f0f7";
+}
+
+/* line 245, ../sass/lib/font-awesome/_icons.scss */
+.fa-hospital-o:before {
+  content: "\f0f8";
+}
+
+/* line 246, ../sass/lib/font-awesome/_icons.scss */
+.fa-ambulance:before {
+  content: "\f0f9";
+}
+
+/* line 247, ../sass/lib/font-awesome/_icons.scss */
+.fa-medkit:before {
+  content: "\f0fa";
+}
+
+/* line 248, ../sass/lib/font-awesome/_icons.scss */
+.fa-fighter-jet:before {
+  content: "\f0fb";
+}
+
+/* line 249, ../sass/lib/font-awesome/_icons.scss */
+.fa-beer:before {
+  content: "\f0fc";
+}
+
+/* line 250, ../sass/lib/font-awesome/_icons.scss */
+.fa-h-square:before {
+  content: "\f0fd";
+}
+
+/* line 251, ../sass/lib/font-awesome/_icons.scss */
+.fa-plus-square:before {
+  content: "\f0fe";
+}
+
+/* line 252, ../sass/lib/font-awesome/_icons.scss */
+.fa-angle-double-left:before {
+  content: "\f100";
+}
+
+/* line 253, ../sass/lib/font-awesome/_icons.scss */
+.fa-angle-double-right:before {
+  content: "\f101";
+}
+
+/* line 254, ../sass/lib/font-awesome/_icons.scss */
+.fa-angle-double-up:before {
+  content: "\f102";
+}
+
+/* line 255, ../sass/lib/font-awesome/_icons.scss */
+.fa-angle-double-down:before {
+  content: "\f103";
+}
+
+/* line 256, ../sass/lib/font-awesome/_icons.scss */
+.fa-angle-left:before {
+  content: "\f104";
+}
+
+/* line 257, ../sass/lib/font-awesome/_icons.scss */
+.fa-angle-right:before {
+  content: "\f105";
+}
+
+/* line 258, ../sass/lib/font-awesome/_icons.scss */
+.fa-angle-up:before {
+  content: "\f106";
+}
+
+/* line 259, ../sass/lib/font-awesome/_icons.scss */
+.fa-angle-down:before {
+  content: "\f107";
+}
+
+/* line 260, ../sass/lib/font-awesome/_icons.scss */
+.fa-desktop:before {
+  content: "\f108";
+}
+
+/* line 261, ../sass/lib/font-awesome/_icons.scss */
+.fa-laptop:before, .featurebox.c-1 .icon:before {
+  content: "\f109";
+}
+
+/* line 262, ../sass/lib/font-awesome/_icons.scss */
+.fa-tablet:before {
+  content: "\f10a";
+}
+
+/* line 264, ../sass/lib/font-awesome/_icons.scss */
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "\f10b";
+}
+
+/* line 265, ../sass/lib/font-awesome/_icons.scss */
+.fa-circle-o:before {
+  content: "\f10c";
+}
+
+/* line 266, ../sass/lib/font-awesome/_icons.scss */
+.fa-quote-left:before {
+  content: "\f10d";
+}
+
+/* line 267, ../sass/lib/font-awesome/_icons.scss */
+.fa-quote-right:before {
+  content: "\f10e";
+}
+
+/* line 268, ../sass/lib/font-awesome/_icons.scss */
+.fa-spinner:before {
+  content: "\f110";
+}
+
+/* line 269, ../sass/lib/font-awesome/_icons.scss */
+.fa-circle:before {
+  content: "\f111";
+}
+
+/* line 271, ../sass/lib/font-awesome/_icons.scss */
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "\f112";
+}
+
+/* line 272, ../sass/lib/font-awesome/_icons.scss */
+.fa-github-alt:before {
+  content: "\f113";
+}
+
+/* line 273, ../sass/lib/font-awesome/_icons.scss */
+.fa-folder-o:before {
+  content: "\f114";
+}
+
+/* line 274, ../sass/lib/font-awesome/_icons.scss */
+.fa-folder-open-o:before {
+  content: "\f115";
+}
+
+/* line 275, ../sass/lib/font-awesome/_icons.scss */
+.fa-smile-o:before {
+  content: "\f118";
+}
+
+/* line 276, ../sass/lib/font-awesome/_icons.scss */
+.fa-frown-o:before {
+  content: "\f119";
+}
+
+/* line 277, ../sass/lib/font-awesome/_icons.scss */
+.fa-meh-o:before {
+  content: "\f11a";
+}
+
+/* line 278, ../sass/lib/font-awesome/_icons.scss */
+.fa-gamepad:before {
+  content: "\f11b";
+}
+
+/* line 279, ../sass/lib/font-awesome/_icons.scss */
+.fa-keyboard-o:before {
+  content: "\f11c";
+}
+
+/* line 280, ../sass/lib/font-awesome/_icons.scss */
+.fa-flag-o:before {
+  content: "\f11d";
+}
+
+/* line 281, ../sass/lib/font-awesome/_icons.scss */
+.fa-flag-checkered:before {
+  content: "\f11e";
+}
+
+/* line 282, ../sass/lib/font-awesome/_icons.scss */
+.fa-terminal:before {
+  content: "\f120";
+}
+
+/* line 283, ../sass/lib/font-awesome/_icons.scss */
+.fa-code:before {
+  content: "\f121";
+}
+
+/* line 284, ../sass/lib/font-awesome/_icons.scss */
+.fa-reply-all:before {
+  content: "\f122";
+}
+
+/* line 285, ../sass/lib/font-awesome/_icons.scss */
+.fa-mail-reply-all:before {
+  content: "\f122";
+}
+
+/* line 288, ../sass/lib/font-awesome/_icons.scss */
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "\f123";
+}
+
+/* line 289, ../sass/lib/font-awesome/_icons.scss */
+.fa-location-arrow:before {
+  content: "\f124";
+}
+
+/* line 290, ../sass/lib/font-awesome/_icons.scss */
+.fa-crop:before {
+  content: "\f125";
+}
+
+/* line 291, ../sass/lib/font-awesome/_icons.scss */
+.fa-code-fork:before {
+  content: "\f126";
+}
+
+/* line 293, ../sass/lib/font-awesome/_icons.scss */
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "\f127";
+}
+
+/* line 294, ../sass/lib/font-awesome/_icons.scss */
+.fa-question:before {
+  content: "\f128";
+}
+
+/* line 295, ../sass/lib/font-awesome/_icons.scss */
+.fa-info:before {
+  content: "\f129";
+}
+
+/* line 296, ../sass/lib/font-awesome/_icons.scss */
+.fa-exclamation:before {
+  content: "\f12a";
+}
+
+/* line 297, ../sass/lib/font-awesome/_icons.scss */
+.fa-superscript:before {
+  content: "\f12b";
+}
+
+/* line 298, ../sass/lib/font-awesome/_icons.scss */
+.fa-subscript:before {
+  content: "\f12c";
+}
+
+/* line 299, ../sass/lib/font-awesome/_icons.scss */
+.fa-eraser:before {
+  content: "\f12d";
+}
+
+/* line 300, ../sass/lib/font-awesome/_icons.scss */
+.fa-puzzle-piece:before {
+  content: "\f12e";
+}
+
+/* line 301, ../sass/lib/font-awesome/_icons.scss */
+.fa-microphone:before {
+  content: "\f130";
+}
+
+/* line 302, ../sass/lib/font-awesome/_icons.scss */
+.fa-microphone-slash:before {
+  content: "\f131";
+}
+
+/* line 303, ../sass/lib/font-awesome/_icons.scss */
+.fa-shield:before {
+  content: "\f132";
+}
+
+/* line 304, ../sass/lib/font-awesome/_icons.scss */
+.fa-calendar-o:before {
+  content: "\f133";
+}
+
+/* line 305, ../sass/lib/font-awesome/_icons.scss */
+.fa-fire-extinguisher:before {
+  content: "\f134";
+}
+
+/* line 306, ../sass/lib/font-awesome/_icons.scss */
+.fa-rocket:before {
+  content: "\f135";
+}
+
+/* line 307, ../sass/lib/font-awesome/_icons.scss */
+.fa-maxcdn:before {
+  content: "\f136";
+}
+
+/* line 308, ../sass/lib/font-awesome/_icons.scss */
+.fa-chevron-circle-left:before {
+  content: "\f137";
+}
+
+/* line 309, ../sass/lib/font-awesome/_icons.scss */
+.fa-chevron-circle-right:before {
+  content: "\f138";
+}
+
+/* line 310, ../sass/lib/font-awesome/_icons.scss */
+.fa-chevron-circle-up:before {
+  content: "\f139";
+}
+
+/* line 311, ../sass/lib/font-awesome/_icons.scss */
+.fa-chevron-circle-down:before {
+  content: "\f13a";
+}
+
+/* line 312, ../sass/lib/font-awesome/_icons.scss */
+.fa-html5:before {
+  content: "\f13b";
+}
+
+/* line 313, ../sass/lib/font-awesome/_icons.scss */
+.fa-css3:before {
+  content: "\f13c";
+}
+
+/* line 314, ../sass/lib/font-awesome/_icons.scss */
+.fa-anchor:before {
+  content: "\f13d";
+}
+
+/* line 315, ../sass/lib/font-awesome/_icons.scss */
+.fa-unlock-alt:before {
+  content: "\f13e";
+}
+
+/* line 316, ../sass/lib/font-awesome/_icons.scss */
+.fa-bullseye:before {
+  content: "\f140";
+}
+
+/* line 317, ../sass/lib/font-awesome/_icons.scss */
+.fa-ellipsis-h:before {
+  content: "\f141";
+}
+
+/* line 318, ../sass/lib/font-awesome/_icons.scss */
+.fa-ellipsis-v:before {
+  content: "\f142";
+}
+
+/* line 319, ../sass/lib/font-awesome/_icons.scss */
+.fa-rss-square:before {
+  content: "\f143";
+}
+
+/* line 320, ../sass/lib/font-awesome/_icons.scss */
+.fa-play-circle:before {
+  content: "\f144";
+}
+
+/* line 321, ../sass/lib/font-awesome/_icons.scss */
+.fa-ticket:before {
+  content: "\f145";
+}
+
+/* line 322, ../sass/lib/font-awesome/_icons.scss */
+.fa-minus-square:before {
+  content: "\f146";
+}
+
+/* line 323, ../sass/lib/font-awesome/_icons.scss */
+.fa-minus-square-o:before {
+  content: "\f147";
+}
+
+/* line 324, ../sass/lib/font-awesome/_icons.scss */
+.fa-level-up:before {
+  content: "\f148";
+}
+
+/* line 325, ../sass/lib/font-awesome/_icons.scss */
+.fa-level-down:before {
+  content: "\f149";
+}
+
+/* line 326, ../sass/lib/font-awesome/_icons.scss */
+.fa-check-square:before {
+  content: "\f14a";
+}
+
+/* line 327, ../sass/lib/font-awesome/_icons.scss */
+.fa-pencil-square:before {
+  content: "\f14b";
+}
+
+/* line 328, ../sass/lib/font-awesome/_icons.scss */
+.fa-external-link-square:before {
+  content: "\f14c";
+}
+
+/* line 329, ../sass/lib/font-awesome/_icons.scss */
+.fa-share-square:before {
+  content: "\f14d";
+}
+
+/* line 330, ../sass/lib/font-awesome/_icons.scss */
+.fa-compass:before {
+  content: "\f14e";
+}
+
+/* line 332, ../sass/lib/font-awesome/_icons.scss */
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "\f150";
+}
+
+/* line 334, ../sass/lib/font-awesome/_icons.scss */
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "\f151";
+}
+
+/* line 336, ../sass/lib/font-awesome/_icons.scss */
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "\f152";
+}
+
+/* line 338, ../sass/lib/font-awesome/_icons.scss */
+.fa-euro:before,
+.fa-eur:before {
+  content: "\f153";
+}
+
+/* line 339, ../sass/lib/font-awesome/_icons.scss */
+.fa-gbp:before {
+  content: "\f154";
+}
+
+/* line 341, ../sass/lib/font-awesome/_icons.scss */
+.fa-dollar:before,
+.fa-usd:before {
+  content: "\f155";
+}
+
+/* line 343, ../sass/lib/font-awesome/_icons.scss */
+.fa-rupee:before,
+.fa-inr:before {
+  content: "\f156";
+}
+
+/* line 347, ../sass/lib/font-awesome/_icons.scss */
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "\f157";
+}
+
+/* line 350, ../sass/lib/font-awesome/_icons.scss */
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "\f158";
+}
+
+/* line 352, ../sass/lib/font-awesome/_icons.scss */
+.fa-won:before,
+.fa-krw:before {
+  content: "\f159";
+}
+
+/* line 354, ../sass/lib/font-awesome/_icons.scss */
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "\f15a";
+}
+
+/* line 355, ../sass/lib/font-awesome/_icons.scss */
+.fa-file:before {
+  content: "\f15b";
+}
+
+/* line 356, ../sass/lib/font-awesome/_icons.scss */
+.fa-file-text:before {
+  content: "\f15c";
+}
+
+/* line 357, ../sass/lib/font-awesome/_icons.scss */
+.fa-sort-alpha-asc:before {
+  content: "\f15d";
+}
+
+/* line 358, ../sass/lib/font-awesome/_icons.scss */
+.fa-sort-alpha-desc:before {
+  content: "\f15e";
+}
+
+/* line 359, ../sass/lib/font-awesome/_icons.scss */
+.fa-sort-amount-asc:before {
+  content: "\f160";
+}
+
+/* line 360, ../sass/lib/font-awesome/_icons.scss */
+.fa-sort-amount-desc:before {
+  content: "\f161";
+}
+
+/* line 361, ../sass/lib/font-awesome/_icons.scss */
+.fa-sort-numeric-asc:before {
+  content: "\f162";
+}
+
+/* line 362, ../sass/lib/font-awesome/_icons.scss */
+.fa-sort-numeric-desc:before {
+  content: "\f163";
+}
+
+/* line 363, ../sass/lib/font-awesome/_icons.scss */
+.fa-thumbs-up:before, .featurebox.c-2 .icon:before {
+  content: "\f164";
+}
+
+/* line 364, ../sass/lib/font-awesome/_icons.scss */
+.fa-thumbs-down:before {
+  content: "\f165";
+}
+
+/* line 365, ../sass/lib/font-awesome/_icons.scss */
+.fa-youtube-square:before {
+  content: "\f166";
+}
+
+/* line 366, ../sass/lib/font-awesome/_icons.scss */
+.fa-youtube:before {
+  content: "\f167";
+}
+
+/* line 367, ../sass/lib/font-awesome/_icons.scss */
+.fa-xing:before {
+  content: "\f168";
+}
+
+/* line 368, ../sass/lib/font-awesome/_icons.scss */
+.fa-xing-square:before {
+  content: "\f169";
+}
+
+/* line 369, ../sass/lib/font-awesome/_icons.scss */
+.fa-youtube-play:before {
+  content: "\f16a";
+}
+
+/* line 370, ../sass/lib/font-awesome/_icons.scss */
+.fa-dropbox:before {
+  content: "\f16b";
+}
+
+/* line 371, ../sass/lib/font-awesome/_icons.scss */
+.fa-stack-overflow:before {
+  content: "\f16c";
+}
+
+/* line 372, ../sass/lib/font-awesome/_icons.scss */
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+/* line 373, ../sass/lib/font-awesome/_icons.scss */
+.fa-flickr:before {
+  content: "\f16e";
+}
+
+/* line 374, ../sass/lib/font-awesome/_icons.scss */
+.fa-adn:before {
+  content: "\f170";
+}
+
+/* line 375, ../sass/lib/font-awesome/_icons.scss */
+.fa-bitbucket:before {
+  content: "\f171";
+}
+
+/* line 376, ../sass/lib/font-awesome/_icons.scss */
+.fa-bitbucket-square:before {
+  content: "\f172";
+}
+
+/* line 377, ../sass/lib/font-awesome/_icons.scss */
+.fa-tumblr:before {
+  content: "\f173";
+}
+
+/* line 378, ../sass/lib/font-awesome/_icons.scss */
+.fa-tumblr-square:before {
+  content: "\f174";
+}
+
+/* line 379, ../sass/lib/font-awesome/_icons.scss */
+.fa-long-arrow-down:before {
+  content: "\f175";
+}
+
+/* line 380, ../sass/lib/font-awesome/_icons.scss */
+.fa-long-arrow-up:before {
+  content: "\f176";
+}
+
+/* line 381, ../sass/lib/font-awesome/_icons.scss */
+.fa-long-arrow-left:before {
+  content: "\f177";
+}
+
+/* line 382, ../sass/lib/font-awesome/_icons.scss */
+.fa-long-arrow-right:before {
+  content: "\f178";
+}
+
+/* line 383, ../sass/lib/font-awesome/_icons.scss */
+.fa-apple:before {
+  content: "\f179";
+}
+
+/* line 384, ../sass/lib/font-awesome/_icons.scss */
+.fa-windows:before {
+  content: "\f17a";
+}
+
+/* line 385, ../sass/lib/font-awesome/_icons.scss */
+.fa-android:before {
+  content: "\f17b";
+}
+
+/* line 386, ../sass/lib/font-awesome/_icons.scss */
+.fa-linux:before {
+  content: "\f17c";
+}
+
+/* line 387, ../sass/lib/font-awesome/_icons.scss */
+.fa-dribbble:before {
+  content: "\f17d";
+}
+
+/* line 388, ../sass/lib/font-awesome/_icons.scss */
+.fa-skype:before {
+  content: "\f17e";
+}
+
+/* line 389, ../sass/lib/font-awesome/_icons.scss */
+.fa-foursquare:before {
+  content: "\f180";
+}
+
+/* line 390, ../sass/lib/font-awesome/_icons.scss */
+.fa-trello:before {
+  content: "\f181";
+}
+
+/* line 391, ../sass/lib/font-awesome/_icons.scss */
+.fa-female:before {
+  content: "\f182";
+}
+
+/* line 392, ../sass/lib/font-awesome/_icons.scss */
+.fa-male:before {
+  content: "\f183";
+}
+
+/* line 393, ../sass/lib/font-awesome/_icons.scss */
+.fa-gittip:before {
+  content: "\f184";
+}
+
+/* line 394, ../sass/lib/font-awesome/_icons.scss */
+.fa-sun-o:before {
+  content: "\f185";
+}
+
+/* line 395, ../sass/lib/font-awesome/_icons.scss */
+.fa-moon-o:before {
+  content: "\f186";
+}
+
+/* line 396, ../sass/lib/font-awesome/_icons.scss */
+.fa-archive:before {
+  content: "\f187";
+}
+
+/* line 397, ../sass/lib/font-awesome/_icons.scss */
+.fa-bug:before {
+  content: "\f188";
+}
+
+/* line 398, ../sass/lib/font-awesome/_icons.scss */
+.fa-vk:before {
+  content: "\f189";
+}
+
+/* line 399, ../sass/lib/font-awesome/_icons.scss */
+.fa-weibo:before {
+  content: "\f18a";
+}
+
+/* line 400, ../sass/lib/font-awesome/_icons.scss */
+.fa-renren:before {
+  content: "\f18b";
+}
+
+/* line 401, ../sass/lib/font-awesome/_icons.scss */
+.fa-pagelines:before {
+  content: "\f18c";
+}
+
+/* line 402, ../sass/lib/font-awesome/_icons.scss */
+.fa-stack-exchange:before {
+  content: "\f18d";
+}
+
+/* line 403, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-circle-o-right:before {
+  content: "\f18e";
+}
+
+/* line 404, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-circle-o-left:before {
+  content: "\f190";
+}
+
+/* line 406, ../sass/lib/font-awesome/_icons.scss */
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "\f191";
+}
+
+/* line 407, ../sass/lib/font-awesome/_icons.scss */
+.fa-dot-circle-o:before {
+  content: "\f192";
+}
+
+/* line 408, ../sass/lib/font-awesome/_icons.scss */
+.fa-wheelchair:before {
+  content: "\f193";
+}
+
+/* line 409, ../sass/lib/font-awesome/_icons.scss */
+.fa-vimeo-square:before {
+  content: "\f194";
+}
+
+/* line 411, ../sass/lib/font-awesome/_icons.scss */
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "\f195";
+}
+
+/* line 412, ../sass/lib/font-awesome/_icons.scss */
+.fa-plus-square-o:before {
+  content: "\f196";
+}
+
+/*
+config
+================================
+This file contains all the variables that can be used 
+
+* Gridsystem  
+* breakpoints
+* colors
+* fonts
+
+*/
+/* 
+grid setup
+----------------------------------------------------------------
+build on singualritygs
+*/
+/* line 117, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_background-grid.scss */
+[data-development-grid="show"] {
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 128, 128, 0.5)), color-stop(20%, rgba(0, 128, 128, 0.5)), color-stop(20%, rgba(0, 128, 128, 0.25)), color-stop(26.66667%, rgba(0, 128, 128, 0.25)), color-stop(26.66667%, rgba(0, 128, 128, 0.5)), color-stop(46.66667%, rgba(0, 128, 128, 0.5)), color-stop(46.66667%, rgba(0, 128, 128, 0.25)), color-stop(53.33333%, rgba(0, 128, 128, 0.25)), color-stop(53.33333%, rgba(0, 128, 128, 0.5)), color-stop(73.33333%, rgba(0, 128, 128, 0.5)), color-stop(73.33333%, rgba(0, 128, 128, 0.25)), color-stop(80%, rgba(0, 128, 128, 0.25)), color-stop(80%, rgba(0, 128, 128, 0.5)), color-stop(100%, rgba(0, 128, 128, 0.5)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 128, 128, 0.5), rgba(0, 128, 128, 0.5) 20%, rgba(0, 128, 128, 0.25) 20%, rgba(0, 128, 128, 0.25) 26.66667%, rgba(0, 128, 128, 0.5) 26.66667%, rgba(0, 128, 128, 0.5) 46.66667%, rgba(0, 128, 128, 0.25) 46.66667%, rgba(0, 128, 128, 0.25) 53.33333%, rgba(0, 128, 128, 0.5) 53.33333%, rgba(0, 128, 128, 0.5) 73.33333%, rgba(0, 128, 128, 0.25) 73.33333%, rgba(0, 128, 128, 0.25) 80%, rgba(0, 128, 128, 0.5) 80%, rgba(0, 128, 128, 0.5) 100%);
+  background-image: -moz-linear-gradient(left, rgba(0, 128, 128, 0.5), rgba(0, 128, 128, 0.5) 20%, rgba(0, 128, 128, 0.25) 20%, rgba(0, 128, 128, 0.25) 26.66667%, rgba(0, 128, 128, 0.5) 26.66667%, rgba(0, 128, 128, 0.5) 46.66667%, rgba(0, 128, 128, 0.25) 46.66667%, rgba(0, 128, 128, 0.25) 53.33333%, rgba(0, 128, 128, 0.5) 53.33333%, rgba(0, 128, 128, 0.5) 73.33333%, rgba(0, 128, 128, 0.25) 73.33333%, rgba(0, 128, 128, 0.25) 80%, rgba(0, 128, 128, 0.5) 80%, rgba(0, 128, 128, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 128, 128, 0.5), rgba(0, 128, 128, 0.5) 20%, rgba(0, 128, 128, 0.25) 20%, rgba(0, 128, 128, 0.25) 26.66667%, rgba(0, 128, 128, 0.5) 26.66667%, rgba(0, 128, 128, 0.5) 46.66667%, rgba(0, 128, 128, 0.25) 46.66667%, rgba(0, 128, 128, 0.25) 53.33333%, rgba(0, 128, 128, 0.5) 53.33333%, rgba(0, 128, 128, 0.5) 73.33333%, rgba(0, 128, 128, 0.25) 73.33333%, rgba(0, 128, 128, 0.25) 80%, rgba(0, 128, 128, 0.5) 80%, rgba(0, 128, 128, 0.5) 100%);
+  background-image: linear-gradient(left, rgba(0, 128, 128, 0.5), rgba(0, 128, 128, 0.5) 20%, rgba(0, 128, 128, 0.25) 20%, rgba(0, 128, 128, 0.25) 26.66667%, rgba(0, 128, 128, 0.5) 26.66667%, rgba(0, 128, 128, 0.5) 46.66667%, rgba(0, 128, 128, 0.25) 46.66667%, rgba(0, 128, 128, 0.25) 53.33333%, rgba(0, 128, 128, 0.5) 53.33333%, rgba(0, 128, 128, 0.5) 73.33333%, rgba(0, 128, 128, 0.25) 73.33333%, rgba(0, 128, 128, 0.25) 80%, rgba(0, 128, 128, 0.5) 80%, rgba(0, 128, 128, 0.5) 100%);
+}
+@media (min-width: 768px) {
+  /* line 117, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_background-grid.scss */
+  [data-development-grid="show"] {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 128, 128, 0.5)), color-stop(9.67742%, rgba(0, 128, 128, 0.5)), color-stop(9.67742%, rgba(0, 128, 128, 0.25)), color-stop(12.90323%, rgba(0, 128, 128, 0.25)), color-stop(12.90323%, rgba(0, 128, 128, 0.5)), color-stop(22.58065%, rgba(0, 128, 128, 0.5)), color-stop(22.58065%, rgba(0, 128, 128, 0.25)), color-stop(25.80645%, rgba(0, 128, 128, 0.25)), color-stop(25.80645%, rgba(0, 128, 128, 0.5)), color-stop(35.48387%, rgba(0, 128, 128, 0.5)), color-stop(35.48387%, rgba(0, 128, 128, 0.25)), color-stop(38.70968%, rgba(0, 128, 128, 0.25)), color-stop(38.70968%, rgba(0, 128, 128, 0.5)), color-stop(48.3871%, rgba(0, 128, 128, 0.5)), color-stop(48.3871%, rgba(0, 128, 128, 0.25)), color-stop(51.6129%, rgba(0, 128, 128, 0.25)), color-stop(51.6129%, rgba(0, 128, 128, 0.5)), color-stop(61.29032%, rgba(0, 128, 128, 0.5)), color-stop(61.29032%, rgba(0, 128, 128, 0.25)), color-stop(64.51613%, rgba(0, 128, 128, 0.25)), color-stop(64.51613%, rgba(0, 128, 128, 0.5)), color-stop(74.19355%, rgba(0, 128, 128, 0.5)), color-stop(74.19355%, rgba(0, 128, 128, 0.25)), color-stop(77.41935%, rgba(0, 128, 128, 0.25)), color-stop(77.41935%, rgba(0, 128, 128, 0.5)), color-stop(87.09677%, rgba(0, 128, 128, 0.5)), color-stop(87.09677%, rgba(0, 128, 128, 0.25)), color-stop(90.32258%, rgba(0, 128, 128, 0.25)), color-stop(90.32258%, rgba(0, 128, 128, 0.5)), color-stop(100%, rgba(0, 128, 128, 0.5)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 128, 128, 0.5), rgba(0, 128, 128, 0.5) 9.67742%, rgba(0, 128, 128, 0.25) 9.67742%, rgba(0, 128, 128, 0.25) 12.90323%, rgba(0, 128, 128, 0.5) 12.90323%, rgba(0, 128, 128, 0.5) 22.58065%, rgba(0, 128, 128, 0.25) 22.58065%, rgba(0, 128, 128, 0.25) 25.80645%, rgba(0, 128, 128, 0.5) 25.80645%, rgba(0, 128, 128, 0.5) 35.48387%, rgba(0, 128, 128, 0.25) 35.48387%, rgba(0, 128, 128, 0.25) 38.70968%, rgba(0, 128, 128, 0.5) 38.70968%, rgba(0, 128, 128, 0.5) 48.3871%, rgba(0, 128, 128, 0.25) 48.3871%, rgba(0, 128, 128, 0.25) 51.6129%, rgba(0, 128, 128, 0.5) 51.6129%, rgba(0, 128, 128, 0.5) 61.29032%, rgba(0, 128, 128, 0.25) 61.29032%, rgba(0, 128, 128, 0.25) 64.51613%, rgba(0, 128, 128, 0.5) 64.51613%, rgba(0, 128, 128, 0.5) 74.19355%, rgba(0, 128, 128, 0.25) 74.19355%, rgba(0, 128, 128, 0.25) 77.41935%, rgba(0, 128, 128, 0.5) 77.41935%, rgba(0, 128, 128, 0.5) 87.09677%, rgba(0, 128, 128, 0.25) 87.09677%, rgba(0, 128, 128, 0.25) 90.32258%, rgba(0, 128, 128, 0.5) 90.32258%, rgba(0, 128, 128, 0.5) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 128, 128, 0.5), rgba(0, 128, 128, 0.5) 9.67742%, rgba(0, 128, 128, 0.25) 9.67742%, rgba(0, 128, 128, 0.25) 12.90323%, rgba(0, 128, 128, 0.5) 12.90323%, rgba(0, 128, 128, 0.5) 22.58065%, rgba(0, 128, 128, 0.25) 22.58065%, rgba(0, 128, 128, 0.25) 25.80645%, rgba(0, 128, 128, 0.5) 25.80645%, rgba(0, 128, 128, 0.5) 35.48387%, rgba(0, 128, 128, 0.25) 35.48387%, rgba(0, 128, 128, 0.25) 38.70968%, rgba(0, 128, 128, 0.5) 38.70968%, rgba(0, 128, 128, 0.5) 48.3871%, rgba(0, 128, 128, 0.25) 48.3871%, rgba(0, 128, 128, 0.25) 51.6129%, rgba(0, 128, 128, 0.5) 51.6129%, rgba(0, 128, 128, 0.5) 61.29032%, rgba(0, 128, 128, 0.25) 61.29032%, rgba(0, 128, 128, 0.25) 64.51613%, rgba(0, 128, 128, 0.5) 64.51613%, rgba(0, 128, 128, 0.5) 74.19355%, rgba(0, 128, 128, 0.25) 74.19355%, rgba(0, 128, 128, 0.25) 77.41935%, rgba(0, 128, 128, 0.5) 77.41935%, rgba(0, 128, 128, 0.5) 87.09677%, rgba(0, 128, 128, 0.25) 87.09677%, rgba(0, 128, 128, 0.25) 90.32258%, rgba(0, 128, 128, 0.5) 90.32258%, rgba(0, 128, 128, 0.5) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 128, 128, 0.5), rgba(0, 128, 128, 0.5) 9.67742%, rgba(0, 128, 128, 0.25) 9.67742%, rgba(0, 128, 128, 0.25) 12.90323%, rgba(0, 128, 128, 0.5) 12.90323%, rgba(0, 128, 128, 0.5) 22.58065%, rgba(0, 128, 128, 0.25) 22.58065%, rgba(0, 128, 128, 0.25) 25.80645%, rgba(0, 128, 128, 0.5) 25.80645%, rgba(0, 128, 128, 0.5) 35.48387%, rgba(0, 128, 128, 0.25) 35.48387%, rgba(0, 128, 128, 0.25) 38.70968%, rgba(0, 128, 128, 0.5) 38.70968%, rgba(0, 128, 128, 0.5) 48.3871%, rgba(0, 128, 128, 0.25) 48.3871%, rgba(0, 128, 128, 0.25) 51.6129%, rgba(0, 128, 128, 0.5) 51.6129%, rgba(0, 128, 128, 0.5) 61.29032%, rgba(0, 128, 128, 0.25) 61.29032%, rgba(0, 128, 128, 0.25) 64.51613%, rgba(0, 128, 128, 0.5) 64.51613%, rgba(0, 128, 128, 0.5) 74.19355%, rgba(0, 128, 128, 0.25) 74.19355%, rgba(0, 128, 128, 0.25) 77.41935%, rgba(0, 128, 128, 0.5) 77.41935%, rgba(0, 128, 128, 0.5) 87.09677%, rgba(0, 128, 128, 0.25) 87.09677%, rgba(0, 128, 128, 0.25) 90.32258%, rgba(0, 128, 128, 0.5) 90.32258%, rgba(0, 128, 128, 0.5) 100%);
+    background-image: linear-gradient(left, rgba(0, 128, 128, 0.5), rgba(0, 128, 128, 0.5) 9.67742%, rgba(0, 128, 128, 0.25) 9.67742%, rgba(0, 128, 128, 0.25) 12.90323%, rgba(0, 128, 128, 0.5) 12.90323%, rgba(0, 128, 128, 0.5) 22.58065%, rgba(0, 128, 128, 0.25) 22.58065%, rgba(0, 128, 128, 0.25) 25.80645%, rgba(0, 128, 128, 0.5) 25.80645%, rgba(0, 128, 128, 0.5) 35.48387%, rgba(0, 128, 128, 0.25) 35.48387%, rgba(0, 128, 128, 0.25) 38.70968%, rgba(0, 128, 128, 0.5) 38.70968%, rgba(0, 128, 128, 0.5) 48.3871%, rgba(0, 128, 128, 0.25) 48.3871%, rgba(0, 128, 128, 0.25) 51.6129%, rgba(0, 128, 128, 0.5) 51.6129%, rgba(0, 128, 128, 0.5) 61.29032%, rgba(0, 128, 128, 0.25) 61.29032%, rgba(0, 128, 128, 0.25) 64.51613%, rgba(0, 128, 128, 0.5) 64.51613%, rgba(0, 128, 128, 0.5) 74.19355%, rgba(0, 128, 128, 0.25) 74.19355%, rgba(0, 128, 128, 0.25) 77.41935%, rgba(0, 128, 128, 0.5) 77.41935%, rgba(0, 128, 128, 0.5) 87.09677%, rgba(0, 128, 128, 0.25) 87.09677%, rgba(0, 128, 128, 0.25) 90.32258%, rgba(0, 128, 128, 0.5) 90.32258%, rgba(0, 128, 128, 0.5) 100%);
+  }
+}
+@media (min-width: 960px) {
+  /* line 117, ../../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/singularitygs-1.1.2/stylesheets/singularitygs/helpers/_background-grid.scss */
+  [data-development-grid="show"] {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 128, 128, 0.5)), color-stop(6.38298%, rgba(0, 128, 128, 0.5)), color-stop(6.38298%, rgba(0, 128, 128, 0.25)), color-stop(8.51064%, rgba(0, 128, 128, 0.25)), color-stop(8.51064%, rgba(0, 128, 128, 0.5)), color-stop(14.89362%, rgba(0, 128, 128, 0.5)), color-stop(14.89362%, rgba(0, 128, 128, 0.25)), color-stop(17.02128%, rgba(0, 128, 128, 0.25)), color-stop(17.02128%, rgba(0, 128, 128, 0.5)), color-stop(23.40426%, rgba(0, 128, 128, 0.5)), color-stop(23.40426%, rgba(0, 128, 128, 0.25)), color-stop(25.53191%, rgba(0, 128, 128, 0.25)), color-stop(25.53191%, rgba(0, 128, 128, 0.5)), color-stop(31.91489%, rgba(0, 128, 128, 0.5)), color-stop(31.91489%, rgba(0, 128, 128, 0.25)), color-stop(34.04255%, rgba(0, 128, 128, 0.25)), color-stop(34.04255%, rgba(0, 128, 128, 0.5)), color-stop(40.42553%, rgba(0, 128, 128, 0.5)), color-stop(40.42553%, rgba(0, 128, 128, 0.25)), color-stop(42.55319%, rgba(0, 128, 128, 0.25)), color-stop(42.55319%, rgba(0, 128, 128, 0.5)), color-stop(48.93617%, rgba(0, 128, 128, 0.5)), color-stop(48.93617%, rgba(0, 128, 128, 0.25)), color-stop(51.06383%, rgba(0, 128, 128, 0.25)), color-stop(51.06383%, rgba(0, 128, 128, 0.5)), color-stop(57.44681%, rgba(0, 128, 128, 0.5)), color-stop(57.44681%, rgba(0, 128, 128, 0.25)), color-stop(59.57447%, rgba(0, 128, 128, 0.25)), color-stop(59.57447%, rgba(0, 128, 128, 0.5)), color-stop(65.95745%, rgba(0, 128, 128, 0.5)), color-stop(65.95745%, rgba(0, 128, 128, 0.25)), color-stop(68.08511%, rgba(0, 128, 128, 0.25)), color-stop(68.08511%, rgba(0, 128, 128, 0.5)), color-stop(74.46809%, rgba(0, 128, 128, 0.5)), color-stop(74.46809%, rgba(0, 128, 128, 0.25)), color-stop(76.59574%, rgba(0, 128, 128, 0.25)), color-stop(76.59574%, rgba(0, 128, 128, 0.5)), color-stop(82.97872%, rgba(0, 128, 128, 0.5)), color-stop(82.97872%, rgba(0, 128, 128, 0.25)), color-stop(85.10638%, rgba(0, 128, 128, 0.25)), color-stop(85.10638%, rgba(0, 128, 128, 0.5)), color-stop(91.48936%, rgba(0, 128, 128, 0.5)), color-stop(91.48936%, rgba(0, 128, 128, 0.25)), color-stop(93.61702%, rgba(0, 128, 128, 0.25)), color-stop(93.61702%, rgba(0, 128, 128, 0.5)), color-stop(100%, rgba(0, 128, 128, 0.5)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 128, 128, 0.5), rgba(0, 128, 128, 0.5) 6.38298%, rgba(0, 128, 128, 0.25) 6.38298%, rgba(0, 128, 128, 0.25) 8.51064%, rgba(0, 128, 128, 0.5) 8.51064%, rgba(0, 128, 128, 0.5) 14.89362%, rgba(0, 128, 128, 0.25) 14.89362%, rgba(0, 128, 128, 0.25) 17.02128%, rgba(0, 128, 128, 0.5) 17.02128%, rgba(0, 128, 128, 0.5) 23.40426%, rgba(0, 128, 128, 0.25) 23.40426%, rgba(0, 128, 128, 0.25) 25.53191%, rgba(0, 128, 128, 0.5) 25.53191%, rgba(0, 128, 128, 0.5) 31.91489%, rgba(0, 128, 128, 0.25) 31.91489%, rgba(0, 128, 128, 0.25) 34.04255%, rgba(0, 128, 128, 0.5) 34.04255%, rgba(0, 128, 128, 0.5) 40.42553%, rgba(0, 128, 128, 0.25) 40.42553%, rgba(0, 128, 128, 0.25) 42.55319%, rgba(0, 128, 128, 0.5) 42.55319%, rgba(0, 128, 128, 0.5) 48.93617%, rgba(0, 128, 128, 0.25) 48.93617%, rgba(0, 128, 128, 0.25) 51.06383%, rgba(0, 128, 128, 0.5) 51.06383%, rgba(0, 128, 128, 0.5) 57.44681%, rgba(0, 128, 128, 0.25) 57.44681%, rgba(0, 128, 128, 0.25) 59.57447%, rgba(0, 128, 128, 0.5) 59.57447%, rgba(0, 128, 128, 0.5) 65.95745%, rgba(0, 128, 128, 0.25) 65.95745%, rgba(0, 128, 128, 0.25) 68.08511%, rgba(0, 128, 128, 0.5) 68.08511%, rgba(0, 128, 128, 0.5) 74.46809%, rgba(0, 128, 128, 0.25) 74.46809%, rgba(0, 128, 128, 0.25) 76.59574%, rgba(0, 128, 128, 0.5) 76.59574%, rgba(0, 128, 128, 0.5) 82.97872%, rgba(0, 128, 128, 0.25) 82.97872%, rgba(0, 128, 128, 0.25) 85.10638%, rgba(0, 128, 128, 0.5) 85.10638%, rgba(0, 128, 128, 0.5) 91.48936%, rgba(0, 128, 128, 0.25) 91.48936%, rgba(0, 128, 128, 0.25) 93.61702%, rgba(0, 128, 128, 0.5) 93.61702%, rgba(0, 128, 128, 0.5) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 128, 128, 0.5), rgba(0, 128, 128, 0.5) 6.38298%, rgba(0, 128, 128, 0.25) 6.38298%, rgba(0, 128, 128, 0.25) 8.51064%, rgba(0, 128, 128, 0.5) 8.51064%, rgba(0, 128, 128, 0.5) 14.89362%, rgba(0, 128, 128, 0.25) 14.89362%, rgba(0, 128, 128, 0.25) 17.02128%, rgba(0, 128, 128, 0.5) 17.02128%, rgba(0, 128, 128, 0.5) 23.40426%, rgba(0, 128, 128, 0.25) 23.40426%, rgba(0, 128, 128, 0.25) 25.53191%, rgba(0, 128, 128, 0.5) 25.53191%, rgba(0, 128, 128, 0.5) 31.91489%, rgba(0, 128, 128, 0.25) 31.91489%, rgba(0, 128, 128, 0.25) 34.04255%, rgba(0, 128, 128, 0.5) 34.04255%, rgba(0, 128, 128, 0.5) 40.42553%, rgba(0, 128, 128, 0.25) 40.42553%, rgba(0, 128, 128, 0.25) 42.55319%, rgba(0, 128, 128, 0.5) 42.55319%, rgba(0, 128, 128, 0.5) 48.93617%, rgba(0, 128, 128, 0.25) 48.93617%, rgba(0, 128, 128, 0.25) 51.06383%, rgba(0, 128, 128, 0.5) 51.06383%, rgba(0, 128, 128, 0.5) 57.44681%, rgba(0, 128, 128, 0.25) 57.44681%, rgba(0, 128, 128, 0.25) 59.57447%, rgba(0, 128, 128, 0.5) 59.57447%, rgba(0, 128, 128, 0.5) 65.95745%, rgba(0, 128, 128, 0.25) 65.95745%, rgba(0, 128, 128, 0.25) 68.08511%, rgba(0, 128, 128, 0.5) 68.08511%, rgba(0, 128, 128, 0.5) 74.46809%, rgba(0, 128, 128, 0.25) 74.46809%, rgba(0, 128, 128, 0.25) 76.59574%, rgba(0, 128, 128, 0.5) 76.59574%, rgba(0, 128, 128, 0.5) 82.97872%, rgba(0, 128, 128, 0.25) 82.97872%, rgba(0, 128, 128, 0.25) 85.10638%, rgba(0, 128, 128, 0.5) 85.10638%, rgba(0, 128, 128, 0.5) 91.48936%, rgba(0, 128, 128, 0.25) 91.48936%, rgba(0, 128, 128, 0.25) 93.61702%, rgba(0, 128, 128, 0.5) 93.61702%, rgba(0, 128, 128, 0.5) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 128, 128, 0.5), rgba(0, 128, 128, 0.5) 6.38298%, rgba(0, 128, 128, 0.25) 6.38298%, rgba(0, 128, 128, 0.25) 8.51064%, rgba(0, 128, 128, 0.5) 8.51064%, rgba(0, 128, 128, 0.5) 14.89362%, rgba(0, 128, 128, 0.25) 14.89362%, rgba(0, 128, 128, 0.25) 17.02128%, rgba(0, 128, 128, 0.5) 17.02128%, rgba(0, 128, 128, 0.5) 23.40426%, rgba(0, 128, 128, 0.25) 23.40426%, rgba(0, 128, 128, 0.25) 25.53191%, rgba(0, 128, 128, 0.5) 25.53191%, rgba(0, 128, 128, 0.5) 31.91489%, rgba(0, 128, 128, 0.25) 31.91489%, rgba(0, 128, 128, 0.25) 34.04255%, rgba(0, 128, 128, 0.5) 34.04255%, rgba(0, 128, 128, 0.5) 40.42553%, rgba(0, 128, 128, 0.25) 40.42553%, rgba(0, 128, 128, 0.25) 42.55319%, rgba(0, 128, 128, 0.5) 42.55319%, rgba(0, 128, 128, 0.5) 48.93617%, rgba(0, 128, 128, 0.25) 48.93617%, rgba(0, 128, 128, 0.25) 51.06383%, rgba(0, 128, 128, 0.5) 51.06383%, rgba(0, 128, 128, 0.5) 57.44681%, rgba(0, 128, 128, 0.25) 57.44681%, rgba(0, 128, 128, 0.25) 59.57447%, rgba(0, 128, 128, 0.5) 59.57447%, rgba(0, 128, 128, 0.5) 65.95745%, rgba(0, 128, 128, 0.25) 65.95745%, rgba(0, 128, 128, 0.25) 68.08511%, rgba(0, 128, 128, 0.5) 68.08511%, rgba(0, 128, 128, 0.5) 74.46809%, rgba(0, 128, 128, 0.25) 74.46809%, rgba(0, 128, 128, 0.25) 76.59574%, rgba(0, 128, 128, 0.5) 76.59574%, rgba(0, 128, 128, 0.5) 82.97872%, rgba(0, 128, 128, 0.25) 82.97872%, rgba(0, 128, 128, 0.25) 85.10638%, rgba(0, 128, 128, 0.5) 85.10638%, rgba(0, 128, 128, 0.5) 91.48936%, rgba(0, 128, 128, 0.25) 91.48936%, rgba(0, 128, 128, 0.25) 93.61702%, rgba(0, 128, 128, 0.5) 93.61702%, rgba(0, 128, 128, 0.5) 100%);
+    background-image: linear-gradient(left, rgba(0, 128, 128, 0.5), rgba(0, 128, 128, 0.5) 6.38298%, rgba(0, 128, 128, 0.25) 6.38298%, rgba(0, 128, 128, 0.25) 8.51064%, rgba(0, 128, 128, 0.5) 8.51064%, rgba(0, 128, 128, 0.5) 14.89362%, rgba(0, 128, 128, 0.25) 14.89362%, rgba(0, 128, 128, 0.25) 17.02128%, rgba(0, 128, 128, 0.5) 17.02128%, rgba(0, 128, 128, 0.5) 23.40426%, rgba(0, 128, 128, 0.25) 23.40426%, rgba(0, 128, 128, 0.25) 25.53191%, rgba(0, 128, 128, 0.5) 25.53191%, rgba(0, 128, 128, 0.5) 31.91489%, rgba(0, 128, 128, 0.25) 31.91489%, rgba(0, 128, 128, 0.25) 34.04255%, rgba(0, 128, 128, 0.5) 34.04255%, rgba(0, 128, 128, 0.5) 40.42553%, rgba(0, 128, 128, 0.25) 40.42553%, rgba(0, 128, 128, 0.25) 42.55319%, rgba(0, 128, 128, 0.5) 42.55319%, rgba(0, 128, 128, 0.5) 48.93617%, rgba(0, 128, 128, 0.25) 48.93617%, rgba(0, 128, 128, 0.25) 51.06383%, rgba(0, 128, 128, 0.5) 51.06383%, rgba(0, 128, 128, 0.5) 57.44681%, rgba(0, 128, 128, 0.25) 57.44681%, rgba(0, 128, 128, 0.25) 59.57447%, rgba(0, 128, 128, 0.5) 59.57447%, rgba(0, 128, 128, 0.5) 65.95745%, rgba(0, 128, 128, 0.25) 65.95745%, rgba(0, 128, 128, 0.25) 68.08511%, rgba(0, 128, 128, 0.5) 68.08511%, rgba(0, 128, 128, 0.5) 74.46809%, rgba(0, 128, 128, 0.25) 74.46809%, rgba(0, 128, 128, 0.25) 76.59574%, rgba(0, 128, 128, 0.5) 76.59574%, rgba(0, 128, 128, 0.5) 82.97872%, rgba(0, 128, 128, 0.25) 82.97872%, rgba(0, 128, 128, 0.25) 85.10638%, rgba(0, 128, 128, 0.5) 85.10638%, rgba(0, 128, 128, 0.5) 91.48936%, rgba(0, 128, 128, 0.25) 91.48936%, rgba(0, 128, 128, 0.25) 93.61702%, rgba(0, 128, 128, 0.5) 93.61702%, rgba(0, 128, 128, 0.5) 100%);
+  }
+}
+
+/*
+breakpoints
+--------------------------------------------------------------------------------
+Sets the default breakpoints for us in the build of the layout file.
+
+Documentation can be found at 
+* http://breakpoint-sass.com 
+* https://github.com/team-sass/breakpoint
+
+    @include breakpoint($mobile) {
+      .foo{ background:blue}
+    }
+    @include breakpoint($handheld) {
+      .foo{ background:black}
+    }
+*/
+/*
+usage: 
+ 
+body{
+  @include breakpoint($mobile) {background: gray}
+  @include breakpoint($mobile-portrait) {background: blue}
+  @include breakpoint($mobile-landscape) {background: teal}
+  @include breakpoint($mobile-retina) {background: red}
+  @include breakpoint($mobile-retina-portrait) {background: pink}
+  @include breakpoint($mobile-retina-landscape) {background: gold}
+  @include breakpoint($tablet) {background: maroon}
+  // @include breakpoint($tablet-landscape) {background: coral}
+  // @include breakpoint($tablet-portrait) {background: orange}
+  @include breakpoint($desktop) {background: lightgray}
+  @include breakpoint($desktop-huge) {background: white}
+}
+*/
+@media (max-width: 480px) {
+  /* line 88, ../sass/_config.scss */
+  body {
+    border-left: 4px solid #ddd;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 88, ../sass/_config.scss */
+  body {
+    border-left: 4px solid #0c0;
+  }
+}
+@media (min-width: 960px) {
+  /* line 88, ../sass/_config.scss */
+  body {
+    border-left: 4px solid #ccc;
+  }
+}
+
+/* 
+colors
+----------------------------------------------------------------
+*/
+/*
+Fontstack
+--------------------------------------------------------------------------------
+This file defines our font stacks and sitespecific stacks
+uses the fontsize mixin:
+
+import the font
+note we use "//"" cause something is retarded in browsers 
+    .foo{
+      @include fontsize($size:1.6, $line: $size * 1.5);  
+    }
+    
+    @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+    @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+generel fontstacks
+---------------------
+$sans-serif : "Helvetica Neue", Helvetica, Arial, sans-serif;  
+$serif: "Droid Serif", Georgia, serif;  
+$monospace  : "Monaco", "Courier New", monospace;  
+
+Sitespecific fontstacks
+---------------------------
+$foo: "foo", $sans-serif;  
+Fontstack Placeholders
+
+    .bar{
+      @extend %foo;
+    } 
+    
+*/
+/*
+basefont size & lineheight
+----------------------
+ */
+/*
+Mixins
+======
+
+Mixins
+======
+
+*/
+/*
+Color functions
+==================
+  foobar
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+sass linkcolor();
+---------------------
+$link:  
+$hover:$link  
+$decorationhover:underline   
+$visited: $link   
+$focus : $hover
+$decoration: none
+
+@include linkcolor(color,hover, decoration, decoration );
+
+    <!--
+ 
+      @mixin linkcolor($link, $hover:$link, $decorationhover:underline, $visited: $link, $focus : $hover,$decoration: none){
+        a{color:$link; text-decoration:$decoration; }
+        a:link   { color:$link;}
+        a:visited{ color:$visited;}
+        a:focus  { color:$focus;}
+        a:hover  { color:$hover; text-decoration: $decorationhover;}
+      }
+
+    -->
+*/
+/*
+REM fix
+--------------
+
+A fix so we can use rem & support ie8 & its retarded friends
+$size is the em value
+@include remfix('width', 1.5);
+
+*/
+/*
+fontsize
+-----------------------
+@mixin fontsize($size:1.6, $line: $size * 1.5){
+  font-size:   ($size * 10) + px;
+  font-size:   $size + rem;
+  line-height: ($line * 10) + px;
+  line-height: $line + rem;
+}
+
+ */
+/*
+normalize
+===============
+
+ */
+/* normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 28, ../sass/lib/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 38, ../sass/lib/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 47, ../sass/lib/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+/* line 58, ../sass/lib/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 72, ../sass/lib/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 82, ../sass/lib/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 94, ../sass/lib/_normalize.scss */
+a {
+  background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 102, ../sass/lib/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 111, ../sass/lib/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 124, ../sass/lib/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 133, ../sass/lib/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 142, ../sass/lib/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 150, ../sass/lib/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 158, ../sass/lib/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 168, ../sass/lib/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 180, ../sass/lib/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 189, ../sass/lib/_normalize.scss */
+pre {
+  white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+/* line 197, ../sass/lib/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 205, ../sass/lib/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 214, ../sass/lib/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 221, ../sass/lib/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 225, ../sass/lib/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 237, ../sass/lib/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 245, ../sass/lib/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 257, ../sass/lib/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 269, ../sass/lib/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 280, ../sass/lib/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 294, ../sass/lib/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 306, ../sass/lib/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 318, ../sass/lib/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 333, ../sass/lib/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 343, ../sass/lib/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 353, ../sass/lib/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 364, ../sass/lib/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 377, ../sass/lib/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 386, ../sass/lib/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 396, ../sass/lib/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 409, ../sass/lib/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+base
+================
+
+base.scss
+================
+
+Documentation
+-----------------------
+base styles & 
+[smacss: base](https://smacss.com/book/type-base)
+
+Reset html & body
+-------------------------------
+Body is set to 62.5 to force the font sizing to be easy to be calculated with
+1em = 10px - body margin & padding is resetted
+
+    <html>
+    <body>
+      lorem ipsum
+    </body>
+    </html>
+*/
+/* line 24, ../sass/base/_base.scss */
+html {
+  font-size: 62.5%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: #f3f5f6;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 32, ../sass/base/_base.scss */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/*
+boxsizing
+-------------
+All elements are set to use the border-box, cause were tired of bs.
+   
+
+    <!--
+    *{  
+      -moz-box-sizing: border-box;  
+      -webkit-box-sizing: border-box;  
+      -ms-box-sizing: border-box;  
+      box-sizing: border-box;  
+      word-wrap: break-word;  
+     }
+    --> 
+*/
+/* line 55, ../sass/base/_base.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/*
+rulers
+===================
+    <hr>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+
+*/
+/* line 71, ../sass/base/_base.scss */
+hr {
+  border-top: 1px solid black;
+}
+
+/*
+List
+===========================
+
+List
+===========================
+
+
+List default
+-----------------------
+    <ul>
+      <li>lorem</li>
+      <li>foobar</li>
+      <li>foobar</li>
+    </ul>
+
+*/
+/* line 18, ../sass/base/_list.scss */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*
+content list
+---------------------------------
+    <div class="content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, rerum, assumenda officia itaque magnam voluptatibus repellat nemo voluptatem omnis explicabo provident hic eum inventore facilis quasi sed doloribus a aliquid!
+      <ul>
+        <li>lorem</li>
+        <li>foobar</li>
+        <li>foobar</li>
+      </ul>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, rerum, assumenda officia itaque magnam voluptatibus repellat nemo voluptatem omnis explicabo provident hic eum inventore facilis quasi sed doloribus a aliquid!
+      </p>
+
+    </div>
+*/
+/* line 44, ../sass/base/_list.scss */
+.content ul {
+  padding: 0 0 1.5rem 0.5rem;
+}
+
+/* line 47, ../sass/base/_list.scss */
+.content li {
+  padding: 0 0 0.5rem 0.7rem;
+  list-style: none;
+}
+
+/*
+Center list
+----------------------
+@todo should this class be called inline-list-center
+    <ul class="center">
+      <li>lorem</li>
+      <li>foobar</li>
+      <li>foobar</li>
+    </ul>
+*/
+/* line 64, ../sass/base/_list.scss */
+ul.center {
+  text-align: center;
+}
+/* line 66, ../sass/base/_list.scss */
+ul.center li {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+/* line 67, ../sass/base/_list.scss */
+ul.center a {
+  display: inline-block;
+}
+
+/*
+right list
+----------------------
+align a list right
+@todo should this class be called inline-list-right
+      
+    <ul class="right">
+      <li>lorem</li>
+      <li>foobar</li>
+      <li>foobar</li>
+    </ul>
+*/
+/* line 85, ../sass/base/_list.scss */
+ul.right {
+  text-align: right;
+}
+/* line 87, ../sass/base/_list.scss */
+ul.right li {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+/* line 88, ../sass/base/_list.scss */
+ul.right a {
+  display: inline-block;
+}
+
+/*
+Navigation 
+============
+
+Navigation 
+============
+Default navigation
+
+    <nav>
+      <ul>
+        <li><a href="">frontpage</a></li>
+        <li><a href="">news</a></li>
+        <li><a href="">info</a></li>
+        <li><a href="">contact</a></li>
+      </ul>
+    </nav>
+
+*/
+/*
+inline navigation
+-------------------------------
+**.nav-incline ** class can be added as needed
+    <nav>
+      <ul class="nav-inline">
+        <li><a href="">frontpage</a></li>
+        <li><a href="">news</a></li>
+        <li><a href="">info</a></li>
+        <li><a href="">contact</a></li>
+      </ul>
+    </nav>
+    
+    <hr>
+    
+    <nav class="nav-inline">
+      <ul>
+        <li><a href="">frontpage</a></li>
+        <li><a href="">news</a></li>
+        <li><a href="">info</a></li>
+        <li><a href="">contact</a></li>
+      </ul>
+    </nav>
+    
+    <hr>
+    
+    <div class="nav-inline">
+      <nav> 
+        <ul>
+          <li><a href="">frontpage</a></li>
+          <li><a href="">news</a></li>
+          <li><a href="">info</a></li>
+          <li><a href="">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+*/
+/* line 65, ../sass/base/_navigation.scss */
+.nav-inline li, nav ul li {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+/* line 66, ../sass/base/_navigation.scss */
+.nav-inline a, nav ul a {
+  display: inline-block;
+}
+
+/*
+Center navigation
+--------------------------------
+      
+    <div class="nav-center">
+    <nav>
+      <ul>
+        <li><a href="">frontpage</a></li>
+        <li><a href="">news</a></li>
+        <li><a href="">info</a></li>
+        <li><a href="">contact</a></li>
+      </ul>
+    </nav>
+    </div>
+
+    <hr>
+
+    <nav class="nav-center">
+      <ul>
+        <li><a href="">frontpage</a></li>
+        <li><a href="">news</a></li>
+        <li><a href="">info</a></li>
+        <li><a href="">contact</a></li>
+      </ul>
+    </nav>
+
+
+*/
+/* line 103, ../sass/base/_navigation.scss */
+.nav-center nav, .item-list-pager nav {
+  text-align: center;
+}
+/* line 104, ../sass/base/_navigation.scss */
+.nav-center ul, .item-list-pager ul {
+  text-align: center;
+}
+/* line 105, ../sass/base/_navigation.scss */
+.nav-center li, .item-list-pager li {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+/* line 106, ../sass/base/_navigation.scss */
+.nav-center a, .item-list-pager a {
+  display: inline-block;
+}
+
+/*
+navigation right
+--------------------------------
+      
+    <div class="nav-right">
+    <nav>
+      <ul>
+        <li><a href="">frontpage</a></li>
+        <li><a href="">news</a></li>
+        <li><a href="">info</a></li>
+        <li><a href="">contact</a></li>
+      </ul>
+    </nav>
+    </div>
+
+    <hr>
+
+    <nav class="nav-right">
+      <ul>
+        <li><a href="">frontpage</a></li>
+        <li><a href="">news</a></li>
+        <li><a href="">info</a></li>
+        <li><a href="">contact</a></li>
+      </ul>
+    </nav>
+
+
+*/
+/* line 144, ../sass/base/_navigation.scss */
+.nav-right nav {
+  text-align: right;
+}
+/* line 145, ../sass/base/_navigation.scss */
+.nav-right ul {
+  text-align: right;
+}
+/* line 146, ../sass/base/_navigation.scss */
+.nav-right li {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+/* line 147, ../sass/base/_navigation.scss */
+.nav-right a {
+  display: inline-block;
+}
+
+/*
+Images
+==========================
+
+Images.scss
+======================================
+   
+Documentation
+---------------------------------------
+
+    <img src="../../styleguide-theme/coffee-120.jpg" alt="vuf">
+*/
+/*
+Figure
+------------------------
+
+    <figure>
+      <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+      <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</figcaption>
+    </figure>
+   
+*/
+/* line 25, ../sass/base/_image.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+@media \0screen {
+  /* line 34, ../sass/base/_image.scss */
+  img {
+    width: auto;
+  }
+}
+/* line 36, ../sass/base/_image.scss */
+figure {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+/* line 42, ../sass/base/_image.scss */
+figcaption {
+  text-align: left;
+  word-wrap: break-word;
+}
+
+/* line 47, ../sass/base/_image.scss */
+figcaption {
+  font-size: 1.2rem;
+}
+
+/*
+Images Inline
+================================
+
+image inline
+---------------------------
+
+    <p class="content">
+      <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+    </p>
+*/
+/*
+figure inline 
+-----------------------------
+
+    <div class="content">
+      <figure class="lovelypink">
+        <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+        <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</figcaption>
+      </figure>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+    </div>
+ */
+/* line 79, ../sass/base/_image.scss */
+.content img {
+  float: left;
+  padding: 0 1rem 1rem 0;
+}
+
+/* line 84, ../sass/base/_image.scss */
+.content figure {
+  padding: 0 1rem 1rem 0;
+  float: left;
+}
+
+/* line 88, ../sass/base/_image.scss */
+.content figure img {
+  float: none;
+}
+
+/*
+images inline right aligned
+---------------------------
+    <p class="content">
+      <img src="../../styleguide-theme/coffee-120.jpg" alt="vuf" class="right">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+    </p>
+    
+    <hr>
+    
+    <p class="content">
+      <span class="right"><img src="../../styleguide-theme/coffee-120.jpg" alt="vuf" class="right"></span>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+    </p>
+
+*/
+/* line 110, ../sass/base/_image.scss */
+.content img.right,
+.content .right img {
+  float: right;
+  padding: 0 1rem 1rem 0;
+}
+
+/*
+Video
+=========================
+
+Video
+------------------------
+Test for vimoe & youtube that both are using an iframe
+
+Vimeo
+-----------------------
+
+    <iframe width="560" height="315" src="//www.youtube.com/embed/M7FIvfx5J10" frameborder="0" allowfullscreen>
+    </iframe>
+
+    <hr>
+    <div class="shadow">
+      <iframe width="560" height="315" src="//www.youtube.com/embed/M7FIvfx5J10" frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+
+    <hr>
+    
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+    <iframe src="//www.youtube.com/embed/M7FIvfx5J10" frameborder="0" allowfullscreen>
+    </iframe>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+*/
+/*
+ youtube
+ -------------------
+
+    <iframe src="//player.vimeo.com/video/79649212" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <p><a href="http://vimeo.com/79649212">NECRONOMICA</a> from <a href="http://vimeo.com/user21204606">Kyle Bogart</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+ */
+/* line 36, ../sass/base/_video.scss */
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 40, ../sass/base/_video.scss */
+iframe {
+  max-width: 100%;
+}
+
+/*
+Grid system
+===================================
+
+Grid system
+===================================
+the grid is configured in _congig.scss  
+
+Documentation:
+----------------------------
+[Singularity GS](http://singularity.gs)  
+[wiki](https://github.com/Team-Sass/Singularity/wiki)  
+    
+
+ */
+/*
+
+.l-half
+--------------------------------
+
+    <section class="l-half">
+      <header>
+        <h2>header title 2</h2>
+      </header>
+      <div>1</div>
+      <div>2</div>
+    </section>
+
+*/
+@media (max-width: 480px) {
+  /* line 36, ../sass/layout/_grid.scss */
+  .l-half header {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 36, ../sass/layout/_grid.scss */
+  .l-half header {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 960px) {
+  /* line 36, ../sass/layout/_grid.scss */
+  .l-half header {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (max-width: 480px) {
+  /* line 41, ../sass/layout/_grid.scss */
+  .l-half > div,
+  .l-half > article,
+  .l-half > section {
+    width: 46.66667%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 6.66667%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 41, ../sass/layout/_grid.scss */
+  .l-half > div,
+  .l-half > article,
+  .l-half > section {
+    width: 48.3871%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 3.22581%;
+  }
+}
+@media (min-width: 960px) {
+  /* line 41, ../sass/layout/_grid.scss */
+  .l-half > div,
+  .l-half > article,
+  .l-half > section {
+    width: 48.93617%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.12766%;
+  }
+}
+@media (max-width: 480px) {
+  /* line 46, ../sass/layout/_grid.scss */
+  .l-half > div:last-child,
+  .l-half > article:last-child,
+  .l-half > section:last-child {
+    width: 46.66667%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 46, ../sass/layout/_grid.scss */
+  .l-half > div:last-child,
+  .l-half > article:last-child,
+  .l-half > section:last-child {
+    width: 48.3871%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 960px) {
+  /* line 46, ../sass/layout/_grid.scss */
+  .l-half > div:last-child,
+  .l-half > article:last-child,
+  .l-half > section:last-child {
+    width: 48.93617%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/*
+l-third
+-------------------------------------------------
+    
+    <section class="l-third">
+      <header>
+        <h2>header title 2</h2>
+      </header>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </section>
+
+*/
+@media (max-width: 480px) {
+  /* line 73, ../sass/layout/_grid.scss */
+  .l-third header {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 73, ../sass/layout/_grid.scss */
+  .l-third header {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 960px) {
+  /* line 73, ../sass/layout/_grid.scss */
+  .l-third header {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (max-width: 480px) {
+  /* line 78, ../sass/layout/_grid.scss */
+  .l-third > div,
+  .l-third > article,
+  .l-third > section {
+    width: 100%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+    background: pink;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 78, ../sass/layout/_grid.scss */
+  .l-third > div,
+  .l-third > article,
+  .l-third > section {
+    width: 31.42857%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.85714%;
+  }
+}
+@media (min-width: 960px) {
+  /* line 78, ../sass/layout/_grid.scss */
+  .l-third > div,
+  .l-third > article,
+  .l-third > section {
+    width: 31.91489%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.12766%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 83, ../sass/layout/_grid.scss */
+  .l-third > div:last-child,
+  .l-third > article:last-child,
+  .l-third > section:last-child {
+    width: 31.42857%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 960px) {
+  /* line 83, ../sass/layout/_grid.scss */
+  .l-third > div:last-child,
+  .l-third > article:last-child,
+  .l-third > section:last-child {
+    width: 31.91489%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/*
+l-fourth
+---------------------------------------------
+
+    <section class="l-fourth">
+      <header>
+        <h2>header title 2</h2>
+      </header>
+      <div>1</div>
+      <div>2</div>
+      <div>2</div>
+      <div>4</div>      
+    </section>
+
+ */
+@media (max-width: 480px) {
+  /* line 108, ../sass/layout/_grid.scss */
+  .l-fourth header {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 108, ../sass/layout/_grid.scss */
+  .l-fourth header {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 960px) {
+  /* line 108, ../sass/layout/_grid.scss */
+  .l-fourth header {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (max-width: 480px) {
+  /* line 113, ../sass/layout/_grid.scss */
+  .l-fourth > div,
+  .l-fourth > article,
+  .l-fourth > section {
+    width: 46.66667%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 6.66667%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 113, ../sass/layout/_grid.scss */
+  .l-fourth > div,
+  .l-fourth > article,
+  .l-fourth > section {
+    width: 22.58065%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 3.22581%;
+  }
+}
+@media (min-width: 960px) {
+  /* line 113, ../sass/layout/_grid.scss */
+  .l-fourth > div,
+  .l-fourth > article,
+  .l-fourth > section {
+    width: 23.40426%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.12766%;
+  }
+}
+@media (max-width: 480px) {
+  /* line 118, ../sass/layout/_grid.scss */
+  .l-fourth > div:nth-of-type(2n),
+  .l-fourth > article:nth-of-type(2n),
+  .l-fourth > section:nth-of-type(2n) {
+    width: 46.66667%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (max-width: 480px) {
+  /* line 121, ../sass/layout/_grid.scss */
+  .l-fourth > div:last-child,
+  .l-fourth > article:last-child,
+  .l-fourth > section:last-child {
+    width: 46.66667%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 121, ../sass/layout/_grid.scss */
+  .l-fourth > div:last-child,
+  .l-fourth > article:last-child,
+  .l-fourth > section:last-child {
+    width: 22.58065%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 960px) {
+  /* line 121, ../sass/layout/_grid.scss */
+  .l-fourth > div:last-child,
+  .l-fourth > article:last-child,
+  .l-fourth > section:last-child {
+    width: 23.40426%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/* line 136, ../sass/layout/_grid.scss */
+.l-half > div, .l-fourth > div, .l-third > div {
+  border-top: dotted 3px solid #333333;
+}
+
+/*
+lf-2
+-----------------------------
+ a Layout controller for rows of data
+ todo: write a js controller to add in a "break" class cuase ie8 dont understand last child :(
+ */
+/*
+Helpers
+==================================
+
+Helpers
+==================================
+small helper tools for layout
+
+
+Clearfix
+--------------------
+oooh yes we got clearfix 
+
+    <!-- 
+    
+    .foo{  
+      @extend .cf;  
+    }
+    
+
+    <div class="cf">
+      ...
+    </div>
+    -->
+*/
+/* line 26, ../sass/layout/_helpers.scss */
+header[role="banner"]:before, .economic-splash:before, header[role="banner"]:after, .economic-splash:after, .cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+/* line 27, ../sass/layout/_helpers.scss */
+header[role="banner"]:after, .economic-splash:after, .cf:after {
+  clear: both;
+}
+
+/* line 28, ../sass/layout/_helpers.scss */
+header[role="banner"], .economic-splash, .cf {
+  zoom: 1;
+}
+
+/*
+Align
+=============================
+Different helpers for positioning
+
+Centercenter 
+---------------------------
+the child centers both horizontal & vertical
+**classes**
+.l-centercenter( %l-centercenter   )
+   
+       
+    <div class="l-centercenter styleguidetest_l-centercenter">
+      <div>using a class: .l-centercenter;</div>
+    </div>
+
+    <div class="styleguide_test_l-centercenter-extend styleguidetest_l-centercenter">
+        <div>@extend %l-centercenter</div>
+    </div>
+
+    <div class="l-centercenter styleguidetest_l-centercenter">
+      <img src="../../styleguide-theme/coffee-120.jpg" alt="vuf">
+    </div>
+
+    <div class="l-centercenter styleguidetest_l-centercenter">
+        <span> inline </span>
+    </div>    
+
+
+
+*/
+/* line 64, ../sass/layout/_helpers.scss */
+.styleguide_test_l-centercenter-extend, .l-centercenter {
+  width: 100%;
+  height: 100;
+  position: relative;
+}
+
+/* line 69, ../sass/layout/_helpers.scss */
+.styleguide_test_l-centercenter-extend > *,
+.l-centercenter > * {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+/* line 77, ../sass/layout/_helpers.scss */
+.styleguidetest_l-centercenter {
+  width: 49%;
+  height: 200px;
+  background-color: gray;
+  font-size: 12px;
+  display: inline-block;
+  margin-right: 1px;
+}
+
+/* line 85, ../sass/layout/_helpers.scss */
+.styleguide_test_l-centercenter-extend {
+  background-color: #eee;
+}
+
+/*
+Right
+-----------------------------------
+
+
+ */
+/*
+Hidden
+--------------------------------------
+**.hidden**  
+Hide for both screenreaders and browsers
+css-discuss.incutio.com/wiki/Screenreader_Visibility
+
+    <div class="hidden">
+      foobar
+    </div>
+*/
+/* line 110, ../sass/layout/_helpers.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/*
+visuallyhidden
+--------------------------
+* [Hide only visually, but have it available for screenreaders: by Jon Neal. ](www.webaim.org/techniques/css/invisiblecontent/)
+* [j.mp/visuallyhidden](j.mp/visuallyhidden)
+
+    <div class="visuallyhidden">
+      foobar
+    </div>
+
+    <div class="visuallyhidden focusable">
+      foobar
+    </div>
+
+*/
+/* line 128, ../sass/layout/_helpers.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 133, ../sass/layout/_helpers.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+invisible
+-----------------------------------
+Hide visually and from screenreaders, but maintain layout
+
+    <div class="invisible">
+      foobar
+    </div>
+
+ */
+/* line 146, ../sass/layout/_helpers.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+visible phone, table & desktop
+------------------------------------
+Quick n dirty classes to inject directly - else use the gridsystem's sass ;)
+
+phone: max-width: 480px
+
+tablet: min-width: 481px - max-width: 979px
+
+desktop
+
+**classes**
+.visible-phone  
+.visible-tablet  
+.visible-desktop  
+.visible-print  
+.hidden-phone  
+.hidden-tablet  
+.hidden-desktop  
+.hidden-print  
+
+
+    <H3>status</h3>
+    <div class="visible-phone"> visible-phone </div>
+    <div class="visible-tablet"> visible-tablet </div>
+    <div class="visible-desktop"> visible-desktop </div>
+    <div class="visible-print"> visible-print </div>
+
+    <div class="hidden-phone"> hidden-phone </div>
+    <div class="hidden-tablet"> hidden-tablet </div>
+    <div class="hidden-desktop"> hidden-desktop </div>
+    <div class="hidden-print"> hidden-print </div>
+
+ */
+/* line 185, ../sass/layout/_helpers.scss */
+.visible-phone {
+  display: none;
+}
+
+/* line 186, ../sass/layout/_helpers.scss */
+.visible-tablet {
+  display: none;
+}
+
+/* line 187, ../sass/layout/_helpers.scss */
+.visible-desktop {
+  display: block;
+}
+
+/* line 188, ../sass/layout/_helpers.scss */
+.hidden-phone {
+  display: block;
+}
+
+/* line 189, ../sass/layout/_helpers.scss */
+.hidden-tablet {
+  display: block;
+}
+
+/* line 190, ../sass/layout/_helpers.scss */
+.hidden-desktop {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  /* line 194, ../sass/layout/_helpers.scss */
+  .visible-phone {
+    display: block;
+  }
+
+  /* line 195, ../sass/layout/_helpers.scss */
+  .hidden-phone {
+    display: none;
+  }
+
+  /* line 196, ../sass/layout/_helpers.scss */
+  .hidden-desktop {
+    display: block;
+  }
+
+  /* line 197, ../sass/layout/_helpers.scss */
+  .visible-desktop {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 979px) {
+  /* line 201, ../sass/layout/_helpers.scss */
+  .visible-tablet {
+    display: block;
+  }
+
+  /* line 202, ../sass/layout/_helpers.scss */
+  .hidden-tablet {
+    display: none;
+  }
+
+  /* line 203, ../sass/layout/_helpers.scss */
+  .hidden-desktop {
+    display: block;
+  }
+
+  /* line 204, ../sass/layout/_helpers.scss */
+  .visible-desktop {
+    display: none;
+  }
+}
+/* line 207, ../sass/layout/_helpers.scss */
+.visible-print {
+  display: none;
+}
+
+/* line 208, ../sass/layout/_helpers.scss */
+.hidden-print {
+  display: block;
+}
+
+@media print {
+  /* line 210, ../sass/layout/_helpers.scss */
+  .hidden-print {
+    display: none;
+  }
+
+  /* line 211, ../sass/layout/_helpers.scss */
+  .visible-print {
+    display: block;
+  }
+}
+/*
+Layout
+=========
+
+Layout
+=========
+the basic design of the page
+
+The grids settings are created in _config.scsss
+*/
+/*
+Container
+===========
+
+    <div class="l-container">
+    </div>
+ */
+/*
+Header
+--------------------------------------
+templates:  
+  
+    <header role="banner">
+        <a href="/" class="logo"><h2> sitename </h2></a>
+    </header>
+ */
+/* line 35, ../sass/layout/_layout.scss */
+header[role="banner"] {
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  /* line 35, ../sass/layout/_layout.scss */
+  header[role="banner"] {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 35, ../sass/layout/_layout.scss */
+  header[role="banner"] {
+    width: 90%;
+  }
+}
+@media (min-width: 960px) {
+  /* line 35, ../sass/layout/_layout.scss */
+  header[role="banner"] {
+    width: 1200px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 43, ../sass/layout/_layout.scss */
+  header[role="banner"] #logo {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 43, ../sass/layout/_layout.scss */
+  header[role="banner"] #logo {
+    width: 48.3871%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+}
+@media (min-width: 960px) {
+  /* line 43, ../sass/layout/_layout.scss */
+  header[role="banner"] #logo {
+    width: 31.91489%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0%;
+    clear: none;
+  }
+}
+@media (max-width: 480px) {
+  /* line 48, ../sass/layout/_layout.scss */
+  header[role="banner"] nav.mainmenu {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 48, ../sass/layout/_layout.scss */
+  header[role="banner"] nav.mainmenu {
+    width: 22.58065%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 51.6129%;
+    clear: none;
+  }
+}
+@media (min-width: 960px) {
+  /* line 48, ../sass/layout/_layout.scss */
+  header[role="banner"] nav.mainmenu {
+    width: 31.91489%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.04255%;
+    clear: none;
+  }
+}
+@media (max-width: 480px) {
+  /* line 53, ../sass/layout/_layout.scss */
+  header[role="banner"] nav.usermenu {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 53, ../sass/layout/_layout.scss */
+  header[role="banner"] nav.usermenu {
+    width: 22.58065%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 960px) {
+  /* line 53, ../sass/layout/_layout.scss */
+  header[role="banner"] nav.usermenu {
+    width: 14.89362%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 68.08511%;
+    clear: none;
+  }
+}
+
+/* line 60, ../sass/layout/_layout.scss */
+main {
+  margin: 0 auto;
+}
+@media (max-width: 480px) {
+  /* line 60, ../sass/layout/_layout.scss */
+  main {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 60, ../sass/layout/_layout.scss */
+  main {
+    width: 90%;
+  }
+}
+@media (min-width: 960px) {
+  /* line 60, ../sass/layout/_layout.scss */
+  main {
+    width: 1200px;
+  }
+}
+
+/* line 67, ../sass/layout/_layout.scss */
+footer[role="contentinfo"] {
+  width: 100%;
+}
+
+/*
+Main
+--------------------------------------------
+    
+    <main>
+      <div> lorem ipsum ...</div>
+    </main>
+ */
+/*
+Footer
+------------------------------
+
+    <footer role="contentinfo">
+      <div>
+        <span>Powered by <a href="http://drupal.org">Drupal</a></span>
+      </div>
+    </footer>
+*/
+/* line 93, ../sass/layout/_layout.scss */
+footer[role="contentinfo"] {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*
+all together now:
+------------------------
+
+
+    <div class="l-container">
+      <header role="banner">
+      </header>
+    
+      <main>
+        <h1> Main content
+      </main>
+    
+      <footer role="contentinfo">
+        <div>
+          <span>Powered by <a href="http://drupal.org">Drupal</a></span>
+        </div>
+      </footer>
+    </div>
+
+
+
+ */
+/* line 144, ../sass/layout/_layout.scss */
+#admin-menu {
+  display: none;
+}
+@media (min-width: 960px) {
+  /* line 144, ../sass/layout/_layout.scss */
+  #admin-menu {
+    display: block;
+  }
+}
+
+/*
+Typography
+===========================
+
+Typography
+===========================
+Fonts & colors for text 
+
+Fontimport
+--------------------------------------------------------------------------------
+This file defines our font stacks and sitespecific stacks
+uses the fontsize mixin (in sass/_mixin.scss)
+
+font import 
+google example:
+note we use "//"" cause something is retarded in browsers 
+  .foo{
+    @include fontsize($size:1.6, $line: $size * 1.5);  
+  }
+  
+  @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+  @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+*/
+/*
+fontstacks
+---------------------------
+$foo: "foo", $sans-serif;  
+Fontstack Placeholders
+  .bar{
+    @extend %foo;
+  } 
+
+generel fontstacks
+---------------------
+*/
+/* line 46, ../sass/design/_typography.scss */
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+/*
+basefont size & lineheight
+----------------------
+ */
+/*
+Body
+-----------------------------
+    <body>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, quae, eos incidunt nisi architecto molestiae consequuntur laborum veritatis necessitatibus nostrum provident a doloribus id. Itaque dignissimos architecto debitis vitae dicta.
+    <body>
+*/
+/* line 74, ../sass/design/_typography.scss */
+body {
+  color: #777777;
+  font-size: 1.4rem;
+}
+
+/*
+content
+---------------------------
+basic content 
+    <div class="content">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      <a href="#">read more</a>  Lorem ipsum dolor sit amet, consectetur adipisicing elit.  
+    </div>  
+ */
+/*
+links
+-----------------------------------------
+mixin: linkcolor($linkcolor, $linkcolorhover, underline);
+     
+    <a href="#">foo</a>
+    
+    <hr>
+
+    <div class="content">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      <a href="#">read more</a>  Lorem ipsum dolor sit amet, consectetur adipisicing elit.  
+    </div>  
+
+ */
+/* line 45, ../sass/_mixin.scss */
+a {
+  color: #0088cc;
+  text-decoration: none;
+}
+
+/* line 46, ../sass/_mixin.scss */
+a:link {
+  color: #0088cc;
+}
+
+/* line 47, ../sass/_mixin.scss */
+a:visited {
+  color: #0088cc;
+}
+
+/* line 48, ../sass/_mixin.scss */
+a:focus {
+  color: #0099e6;
+}
+
+/* line 49, ../sass/_mixin.scss */
+a:hover {
+  color: #0099e6;
+  text-decoration: underline;
+}
+
+/* line 45, ../sass/_mixin.scss */
+.content a {
+  color: #0088cc;
+  text-decoration: none;
+}
+/* line 46, ../sass/_mixin.scss */
+.content a:link {
+  color: #0088cc;
+}
+/* line 47, ../sass/_mixin.scss */
+.content a:visited {
+  color: #0088cc;
+}
+/* line 48, ../sass/_mixin.scss */
+.content a:focus {
+  color: #0099e6;
+}
+/* line 49, ../sass/_mixin.scss */
+.content a:hover {
+  color: #0099e6;
+  text-decoration: underline;
+}
+
+/* line 116, ../sass/design/_typography.scss */
+:focus {
+  outline: 0;
+}
+
+/*
+Headings
+==========
+
+    <h1>h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+    <h2>h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+    <h3>h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+    <h4>h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+    <h5>h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+    <h6>h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+
+*/
+/*
+Headings with links
+==========
+
+    <h1><a href="foo">h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h1>
+    <h2><a href="foo">h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+    <h3><a href="foo">h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+    <h4><a href="foo">h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+    <h5><a href="foo">h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h5>
+    <h6><a href="foo">h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h6>
+
+*/
+/* line 146, ../sass/design/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+  margin: 0 0 2rem 0;
+  color: #121214;
+  font-weight: 200;
+}
+/* line 45, ../sass/_mixin.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #121214;
+  text-decoration: none;
+}
+/* line 46, ../sass/_mixin.scss */
+h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link {
+  color: #121214;
+}
+/* line 47, ../sass/_mixin.scss */
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+  color: #121214;
+}
+/* line 48, ../sass/_mixin.scss */
+h1 a:focus, h2 a:focus, h3 a:focus, h4 a:focus, h5 a:focus, h6 a:focus {
+  color: #0099e6;
+}
+/* line 49, ../sass/_mixin.scss */
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  color: #0099e6;
+  text-decoration: underline;
+}
+
+/* line 153, ../sass/design/_typography.scss */
+h1 {
+  font-size: 8rem;
+}
+
+/* line 156, ../sass/design/_typography.scss */
+h2 {
+  font-size: 3.5rem;
+}
+
+/* line 159, ../sass/design/_typography.scss */
+h3 {
+  font-size: 3rem;
+}
+
+/* line 162, ../sass/design/_typography.scss */
+h4 {
+  font-size: 2.5rem;
+}
+
+/* line 165, ../sass/design/_typography.scss */
+h5 {
+  font-size: 2rem;
+}
+
+/* line 168, ../sass/design/_typography.scss */
+h6 {
+  font-size: 1.6rem;
+}
+
+/*
+Selection colors
+========================================
+
+ */
+/* line 179, ../sass/design/_typography.scss */
+::-moz-selection {
+  background: #d72751;
+  color: #fff;
+}
+
+/* line 180, ../sass/design/_typography.scss */
+::selection {
+  background: #d72751;
+  color: #fff;
+}
+
+/* line 183, ../sass/design/_typography.scss */
+:-moz-placeholder {
+  color: #ccc;
+}
+
+/* line 184, ../sass/design/_typography.scss */
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+/*
+Colors
+=============================
+
+Colors
+-------------------------------
+This file is not "in use" but its used for showing off the colorscheme for 
+the style guide
+
+ */
+/*
+effects
+=============================
+
+Effects
+-----------------------------
+Different grafic effects for design elements shadings, circles etc
+
+circle
+----------------------------
+
+    <div class="circle">
+      <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+    </div>
+
+    <div class="circle">
+      <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+      </p>
+    </div>
+
+
+*/
+/*
+    <div class="content">
+      <div class="circle">
+        <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+      </div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+    </div>
+*/
+/*
+    <div class="circle">
+      <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+    </div>
+    <div class="circle">
+      <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+    </div>
+    <div class="circle">
+      <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+    </div>
+*/
+/* line 46, ../sass/design/_graphicstyles.scss */
+.circle img {
+  width: 10rem;
+  height: 10rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+  border-radius: 5rem;
+  border: 4px dotted #666666;
+}
+
+/* line 54, ../sass/design/_graphicstyles.scss */
+.content .circle img {
+  padding: 0;
+  margin-right: 1rem;
+}
+
+/*
+shadow
+---------------------------
+Shade for elements
+  
+    <div  class="shadow">
+      <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+    </div>
+*/
+/*
+figure
+-------------------------
+
+    <figure class="shadow">
+      <img src="../../styleguide-theme/coffee-400.jpg" alt="vuf">
+      <figcaption>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</figcaption>
+    </figure>
+
+*/
+/* line 80, ../sass/design/_graphicstyles.scss */
+.shadow > * {
+  -webkit-box-shadow: black 3px 3px 8px -4px;
+  -moz-box-shadow: black 3px 3px 8px -4px;
+  box-shadow: black 3px 3px 8px -4px;
+}
+
+/*
+Icons
+============================
+
+icons
+------------------------------
+collection of icons & diffent styles to enhance an element
+new markers etc.
+
+
+ */
+/* line 5, ../sass/design/_design.scss */
+header[role="banner"] {
+  border-top: 5px solid #ededed;
+}
+
+/* line 9, ../sass/design/_design.scss */
+footer[role="contentinfo"] {
+  min-height: 400px;
+  background: #121214;
+  border-top: 4px solid #eee;
+}
+
+/* line 18, ../sass/design/_design.scss */
+.lead {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 30px;
+  color: #777777;
+}
+
+/* 
+Featured box
+------------------------------------
+    <section class="l-fourth">
+
+    <div class="featurebox c-1">
+      <div>
+        <i class="icon icon-laptop"></i>
+        <h2>Lorem ipsum dolor sit amet </h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+    
+    <div class="featurebox c-2">
+      <div>
+        <i class="icon icon-laptop"></i>
+        <h2>Lorem ipsum dolor sit amet </h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+
+    <div class="featurebox c-3">
+      <div>
+        <i class="icon icon-laptop"></i>
+        <h2>Lorem ipsum dolor sit amet </h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+
+    <div class="featurebox c-4">
+      <div>
+        <i class="icon icon-laptop"></i>
+        <h2>Lorem ipsum dolor sit amet </h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+
+
+    </section>
+*/
+/* line 87, ../sass/design/_design.scss */
+.featurebox {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  border-bottom: 1px solid #DFDFDF;
+  border-left: 1px solid #ECECEC;
+  border-right: 1px solid #ECECEC;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(98%, #f9f9f9));
+  background-image: -webkit-linear-gradient(center top, #ffffff, #f9f9f9 98%);
+  background-image: -moz-linear-gradient(center top, #ffffff, #f9f9f9 98%);
+  background-image: -o-linear-gradient(center top, #ffffff, #f9f9f9 98%);
+  background-image: linear-gradient(center top, #ffffff, #f9f9f9 98%);
+  margin: 2rem 0;
+  text-align: center;
+}
+/* line 98, ../sass/design/_design.scss */
+.featurebox > div {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  border-top: 3px solid #666;
+  border-top-width: 4px;
+  padding: 3rem 1rem;
+}
+/* line 104, ../sass/design/_design.scss */
+.featurebox .icon {
+  background-color: #666;
+  color: #fff;
+  font-size: 4rem;
+  line-height: 4rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+  border-radius: 5rem;
+  padding: 2.5rem;
+}
+/* line 114, ../sass/design/_design.scss */
+.featurebox h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 400;
+  padding-top: 1rem;
+}
+/* line 120, ../sass/design/_design.scss */
+.featurebox p {
+  text-align: left;
+}
+
+/* line 127, ../sass/design/_design.scss */
+.featurebox.c-1 > div {
+  border-top-color: #e05048;
+}
+/* line 128, ../sass/design/_design.scss */
+.featurebox.c-1 h2 {
+  color: #e05048;
+}
+/* line 129, ../sass/design/_design.scss */
+.featurebox.c-1 .icon {
+  background-color: #e05048;
+}
+
+/* line 136, ../sass/design/_design.scss */
+.featurebox.c-2 > div {
+  border-top-color: #0088cc;
+}
+/* line 137, ../sass/design/_design.scss */
+.featurebox.c-2 h2 {
+  color: #0088cc;
+}
+/* line 138, ../sass/design/_design.scss */
+.featurebox.c-2 .icon {
+  background-color: #0088cc;
+}
+
+/* line 144, ../sass/design/_design.scss */
+.featurebox.c-3 > div {
+  border-top-color: #4eb25c;
+}
+/* line 145, ../sass/design/_design.scss */
+.featurebox.c-3 h2 {
+  color: #4eb25c;
+}
+/* line 146, ../sass/design/_design.scss */
+.featurebox.c-3 .icon {
+  background-color: #4eb25c;
+}
+
+/* line 152, ../sass/design/_design.scss */
+.featurebox.c-4 > div {
+  border-top-color: #734ba9;
+}
+/* line 153, ../sass/design/_design.scss */
+.featurebox.c-4 h2 {
+  color: #734ba9;
+}
+/* line 154, ../sass/design/_design.scss */
+.featurebox.c-4 .icon {
+  background-color: #734ba9;
+}
+
+/*
+Belt
+
+
+ */
+/* line 166, ../sass/design/_design.scss */
+.belt {
+  width: 100%;
+  background: #121214;
+  padding: 3rem;
+}
+
+/* line 172, ../sass/design/_design.scss */
+.btn {
+  font-size: 2rem;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF0088CC', endColorstr='#FF004466');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4dc3ff), color-stop(50%, #0088cc), color-stop(100%, #00aaff));
+  background: -webkit-linear-gradient(#4dc3ff, #0088cc 50%, #00aaff);
+  background: -moz-linear-gradient(#4dc3ff, #0088cc 50%, #00aaff);
+  background: -o-linear-gradient(#4dc3ff, #0088cc 50%, #00aaff);
+  background: linear-gradient(#4dc3ff, #0088cc 50%, #00aaff);
+  -webkit-box-shadow: #99ddff 0 1px 0 inset;
+  -moz-box-shadow: #99ddff 0 1px 0 inset;
+  box-shadow: #99ddff 0 1px 0 inset;
+  border: 1px solid #0099e6;
+  color: white;
+  text-shadow: #0083c4 0 -1px 0;
+}
+/* line 15, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn:hover {
+  text-decoration: none;
+}
+/* line 24, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn:hover {
+  background-color: #00aaff;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #42c0ff), color-stop(50%, #00aaff), color-stop(100%, #008fd6));
+  background: -webkit-linear-gradient(#42c0ff, #00aaff 50%, #008fd6);
+  background: -moz-linear-gradient(#42c0ff, #00aaff 50%, #008fd6);
+  background: -o-linear-gradient(#42c0ff, #00aaff 50%, #008fd6);
+  background: linear-gradient(#42c0ff, #00aaff 50%, #008fd6);
+}
+/* line 27, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn:active {
+  -webkit-box-shadow: #008fd6 0 1px 2px inset;
+  -moz-box-shadow: #008fd6 0 1px 2px inset;
+  box-shadow: #008fd6 0 1px 2px inset;
+}
+/* line 6, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn.disabled, .btn[disabled] {
+  opacity: 0.6;
+  background: #00aaff;
+  cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 73, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/_sassy-buttons.sass */
+.btn::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+/* line 53, ../sass/_mixin.scss */
+.btn {
+  color: white;
+  text-decoration: none;
+}
+/* line 54, ../sass/_mixin.scss */
+.btn:link {
+  color: white;
+}
+/* line 55, ../sass/_mixin.scss */
+.btn:visited {
+  color: white;
+}
+/* line 56, ../sass/_mixin.scss */
+.btn:focus {
+  color: white;
+}
+/* line 57, ../sass/_mixin.scss */
+.btn:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/*
+Buttons
+===========================
+
+Buttons
+---------------------------
+Buttons for us for links and 
+
+Buttons
+--------------------------------------------------------------------------------
+
+Documentation for sassy buttonshttp://jaredhardy.com/sassy-buttons/    
+*/
+/*
+Form buttons
+--------------------------
+
+    <button>click me</button>
+
+    <div class="form-actions form-wrapper" id="edit-actions">
+      <input type="submit" id="edit-submit" name="op" value="Save" class="form-submit">
+      <input type="submit" id="edit-delete" name="op" value="Delete" class="form-submit">
+    </div>
+
+
+ */
+/* line 29, ../sass/component/_buttons.scss */
+button {
+  font-size: 15px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFCCCCCC');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+  background: -webkit-linear-gradient(#ffffff, #e6e6e6);
+  background: -moz-linear-gradient(#ffffff, #e6e6e6);
+  background: -o-linear-gradient(#ffffff, #e6e6e6);
+  background: linear-gradient(#ffffff, #e6e6e6);
+  -webkit-box-shadow: white 0 1px 0 inset;
+  -moz-box-shadow: white 0 1px 0 inset;
+  box-shadow: white 0 1px 0 inset;
+  border: 1px solid #d9d9d9;
+  color: #333333;
+  text-shadow: white 0 1px 0;
+}
+/* line 15, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+button:hover {
+  text-decoration: none;
+}
+/* line 36, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+button:hover {
+  background-color: #d9d9d9;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #d9d9d9));
+  background: -webkit-linear-gradient(#f2f2f2, #d9d9d9);
+  background: -moz-linear-gradient(#f2f2f2, #d9d9d9);
+  background: -o-linear-gradient(#f2f2f2, #d9d9d9);
+  background: linear-gradient(#f2f2f2, #d9d9d9);
+}
+/* line 39, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+button:active {
+  -webkit-box-shadow: #d2d2d2 0 1px 2px inset;
+  -moz-box-shadow: #d2d2d2 0 1px 2px inset;
+  box-shadow: #d2d2d2 0 1px 2px inset;
+}
+/* line 6, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+button.disabled, button[disabled] {
+  opacity: 0.6;
+  background: #e6e6e6;
+  cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 73, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/_sassy-buttons.sass */
+button::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+
+/* line 32, ../sass/component/_buttons.scss */
+input[type="submit"] {
+  font-size: 15px;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFFFFF', endColorstr='#FFCCCCCC');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e6e6e6));
+  background: -webkit-linear-gradient(#ffffff, #e6e6e6);
+  background: -moz-linear-gradient(#ffffff, #e6e6e6);
+  background: -o-linear-gradient(#ffffff, #e6e6e6);
+  background: linear-gradient(#ffffff, #e6e6e6);
+  -webkit-box-shadow: white 0 1px 0 inset;
+  -moz-box-shadow: white 0 1px 0 inset;
+  box-shadow: white 0 1px 0 inset;
+  border: 1px solid #d9d9d9;
+  color: #333333;
+  text-shadow: white 0 1px 0;
+}
+/* line 15, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+input[type="submit"]:hover {
+  text-decoration: none;
+}
+/* line 36, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+input[type="submit"]:hover {
+  background-color: #d9d9d9;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #d9d9d9));
+  background: -webkit-linear-gradient(#f2f2f2, #d9d9d9);
+  background: -moz-linear-gradient(#f2f2f2, #d9d9d9);
+  background: -o-linear-gradient(#f2f2f2, #d9d9d9);
+  background: linear-gradient(#f2f2f2, #d9d9d9);
+}
+/* line 39, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+input[type="submit"]:active {
+  -webkit-box-shadow: #d2d2d2 0 1px 2px inset;
+  -moz-box-shadow: #d2d2d2 0 1px 2px inset;
+  box-shadow: #d2d2d2 0 1px 2px inset;
+}
+/* line 6, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+input[type="submit"].disabled, input[type="submit"][disabled] {
+  opacity: 0.6;
+  background: #e6e6e6;
+  cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 73, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/_sassy-buttons.sass */
+input[type="submit"]::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+
+/*
+    <div>
+      <label>foo</label>
+      <input type="text">
+    </div>
+    <button class="btn">Button (button.btn)</button>
+    <br><br><br>
+    <a href="#" class="btn">Button (a.btn)</a>
+*/
+/* line 47, ../sass/component/_buttons.scss */
+.btn {
+  font-size: 2rem;
+  padding: 0.5em 1.5em;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF0088CC', endColorstr='#FF004466');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4dc3ff), color-stop(50%, #0088cc), color-stop(100%, #00aaff));
+  background: -webkit-linear-gradient(#4dc3ff, #0088cc 50%, #00aaff);
+  background: -moz-linear-gradient(#4dc3ff, #0088cc 50%, #00aaff);
+  background: -o-linear-gradient(#4dc3ff, #0088cc 50%, #00aaff);
+  background: linear-gradient(#4dc3ff, #0088cc 50%, #00aaff);
+  -webkit-box-shadow: #99ddff 0 1px 0 inset;
+  -moz-box-shadow: #99ddff 0 1px 0 inset;
+  box-shadow: #99ddff 0 1px 0 inset;
+  border: 1px solid #0099e6;
+  color: white;
+  text-shadow: #0083c4 0 -1px 0;
+}
+/* line 15, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn:hover {
+  text-decoration: none;
+}
+/* line 24, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn:hover {
+  background-color: #00aaff;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #42c0ff), color-stop(50%, #00aaff), color-stop(100%, #008fd6));
+  background: -webkit-linear-gradient(#42c0ff, #00aaff 50%, #008fd6);
+  background: -moz-linear-gradient(#42c0ff, #00aaff 50%, #008fd6);
+  background: -o-linear-gradient(#42c0ff, #00aaff 50%, #008fd6);
+  background: linear-gradient(#42c0ff, #00aaff 50%, #008fd6);
+}
+/* line 27, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn:active {
+  -webkit-box-shadow: #008fd6 0 1px 2px inset;
+  -moz-box-shadow: #008fd6 0 1px 2px inset;
+  box-shadow: #008fd6 0 1px 2px inset;
+}
+/* line 6, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.btn.disabled, .btn[disabled] {
+  opacity: 0.6;
+  background: #00aaff;
+  cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 73, ../../../../../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/sassy-buttons/stylesheets/_sassy-buttons.sass */
+.btn::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+/* line 53, ../sass/_mixin.scss */
+.btn {
+  color: white;
+  text-decoration: none;
+}
+/* line 54, ../sass/_mixin.scss */
+.btn:link {
+  color: white;
+}
+/* line 55, ../sass/_mixin.scss */
+.btn:visited {
+  color: white;
+}
+/* line 56, ../sass/_mixin.scss */
+.btn:focus {
+  color: white;
+}
+/* line 57, ../sass/_mixin.scss */
+.btn:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/*
+Breadcrumb
+======================
+
+Breadcrumb
+======================
+Drupals breadcrumbs
+
+templates
+---------------------------
+template.php:
+function themename_breadcrumb($variables) {
+  ....
+}
+
+    <div class="breadcrumb">
+      <a href="/">Home</a>  
+      <a href="/design_test">Design test</a>
+      <a href="/design_test/form">Form</a>
+    </div>
+
+    <nav class="breadcrumb" role="navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/design_test">Design test</a></li>
+        <li><a href="/design_test/form">Form</a></li>
+      </ul>
+    </nav>
+
+*/
+/* line 33, ../sass/component-drupal/_breadcrumb.scss */
+.breadcrumb li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+/* line 39, ../sass/component-drupal/_breadcrumb.scss */
+.breadcrumb li a {
+  padding-right: 10px;
+  padding-right: 1rem;
+  padding-left: 10px;
+  padding-left: 1rem;
+  margin-right: 5px;
+  margin-right: 0.5rem;
+}
+/* line 45, ../sass/component-drupal/_breadcrumb.scss */
+.breadcrumb li a:first-child {
+  padding-left: 0;
+}
+
+/*
+Drupal messages
+=============================
+
+Drupal messages
+===================================
+Drupals standard messages
+
+classes
+------------------------------------
+.messages  
+.status  
+.warning  
+.messages  
+
+    <div class="drupal-messages">
+      <div class="messages error">
+        <h2 class="element-invisible">Error message</h2>
+        Utrum quia ut verto nimis. <a href="#">Vestibulum sed magna</a>. Neque neo rusticus abdo te refoveo os refero adipiscing praemitto genitus aliquam dolus at. 
+      </div>
+      <div class="messages status">
+        <h2 class="element-invisible">Status message</h2>
+        Quibus nunc inhibeo. <a href="#">Vestibulum sed magna</a>. Diam ullamcorper nunc ibidem. 
+      </div>
+      <div class="messages warning">
+        <h2 class="element-invisible">Warning message</h2>
+        Saluto torqueo defui persto minim rusticus vereor dignissim. <a href="#">Vestibulum sed magna</a>. Pecus nobis qui damnum ad commoveo aliquip vero sed iaceo. Velit tincidunt immitto melior dignissim ibidem blandit te. Abbas sit. 
+      </div>
+    </div>
+*/
+/* line 32, ../sass/component-drupal/_message.scss */
+.messages, .messages.status, .messages.warning, .messages.error {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid black;
+}
+/* line 36, ../sass/component-drupal/_message.scss */
+.messages li, .messages.status li, .messages.warning li, .messages.error li {
+  margin: 0 0 1 1.5rem;
+  list-style: none;
+}
+
+/* line 42, ../sass/component-drupal/_message.scss */
+.status.messages {
+  border-color: #be7;
+  background-color: #f8fff0;
+  color: #234600;
+}
+/* line 45, ../sass/_mixin.scss */
+.status.messages a {
+  color: red;
+  text-decoration: none;
+}
+/* line 46, ../sass/_mixin.scss */
+.status.messages a:link {
+  color: red;
+}
+/* line 47, ../sass/_mixin.scss */
+.status.messages a:visited {
+  color: red;
+}
+/* line 48, ../sass/_mixin.scss */
+.status.messages a:focus {
+  color: blue;
+}
+/* line 49, ../sass/_mixin.scss */
+.status.messages a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* line 50, ../sass/component-drupal/_message.scss */
+.warning.messages {
+  border-color: #ed5;
+  background-color: #fffce5;
+  color: #840;
+}
+/* line 45, ../sass/_mixin.scss */
+.warning.messages a {
+  color: red;
+  text-decoration: none;
+}
+/* line 46, ../sass/_mixin.scss */
+.warning.messages a:link {
+  color: red;
+}
+/* line 47, ../sass/_mixin.scss */
+.warning.messages a:visited {
+  color: red;
+}
+/* line 48, ../sass/_mixin.scss */
+.warning.messages a:focus {
+  color: blue;
+}
+/* line 49, ../sass/_mixin.scss */
+.warning.messages a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* line 58, ../sass/component-drupal/_message.scss */
+.error.messages {
+  border-color: #ed541d;
+  background-color: #fef5f1;
+  color: #8c2e0b;
+}
+/* line 45, ../sass/_mixin.scss */
+.error.messages a {
+  color: red;
+  text-decoration: none;
+}
+/* line 46, ../sass/_mixin.scss */
+.error.messages a:link {
+  color: red;
+}
+/* line 47, ../sass/_mixin.scss */
+.error.messages a:visited {
+  color: red;
+}
+/* line 48, ../sass/_mixin.scss */
+.error.messages a:focus {
+  color: blue;
+}
+/* line 49, ../sass/_mixin.scss */
+.error.messages a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/*
+Drupal Forms
+==============
+
+Drupal Forms
+==============
+All the forms based on Druapls & motherships markup
+
+*/
+/*
+textfield
+------------------
+
+    <div class="form-item form-type-textfield">
+      <label for="foo">Machine name source</label>
+      
+      <input type="text" id="foo" value="" size="30" maxlength="128"> 
+    </div>
+
+    <div class="form-item form-type-textfield">
+      <label for="foo">Machine name source</label>
+      
+      <input type="text" id="foo" value="" size="30" maxlength="128"> 
+    </div>
+*/
+/*
+textfield required
+------------------
+    <div class="form-item form-type-machine-name form-required">
+      <label class="required" for="foo">Machine-readable name</label>
+      
+      <input type="text" id="foo" value="" size="30" maxlength="64" required="">
+      
+      <small>A unique machine-readable name. Can only contain lowercase letters, numbers, and underscores.</small>
+    </div>
+
+    <div class="form-item form-type-machine-name form-required">
+      <label class="required" for="foo">Machine-readable name</label>
+      
+      <input type="text" id="foo" value="" size="30" maxlength="64" required="">
+      
+      <small>A unique machine-readable name. Can only contain lowercase letters, numbers, and underscores.</small>
+    </div>
+*/
+/*
+textfield disabled
+------------------------
+
+    <div class="form-item form-type-textfield">
+      <label for="foo">Machine name source</label>
+      
+      <input disabled="disabled" type="text" id="foo" value="" size="30" maxlength="128"> 
+    </div>
+
+    <div class="form-item form-type-textfield">
+      <label for="foo">Machine name source</label>
+      
+      <input disabled="disabled" type="text" id="foo" value="" size="30" maxlength="128"> 
+    </div>
+ */
+/*
+checkbox
+-----------------------------
+
+    <div class="form-item form-type-checkbox">
+      <input type="checkbox" id="foo" name="checkbox" value="1">
+      <label for="foo">Checkbox</label>
+      <small>Quia ymo loquor pertineo zelus exerci. </small>
+    </div>
+
+*/
+/*
+Checkboxes
+------------------------------------------------------------------------------
+
+    <div class="form-item form-type-checkboxes">
+      <label for="foo">Checkboxes</label>
+      <div id="foo" class="form-checkboxes">
+        
+        <div class="form-item form-type-checkbox">
+          <input type="checkbox" id="foo" name="checkboxes[one]" value="one">
+          <label for="foo">Qui oppeto decet</label>
+        </div>
+
+        <div class="form-item  form-type-checkbox">
+          <input type="checkbox" id="bar" name="checkboxes[two]" value="two">
+          <label for="bar">Quadrum exerci lobortis</label>
+          <small>Roto mos secundum si quadrum nutus. </small>
+        </div>
+
+        <div class="form-item  form-type-checkbox">
+          <input type="checkbox" id="baz" name="checkboxes[three]" value="three">
+          <label for="baz">Praemitto humo adipiscing</label>
+        </div>
+
+      </div>
+      <small>In venio oppeto iaceo vereor damnum. </small>
+    </div>
+
+*/
+/*
+checkbox disabled
+
+    <div class="form-item form-type-checkbox">
+      <input disabled="disabled" type="checkbox" id="foo" name="checkbox" value="1">
+      <label for="foo">Checkbox</label>
+      <small>Quia ymo loquor pertineo zelus exerci. </small>
+    </div>
+
+ */
+/*
+radio
+-------------------------------
+
+
+    <div class="form-item  form-type-radio">
+      <input type="radio" id="foo" name="radio">  
+      <label for="foo">Radio</label>
+      <small>Meus hos aptent dolor gemino plaga. But why would you ever use a single radio?</small>
+    </div>
+ */
+/*
+Radios
+-------------------------------
+
+
+    <div class="form-item form-type-radios">
+      <label for="edit-radios">Radios</label>
+      <div id="edit-radios" class="form-radios">
+       
+        <div class="form-item form-type-radio">
+          <input type="radio" id="edit-radios-one" name="radios" value="one">  
+          <label for="edit-radios-one">Pagus iriure sit</label>
+        </div>
+        
+        <div class="form-item form-type-radio">
+          <input type="radio" id="edit-radios-two" name="radios" value="two"> 
+          <label for="edit-radios-two">Brevitas quidem pertineo</label>
+          <small>Ut exerci voco autem immitto tego. </small>
+        </div>
+        
+        <div class="form-item form-type-radio">
+          <input type="radio" id="edit-radios-three" name="radios" value="three">  
+          <label for="edit-radios-three">Refoveo duis wisi</label>
+        </div>
+      
+      </div>
+
+        <small>Jumentum ibidem erat importunus wisi causa. </small>
+      </div>
+
+*/
+/*
+Radio disabled
+-------------------------------
+
+
+    <div class="form-item  form-type-radio">
+      <input disabled="disabled" type="radio" id="foo" name="radio">  
+      <label for="foo">Radio</label>
+      <small>Meus hos aptent dolor gemino plaga. But why would you ever use a single radio?</small>
+    </div>
+ */
+/*
+Select
+------------------------
+
+    <div class="form-item form-type-select">
+      <label for="edit-select">Select</label>
+      <select id="edit-select" name="select">
+       <option value="one">Cogo proprius valde</option>
+       <option value="two">Consectetuer roto ibidem</option>
+       <option value="three">Dignissim verto odio</option>
+      </select>
+
+      <small>Humo defui damnum defui secundum gemino. </small>
+    </div>
+
+ */
+/*
+Select disabled
+------------------------
+
+    <div class="form-item form-type-select">
+      <label for="edit-select">Select</label>
+      <select disabled="disabled" id="edit-select" name="select">
+       <option value="one">Cogo proprius valde</option>
+       <option value="two">Consectetuer roto ibidem</option>
+       <option value="three">Dignissim verto odio</option>
+      </select>
+
+      <small>Humo defui damnum defui secundum gemino. </small>
+    </div>
+
+ */
+/*
+Select multiple
+-------------------------
+
+    <div class="form-item form-type-select">
+      <label for="edit-select-multiple">Select (multiple)</label>
+      <select multiple="multiple" name="select_multiple[]" id="edit-select-multiple">
+        <option value="one">Qui gravis nulla</option>
+        <option value="two">Nutus luctus genitus</option>
+        <option value="three">Wisi scisco nibh</option>
+      </select>
+      <small>Et fere antehabeo fere quae velit. </small>
+    </div>
+
+ */
+/*
+Select multiple disabled
+-------------------------
+
+    <div class="form-item form-type-select">
+      <label for="edit-select-multiple">Select (multiple)</label>
+      <select disabled="disabled" multiple="multiple" name="select_multiple[]" id="edit-select-multiple">
+        <option value="one">Qui gravis nulla</option>
+        <option value="two">Nutus luctus genitus</option>
+        <option value="three">Wisi scisco nibh</option>
+      </select>
+      <small>Et fere antehabeo fere quae velit. </small>
+    </div>
+
+ */
+/*
+Textarea
+------------------------------
+
+    <div class="form-item form-type-textarea">
+      <label for="edit-textarea">Textarea</label>
+    
+      <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
+        <textarea id="edit-textarea" name="textarea" cols="60" rows="5">
+        Neo camur cogo antehabeo saepius roto lobortis verto aliquip typicus roto camur quidem vulputate ea obruo lenis os antehabeo comis suscipere virtus nisl gravis. Eros abluo lenis esca abbas commodo abico illum abdo si capto in erat adipiscing typicus suscipit. 
+        </textarea>
+      
+        <div class="grippie"></div>
+      </div>
+
+    <small>Praemitto dignissim abigo usitas refero iustum. </small>
+    </div>
+
+ */
+/*
+Textarea
+------------------------------
+
+    <div class="form-item form-type-textarea">
+      <label for="edit-textarea">Textarea</label>
+    
+      <div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
+        <textarea disabled="disabled" id="edit-textarea" name="textarea" cols="60" rows="5">
+        Neo camur cogo antehabeo saepius roto lobortis verto aliquip typicus roto camur quidem vulputate ea obruo lenis os antehabeo comis suscipere virtus nisl gravis. Eros abluo lenis esca abbas commodo abico illum abdo si capto in erat adipiscing typicus suscipit. 
+        </textarea>
+      
+        <div class="grippie"></div>
+      </div>
+
+    <small>Praemitto dignissim abigo usitas refero iustum. </small>
+    </div>
+
+ */
+/*
+inline elements
+----------------------------------------------
+
+
+    <div id="edit-inline" class="form-item form-type-item">
+      <label for="edit-inline">Inline elements</label>
+      
+      <div class="container-inline form-wrapper" id="edit-container">
+        <div class="form-item form-type-select">
+          <label for="edit-select--3">Select</label>
+          <select id="edit-select--3" name="select">
+            <option value="one">Qui gravis nulla</option>
+            <option value="two">Nutus luctus genitus</option>
+            <option value="three">Wisi scisco nibh</option>
+          </select>
+        </div>
+        <div class="form-item form-type-textfield">
+          <label for="edit-textfield--3">Textfield</label>
+          <input type="text" id="edit-textfield--3" name="textfield" value="" size="30" maxlength="128">
+        </div>
+      </div>
+    </div>
+*/
+/*
+Fieldset 
+-------------------------
+
+    <fieldset class="collapsible collapse-processed" id="edit-collapsible">
+      <legend>
+        <span class="fieldset-legend">
+          <a class="fieldset-title" href="#">
+            <span class="fieldset-legend-prefix element-invisible">Hide</span>
+            Collapsible fieldset
+          </a>
+          <span class="summary">
+          </span>
+        </span>
+      </legend>
+
+      <div class="fieldset-wrapper">
+        <div class="fieldset-description">Fieldset description</div>
+      </div>
+    </fieldset>
+
+ */
+/*
+Fieldset collapsed
+-------------------------
+
+    <fieldset class="collapsible collapsed collapse-processed" id="edit-collapsible">
+      <legend>
+        <span class="fieldset-legend">
+          <a class="fieldset-title" href="#">
+            <span class="fieldset-legend-prefix element-invisible">Hide</span>
+            Collapsible fieldset
+          </a>
+          <span class="summary">
+          </span>
+        </span>
+      </legend>
+
+      <div class="fieldset-wrapper">
+        <div class="fieldset-description">Fieldset description</div>
+      </div>
+    </fieldset>
+
+ */
+/*
+file
+==================
+    
+
+    <div class="form-type-file">
+      <label for="edit-file">File</label>
+      <input type="file" id="edit-file" name="files[file]">
+    </div>
+
+*/
+/*
+ajax wrapper file
+---------------------------
+
+
+    <div id="edit-managed-file-ajax-wrapper">
+      <div class="form-type-managed-file">
+        <label for="edit-managed-file">Managed file</label>
+        
+        <div id="edit-managed-file" class="form-managed-file">
+          <input type="file" id="edit-managed-file-upload" name="files[managed_file]">
+          <input type="submit" id="edit-managed-file-upload-button" 
+          name="managed_file_upload_button" value="Upload" class="ajax-processed">
+          
+          <input type="hidden" name="managed_file[fid]" value="0">
+        </div>
+
+      </div>
+    </div>
+
+ */
+/*
+widget login
+==================================
+Drupals login page /user
+ */
+/*
+Login -new account
+--------------------------------------------------------------------------------
+
+    <nav class="tabs"><h2 class="element-invisible">Primary tabs</h2><ul class="tabs primary"><li class="active"><a href="/user/register" class="active">Create new account<span class="element-invisible">(active tab)</span></a></li>
+    <li><a href="/user">Log in</a></li>
+    <li><a href="/user/password">Request new password</a></li>
+    </ul></nav>
+
+    <form class="user-info-from-cookie" enctype="multipart/form-data" action="/user/register" method="post" id="user-register-form" accept-charset="UTF-8"><div id="edit-account" class="form-wrapper"><div class="form-item form-type-textfield form-required">
+      <label class="required" for="edit-name">Username</label>
+     <input class="username" placeholder="Username" type="text" id="edit-name" name="name" value="" size="30" maxlength="60" required="">
+
+    <small>Spaces are allowed; punctuation is not allowed except for periods, hyphens, apostrophes, and underscores.</small>
+    </div>
+    <div class="form-item form-type-textfield form-required">
+      <label class="required" for="edit-mail">E-mail address</label>
+     <input placeholder="E-mail address" type="text" id="edit-mail" name="mail" value="" size="30" maxlength="254" required="">
+
+    <small>A valid e-mail address. All e-mails from the system will be sent to this address. The e-mail address is not made public and will only be used if you wish to receive a new password or wish to receive certain news or notifications by e-mail.</small>
+    </div>
+    <input type="hidden" name="timezone" value="Europe/Berlin">
+    </div><input type="hidden" name="form_build_id" value="form-MNo7EUYL3C8WZUgt86Q52J-rvYbiJsfuQz8sJRjvYZo">
+    <input type="hidden" name="form_id" value="user_register_form">
+    <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Create new account"></div></form>
+*/
+/*
+login
+----------------
+
+    <nav class="tabs"><h2 class="element-invisible">Primary tabs</h2><ul class="tabs primary"><li><a href="/user/register">Create new account</a></li>
+    <li class="active"><a href="/user" class="active">Log in<span class="element-invisible">(active tab)</span></a></li>
+    <li><a href="/user/password">Request new password</a></li>
+    </ul></nav>
+    
+    <form action="/user" method="post" id="user-login" accept-charset="UTF-8"><div class="form-item form-type-textfield form-required">
+      <label class="required" for="edit-name">Username</label>
+     <input placeholder="Username" type="text" id="edit-name" name="name" value="" size="30" maxlength="60" required="">
+
+    <small>Enter your drupal7.dev username.</small>
+    </div>
+    <div class="form-item form-type-password form-required">
+      <label class="required" for="edit-pass">Password</label>
+     <input placeholder="Password" type="password" id="edit-pass" name="pass" size="30" maxlength="128">
+
+    <small>Enter the password that accompanies your username.</small>
+    </div>
+    <input type="hidden" name="form_build_id" value="form-OuLuua-uw4qmDq9VL8ZsjRbjJLntbb9fL3x6k3y22_U">
+    <input type="hidden" name="form_id" value="user_login">
+    <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Log in"></div></form>
+
+
+ */
+/*
+lost password
+-------------------------------
+
+
+    <ul class="tabs primary"><li><a href="/user/register">Create new account</a></li>
+    <li><a href="/user">Log in</a></li>
+    <li class="active"><a href="/user/password" class="active">Request new password<span class="element-invisible">(active tab)</span></a></li>
+    </ul>
+
+    <form action="/user/password" method="post" id="user-pass" accept-charset="UTF-8"><div class="form-item form-type-textfield form-required">
+      <label class="required" for="edit-name">Username or e-mail address</label>
+     <input placeholder="Username or e-mail address" type="text" id="edit-name" name="name" value="" size="30" maxlength="254" required="">
+    </div>
+    <input type="hidden" name="form_build_id" value="form-YEiU_ATn3ztthvKNyUh_pXp03iuMthLD5XQ8SCSzF0U">
+    <input type="hidden" name="form_id" value="user_pass">
+    <div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="E-mail new password"></div></form>
+ */
+/*
+Drupal messages
+=============================
+
+Drupal messages
+===================================
+Drupals standard messages
+
+classes
+------------------------------------
+.messages  
+.status  
+.warning  
+.messages  
+
+    <div class="drupal-messages">
+      <div class="messages error">
+        <h2 class="element-invisible">Error message</h2>
+        Utrum quia ut verto nimis. <a href="#">Vestibulum sed magna</a>. Neque neo rusticus abdo te refoveo os refero adipiscing praemitto genitus aliquam dolus at. 
+      </div>
+      <div class="messages status">
+        <h2 class="element-invisible">Status message</h2>
+        Quibus nunc inhibeo. <a href="#">Vestibulum sed magna</a>. Diam ullamcorper nunc ibidem. 
+      </div>
+      <div class="messages warning">
+        <h2 class="element-invisible">Warning message</h2>
+        Saluto torqueo defui persto minim rusticus vereor dignissim. <a href="#">Vestibulum sed magna</a>. Pecus nobis qui damnum ad commoveo aliquip vero sed iaceo. Velit tincidunt immitto melior dignissim ibidem blandit te. Abbas sit. 
+      </div>
+    </div>
+*/
+/* line 32, ../sass/component-drupal/_message.scss */
+.messages, .messages.status, .messages.warning, .messages.error {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid black;
+}
+/* line 36, ../sass/component-drupal/_message.scss */
+.messages li, .messages.status li, .messages.warning li, .messages.error li {
+  margin: 0 0 1 1.5rem;
+  list-style: none;
+}
+
+/* line 42, ../sass/component-drupal/_message.scss */
+.status.messages {
+  border-color: #be7;
+  background-color: #f8fff0;
+  color: #234600;
+}
+/* line 45, ../sass/_mixin.scss */
+.status.messages a {
+  color: red;
+  text-decoration: none;
+}
+/* line 46, ../sass/_mixin.scss */
+.status.messages a:link {
+  color: red;
+}
+/* line 47, ../sass/_mixin.scss */
+.status.messages a:visited {
+  color: red;
+}
+/* line 48, ../sass/_mixin.scss */
+.status.messages a:focus {
+  color: blue;
+}
+/* line 49, ../sass/_mixin.scss */
+.status.messages a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* line 50, ../sass/component-drupal/_message.scss */
+.warning.messages {
+  border-color: #ed5;
+  background-color: #fffce5;
+  color: #840;
+}
+/* line 45, ../sass/_mixin.scss */
+.warning.messages a {
+  color: red;
+  text-decoration: none;
+}
+/* line 46, ../sass/_mixin.scss */
+.warning.messages a:link {
+  color: red;
+}
+/* line 47, ../sass/_mixin.scss */
+.warning.messages a:visited {
+  color: red;
+}
+/* line 48, ../sass/_mixin.scss */
+.warning.messages a:focus {
+  color: blue;
+}
+/* line 49, ../sass/_mixin.scss */
+.warning.messages a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* line 58, ../sass/component-drupal/_message.scss */
+.error.messages {
+  border-color: #ed541d;
+  background-color: #fef5f1;
+  color: #8c2e0b;
+}
+/* line 45, ../sass/_mixin.scss */
+.error.messages a {
+  color: red;
+  text-decoration: none;
+}
+/* line 46, ../sass/_mixin.scss */
+.error.messages a:link {
+  color: red;
+}
+/* line 47, ../sass/_mixin.scss */
+.error.messages a:visited {
+  color: red;
+}
+/* line 48, ../sass/_mixin.scss */
+.error.messages a:focus {
+  color: blue;
+}
+/* line 49, ../sass/_mixin.scss */
+.error.messages a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/*
+Pager
+===========================================
+Drupals default pager for admin task
+
+    <ul class="pager">
+      <li class="pager-first first"><a title="Go to first page" href="#"> first</a></li>
+      <li class="pager-previous"><a title="Go to previous page" href="#"> previous</a></li>
+      <li class="pager-ellipsis">...</li>
+      <li class="pager-item"><a title="Go to page 5" href="#">5</a></li>
+      <li class="pager-item"><a title="Go to page 6" href="#">6</a></li>
+      <li class="pager-item"><a title="Go to page 7" href="#">7</a></li>
+      <li class="pager-item"><a title="Go to page 8" href="#">8</a></li>
+      <li class="pager-current">9</li>
+      <li class="pager-item"><a title="Go to page 10" href="#">10</a></li>
+      <li class="pager-item"><a title="Go to page 11" href="#">11</a></li>
+      <li class="pager-item"><a title="Go to page 12" href="#">12</a></li>
+      <li class="pager-item"><a title="Go to page 13" href="#">13</a></li>
+      <li class="pager-ellipsis">...</li>
+      <li class="pager-next"><a title="Go to next page" href="#">next </a></li>
+      <li class="pager-last last"><a title="Go to last page" href="#">last </a></li>
+    </ul>
+*/
+/* line 25, ../sass/component-drupal/_pager.scss */
+.pager li {
+  padding-left: 5px;
+  padding-left: 0.5rem;
+  display: inline-block;
+}
+/* line 45, ../sass/_mixin.scss */
+.pager li a {
+  color: #999999;
+  text-decoration: none;
+}
+/* line 46, ../sass/_mixin.scss */
+.pager li a:link {
+  color: #999999;
+}
+/* line 47, ../sass/_mixin.scss */
+.pager li a:visited {
+  color: #999999;
+}
+/* line 48, ../sass/_mixin.scss */
+.pager li a:focus {
+  color: #333333;
+}
+/* line 49, ../sass/_mixin.scss */
+.pager li a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+
+/* line 31, ../sass/component-drupal/_pager.scss */
+.pager-current {
+  font-weight: bold;
+}
+
+/* line 33, ../sass/component-drupal/_pager.scss */
+.pager-ellipsis {
+  color: gray;
+}
+
+/* line 35, ../sass/component-drupal/_pager.scss */
+.item-list-pager {
+  clear: both;
+}
+
+/*
+search block
+=======================
+
+ */
+/*
+Search 
+---------------------------
+
+
+    <form action="/" method="post" id="search-block-form" accept-charset="UTF-8">
+      <h2 class="element-invisible">Search form</h2>
+    
+      <div class="form-type-textfield">
+        <label class="element-invisible" for="edit-search-block-form--2">Search</label>
+        <input title="Enter the terms you wish to search for." placeholder="Search" type="text" 
+        id="edit-search-block-form--2" name="search_block_form" value="" size="30" maxlength="128">
+      </div>
+      
+      <div class="form-actions form-wrapper" id="edit-actions">
+        <input type="submit" id="edit-submit" name="op" value="Search">
+      </div>
+
+      <input type="hidden" name="form_build_id" value="form-bUxY4emhOqsB0KS3eS5wWUyr681inVs-vnC2mtNSBco">
+        
+      <input type="hidden" name="form_token" value="J2bpxfqRf6McabKti3eJGZaMNqIMZ3XuxHUloglTaHA">
+      <input type="hidden" name="form_id" value="search_block_form">
+    </form>
+ */
+/*
+table
+===========================
+list basic tables that drupal prints out 
+*/
+/*
+Drupal table
+-----------------------------
+
+    <table class="sticky-enabled tableheader-processed sticky-table">
+      <caption>Table Caption</caption>
+       <thead><tr><th>Column 1</th><th>Column 2</th><th>Column 3</th> </tr></thead>
+      <tbody>
+       <tr class="odd"><td>some text</td><td><a href="/%23">some link</a></td><td>Abico augue duis. </td> </tr>
+       <tr class="even"><td>some text</td><td><a href="/%23">some link</a></td><td>Augue vicis. </td> </tr>
+       <tr class="odd"><td>some text</td><td><a href="/%23">some link</a></td><td>Bene pagus. </td> </tr>
+       <tr class="even"><td>some text</td><td><a href="/%23">some link</a></td><td>Appellatio interdico torqueo. </td> </tr>
+       <tr class="odd"><td>some text</td><td><a href="/%23">some link</a></td><td>Refero facilisis et. </td> </tr>
+      </tbody>
+    </table>
+
+ */
+/*
+Drupal tabledrag
+-----------------------------
+
+
+    <table id="table-tabledrag" class="sticky-enabled tabledrag-processed tableheader-processed sticky-table">
+    <caption>Table Caption</caption>
+     <thead><tr><th>Column 1</th><th>Column 2</th><th>Column 3</th><th class="tabledrag-hide" style="display: none;">Column 4</th> </tr></thead>
+    <tbody>
+     <tr class="draggable odd"><td><a href="#" class="tabledrag-handle" title="Drag to re-order" style=""><div class="handle">&nbsp;</div></a>some text</td><td><a href="/%23">some link</a></td><td>Premo. Occuro nunc facilisi similis natu pecus quibus voco euismod ut ad nobis tum typicus aptent appellatio tum feugiat at euismod veniam utinam torqueo. </td><td class="weight tabledrag-hide" style="display: none;">1</td> </tr>
+     <tr class="draggable even"><td><a href="#" class="tabledrag-handle" title="Drag to re-order" style=""><div class="handle">&nbsp;</div></a>some text</td><td><a href="/%23">some link</a></td><td>In hos. Iaceo pneum saluto enim pertineo cui et refoveo obruo secundum neo antehabeo tego occuro pertineo esca quis validus inhibeo oppeto ad letalis. </td><td class="weight tabledrag-hide" style="display: none;">2</td> </tr>
+     <tr class="draggable odd"><td><a href="#" class="tabledrag-handle" title="Drag to re-order" style=""><div class="handle">&nbsp;</div></a>some text</td><td><a href="/%23">some link</a></td><td>Erat esca cogo occuro humo metuo typicus letalis loquor occuro bene inhibeo consectetuer abico sagaciter pecus. Amet amet zelus ludus iaceo aptent gilvus ymo. </td><td class="weight tabledrag-hide" style="display: none;">3</td> </tr>
+     <tr class="draggable even"><td><a href="#" class="tabledrag-handle" title="Drag to re-order" style=""><div class="handle">&nbsp;</div></a>some text</td><td><a href="/%23">some link</a></td><td>Esse consequat huic laoreet elit quis virtus in ulciscor luptatum feugiat valetudo veniam verto aptent iustum ideo. Loquor similis ille comis persto meus enim. </td><td class="weight tabledrag-hide" style="display: none;">4</td> </tr>
+     <tr class="draggable odd"><td><a href="#" class="tabledrag-handle" title="Drag to re-order" style=""><div class="handle">&nbsp;</div></a>some text</td><td><a href="/%23">some link</a></td><td>Saepius comis caecus turpis damnum nobis. Pertineo valetudo pecus lucidus natu veniam sudo scisco luptatum defui consectetuer nutus patria dolor vulputate modo verto iustum. </td><td class="weight tabledrag-hide" style="display: none;">5</td> </tr>
+     <tr class="draggable even"><td><a href="#" class="tabledrag-handle" title="Drag to re-order" style=""><div class="handle">&nbsp;</div></a>some text</td><td><a href="/%23">some link</a></td><td>Ullamcorper tum volutpat letalis patria premo commoveo quia scisco ille praemitto tincidunt adipiscing venio vindico venio refero turpis scisco tation pneum immitto quidem. Torqueo. </td><td class="weight tabledrag-hide" style="display: none;">6</td> </tr>
+     <tr class="draggable odd"><td><a href="#" class="tabledrag-handle" title="Drag to re-order" style=""><div class="handle">&nbsp;</div></a>some text</td><td><a href="/%23">some link</a></td><td>Ideo ullamcorper gravis humo verto esse. Pertineo oppeto validus consectetuer verto esca erat sed in abbas antehabeo lucidus cui scisco wisi camur rusticus gemino. </td><td class="weight tabledrag-hide" style="display: none;">7</td> </tr>
+     <tr class="draggable even"><td><a href="#" class="tabledrag-handle" title="Drag to re-order" style=""><div class="handle">&nbsp;</div></a>some text</td><td><a href="/%23">some link</a></td><td>Si refoveo lobortis jugis iustum tincidunt aliquam valetudo os commodo ymo abluo validus fere. Huic lenis tation duis esse laoreet decet sit damnum eros. </td><td class="weight tabledrag-hide" style="display: none;">8</td> </tr>
+    </tbody>
+    </table>
+
+*/
+/*
+Userprofile
+===========================================
+userprofile page
+username printer
+comment
+
+preprocess
+-------------------
+ */
+/*
+user image
+-------------------------
+
+    <figure>
+    </figure>
+ */
+/*
+Dragons
+============
+
+Dragons
+============
+Here be Dragons! 
+All the dirty small elements that needs to be added
+
+*/

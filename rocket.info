@@ -1,5 +1,5 @@
-name = buildontopofthis
-description = 
+name = Rocket
+description = Rocket baby! C'mon, we're gonna fly  
 screenshot = screenshot.png
 engine = phptemplate
 core = 7.x
@@ -11,8 +11,8 @@ base theme = mothership
 features[] = favicon
 features[] = name
 ;features[] = slogan
-;features[] = node_user_picture
-;features[] = comment_user_picture
+features[] = node_user_picture
+features[] = comment_user_picture
 ;features[] = comment_user_verification
 ;features[] = main_menu
 ;features[] = secondary_menu
@@ -39,15 +39,15 @@ regions[help] = Help
 regions[highlighted] = Highlighted
 
 ;-------------- C S S -------------
-stylesheets[all][] = css/style.css
-stylesheets[all][] = fix.css
+stylesheets[all][] = css/rocket.css
+;stylesheets[all][] = fix.css
 
 ;-------------- CSS FOAD -------------
 ;stylesheets[all][] = donteverloadmeagain.css
 
 ;-------------- JS -------------
 scripts[] = js/script.js
-scripts[] = js/grid.js
+scripts[] = js/singularity-grid-helper.js
 
 ;-------------- BREAKPOINTS -------------
 breakpoints[mobile] = (min-width: 320px)
@@ -57,3 +57,23 @@ breakpoints[mobile_landscape_only] = (min-width: 480px) and (max-width: 767px)
 breakpoints[tablet] = (min-width: 768px)
 ;breakpoints[tablet_only] = (min-width: 768px) and (max-width: 979px)
 breakpoints[desktop] = (min-width: 980px)
+
+;----------- Magic -----------------------------------
+settings[magic_embedded_mqs] = '0'
+settings[magic_css_excludes] = ':core
+:contrib
+~*.base*
+~admin_menu/*.css
+~overlay/*.css
+~toolbar/*.css
+~magic/magic_dev/css/magic.debug.css
+~panels/*.css
+~l10n_client/*.css'
+settings[magic_footer_js] = '1'
+settings[magic_library_head] = '1'
+settings[magic_experimental_js] = '0'
+settings[magic_js_excludes] = ''
+settings[magic_performance__active_tab] = 'edit-css--2'
+settings[magic_css_excludes_regex][exclude] = '/^(misc\/(.*)|modules\/(.*)|themes\/(.*)|sites\/all\/modules\/(.*))$/'
+settings[magic_css_excludes_regex][include] = '/^((.*)\.base(.*)|sites\/all\/modules\/contrib\/admin_menu\/(.*)\.css|modules\/overlay\/(.*)\.css|modules\/toolbar\/(.*)\.css|sites\/all\/modules\/contrib\/magic\/magic_dev\/css\/magic\.debug\.css|sites\/all\/modules\/contrib\/panels\/(.*)\.css|sites\/all\/modules\/contrib\/l10n_client\/(.*)\.css)$/'
+settings[magic_js_excludes_regex] = ''

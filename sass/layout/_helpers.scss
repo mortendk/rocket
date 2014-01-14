@@ -4,7 +4,7 @@ Helpers
 
 Helpers
 ==================================
-All kinds of little helpers that we need
+small helper tools for layout
 
 
 Clearfix
@@ -84,7 +84,7 @@ the child centers both horizontal & vertical
 }
 .styleguide_test_l-centercenter-extend{
   @extend %l-centercenter;
-  background-color:gray; 
+  background-color:#eee; 
 }
 
 /*
@@ -151,6 +151,12 @@ visible phone, table & desktop
 ------------------------------------
 Quick n dirty classes to inject directly - else use the gridsystem's sass ;)
 
+phone: max-width: 480px
+
+tablet: min-width: 481px - max-width: 979px
+
+desktop
+
 **classes**
 .visible-phone  
 .visible-tablet  
@@ -160,7 +166,7 @@ Quick n dirty classes to inject directly - else use the gridsystem's sass ;)
 .hidden-tablet  
 .hidden-desktop  
 .hidden-print  
-wtf
+
 
     <H3>status</h3>
     <div class="visible-phone"> visible-phone </div>

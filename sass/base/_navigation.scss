@@ -17,7 +17,7 @@ Default navigation
 
 */
 nav ul{
-
+ @extend %nav-inline;
 }
 nav li{
   

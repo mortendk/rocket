@@ -5,16 +5,77 @@ Typography
 Typography
 ===========================
 Fonts & colors for text 
-Fontstacks are all defined in **sass/_config.scss**
 
+Fontimport
+--------------------------------------------------------------------------------
+This file defines our font stacks and sitespecific stacks
+uses the fontsize mixin (in sass/_mixin.scss)
+
+font import 
+google example:
+note we use "//"" cause something is retarded in browsers 
+  .foo{
+    @include fontsize($size:1.6, $line: $size * 1.5);  
+  }
+  
+  @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+  @import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+*/
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+/*
+fontstacks
+---------------------------
+$foo: "foo", $sans-serif;  
+Fontstack Placeholders
+  .bar{
+    @extend %foo;
+  } 
+
+generel fontstacks
+---------------------
+*/
+
+$sans-serif : "Helvetica Neue", Helvetica, Arial, sans-serif;  
+$serif: "Droid Serif", Georgia, serif;  
+$monospace  : "Monaco", "Courier New", monospace;  
+
+$fontbody: "Open Sans", $sans-serif;  
+
+%bodyfont{
+  font-family: $fontbody;
+  font-weight: 400;
+}
+
+%uppercase{
+  text-transform: uppercase;
+}
+
+%normalcase{
+  text-transform: none;
+}
+
+/*
+basefont size & lineheight
+----------------------
+ */
+$fontsize: 1.4rem;
+$lineheight: 2.4rem;
+
+/*
+Body
+-----------------------------
     <body>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, quae, eos incidunt nisi architecto molestiae consequuntur laborum veritatis necessitatibus nostrum provident a doloribus id. Itaque dignissimos architecto debitis vitae dicta.
     <body>
 */
 
 body{
+  @extend %bodyfont;
   color: $fontcolor;
   font-size: $fontsize;
+
 }
 
 /*
@@ -46,7 +107,6 @@ mixin: linkcolor($linkcolor, $linkcolorhover, underline);
     </div>  
 
  */
-
 @include linkcolor($linkcolor, $linkcolorhover, underline);
 
 .content{
@@ -70,7 +130,7 @@ Headings
 */
 
 /*
-Headings links
+Headings with links
 ==========
 
     <h1><a href="foo">h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h1>
@@ -88,9 +148,10 @@ h1,h2, h3, h4, h5, h6{
   line-height:1;
   margin:0 0 2rem 0;
   color:$titlecolor;
+  font-weight:200;
 }
 h1{
-  font-size:4.5rem;
+  font-size:8rem;
 }
 h2{
   font-size:3.5rem;
@@ -121,4 +182,7 @@ Selection colors
 // -- placeholder colors
 :-moz-placeholder { color: #ccc;}
 ::-webkit-input-placeholder { color: #ccc;}
+
+
+
 

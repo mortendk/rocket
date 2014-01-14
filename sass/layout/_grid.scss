@@ -13,3 +13,142 @@ Documentation:
     
 
  */
+
+
+/*
+
+.l-half
+--------------------------------
+
+    <section class="l-half">
+      <header>
+        <h2>header title 2</h2>
+      </header>
+      <div>1</div>
+      <div>2</div>
+    </section>
+
+*/
+%l-half,
+.l-half{
+  @extend %clearfix;
+
+  header{
+    @include breakpoint($mobile) {@include grid-span(4);}
+    @include breakpoint($tablet) {@include grid-span(8);}
+    @include breakpoint($desktop){@include grid-span(12);}    
+  }
+  > div, > article, > section{
+    @include breakpoint($mobile) {@include float-span(2);}
+    @include breakpoint($tablet) {@include float-span(4);}
+    @include breakpoint($desktop){@include float-span(6);}    
+  }
+  > div:last-child, > article:last-child, > section:last-child{    
+    @include breakpoint($mobile) {@include float-span(2, last);}
+    @include breakpoint($tablet) {@include float-span(4, last);}
+    @include breakpoint($desktop){@include float-span(6, last); }
+  }
+}
+
+
+/*
+l-third
+-------------------------------------------------
+    
+    <section class="l-third">
+      <header>
+        <h2>header title 2</h2>
+      </header>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </section>
+
+*/
+
+%l-third,
+.l-third{
+  @extend %clearfix;
+
+  header{
+    @include breakpoint($mobile) {@include grid-span(4);}
+    @include breakpoint($tablet) {@include grid-span(8);}
+    @include breakpoint($desktop){@include grid-span(12);}    
+  }
+  > div, > article, > section{
+    @include breakpoint($mobile) {@include float-span(4); background:pink}
+    @include breakpoint($tablet) {@include float-span(3,$grid:9);}
+    @include breakpoint($desktop){@include float-span(4);}    
+  }
+  > div:last-child, > article:last-child, > section:last-child{    
+    @include breakpoint($tablet) {@include float-span(3, last, $grid:9);}
+    @include breakpoint($desktop){@include float-span(4, last); }
+  }
+}
+
+/*
+l-fourth
+---------------------------------------------
+
+    <section class="l-fourth">
+      <header>
+        <h2>header title 2</h2>
+      </header>
+      <div>1</div>
+      <div>2</div>
+      <div>2</div>
+      <div>4</div>      
+    </section>
+
+ */
+%l-fourth,
+.l-fourth{
+  @extend %clearfix;
+
+  header{
+    @include breakpoint($mobile) {@include grid-span(4);}
+    @include breakpoint($tablet) {@include grid-span(8);}
+    @include breakpoint($desktop){@include grid-span(12);}    
+  }
+  > div, > article, > section{
+    @include breakpoint($mobile) {@include float-span(2);}
+    @include breakpoint($tablet) {@include float-span(2);}
+    @include breakpoint($desktop){@include float-span(3);}    
+  }
+  > div:nth-of-type(2n), > article:nth-of-type(2n), > section:nth-of-type(2n){      
+    @include breakpoint($mobile) {@include float-span(2, last);}
+  }
+  > div:last-child, > article:last-child, > section:last-child{    
+    @include breakpoint($mobile) {@include float-span(2, last);}
+    @include breakpoint($tablet) {@include float-span(2, last);}
+    @include breakpoint($desktop){@include float-span(3, last); }
+  }
+}
+
+
+
+
+section header{
+
+}
+
+.l-half, .l-fourth,.l-third { 
+  > div{
+    border-top: dotted 3px solid #333
+  }
+}
+
+/*
+lf-2
+-----------------------------
+ a Layout controller for rows of data
+ todo: write a js controller to add in a "break" class cuase ie8 dont understand last child :(
+ */
+
+.lf-2 > div{
+
+}
+
+.lf-3 > div{
+
+}
