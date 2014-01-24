@@ -19,6 +19,7 @@ Default navigation
 nav ul{
  @extend %nav-inline;
 }
+
 nav li{
   
 }
@@ -61,8 +62,12 @@ inline navigation
     </div>
 */
 
-.nav-inline, %nav-inline{
-  li{  display:inline-block; padding-right:0.5rem;}
+.nav-inline, 
+%nav-inline{
+  li{ 
+    display:inline-block; 
+    padding-right:0.5rem;
+  }
   a{ display:inline-block; }
 }
 
@@ -99,7 +104,8 @@ Center navigation
 
 
 
-.nav-center, %nav-center{
+.nav-center, 
+%nav-center{
   nav{ text-align: center; }
   ul{ text-align: center; }
   li{  display:inline-block; padding-right:0.5rem;}
@@ -140,7 +146,8 @@ navigation right
 
 
 
-.nav-right, %nav-right{
+.nav-right, 
+%nav-right{
   nav{ text-align: right; }
   ul{ text-align: right; }
   li{  display:inline-block; padding-right:0.5rem;}

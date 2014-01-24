@@ -84,7 +84,7 @@
             
             <li><a class="" href="/styleguide/component/_menu-dropdown.html">Dropdown menu</a></li>
             
-            <li><a class="" href="/styleguide/component/_menu-mobile.html">Mobile Menu</a></li>
+            <li><a class="" href="/styleguide/component/_menu-mobile.html">Mobile Menu icons</a></li>
             
         </ul>
     </div>
@@ -213,43 +213,23 @@
     
 
     
-      <div class="result">
-        <iframe id="iframe_ze4dz" height="0" src="about:blank"></iframe>
-        <script id="script_ze4dz">
-          var iframe  = document.getElementById('iframe_ze4dz');
-          var context = iframe.contentWindow.document;
-          var script  = document.getElementById('script_ze4dz');
-          context.open();
-          context.write('<!doctype html>'
-            +'<html>'
-            +'    <head>'
-            +'        <link rel="stylesheet" href="../../css/rocket.css">'                                
-            +'        <script src="/js/jquery-extra-selectors.js"><\/script><script src="/js/polyfill-ie8.js"><\/script><script src="/js/script.js"><\/script><script src="/js/singularity-grid-helper.js"><\/script>'
-            +'    </head>'
-            +'    <body>'
-            +'        @include breakpoint($mobile) {.foo{ background:blue}}@include breakpoint($handheld) {.foo{ background:black}}'
-            +'    </body>'
-            +'</html>');
-        context.close();
-          script.parentNode.removeChild(script);
-        </script>
-      </div>
-    
 
-    
-      <div class="source language-markup"><pre><code>@include breakpoint($mobile) {
- .foo{ background:blue}
-}
-@include breakpoint($handheld) {
- .foo{ background:black}
-}</code></pre>
-</div>
     
     </div>
   
     <div class="section">
     
-      <div class="comment"><p>usage: </p>
+      <div class="comment"><p>$mobile: (max-width 480px);
+ $mobile-portrait: (max-width 480px) (orientation portrait);
+ $mobile-landscape: (max-width 767px) (orientation landscape);
+$mobile-retina: (max-width 480px) (-webkit-min-device-pixel-ratio 2);
+ $mobile-retina-portrait: (max-width 480px) (-webkit-min-device-pixel-ratio 2) (orientation portrait);
+ $mobile-retina-landscape: (max-width 480px) (-webkit-min-device-pixel-ratio 2) (orientation landscape);
+$mobile-up:(min-width 768px); //huh rename</p>
+<p>$tablet: (min-width 768px) (max-width 1024px);
+ $tablet-portrait: (min-width 768px) (max-width 1024px)  (orientation portrait);
+ $tablet-landscape: (min-width 768px) (max-width 1024px) (orientation landscape);</p>
+<p>usage: </p>
 <p>body{
  @include breakpoint($mobile) {background: gray}
  @include breakpoint($mobile-portrait) {background: blue}
@@ -273,70 +253,23 @@
   
     <div class="section">
     
+      <div class="comment"><p>body{
+ @include breakpoint($small) {border-left: 4px solid #ddd; background:red}
+ @include breakpoint($medium) {border-left: 4px solid #0c0; background:teal}
+ @include breakpoint($large) {border-left: 4px solid #ccc;background: lightgray}
+}</p>
+</div>
+    
+
+    
+
+    
+    </div>
+  
+    <div class="section">
+    
       <div class="comment"><h2 id="colors">colors</h2>
-</div>
-    
-
-    
-
-    
-    </div>
-  
-    <div class="section">
-    
-      <div class="comment"><h2 id="fontstack">Fontstack</h2>
-<p>This file defines our font stacks and sitespecific stacks
-uses the fontsize mixin:</p>
-<p>import the font
-note we use &quot;//&quot;&quot; cause something is retarded in browsers </p>
-</div>
-    
-
-    
-      <div class="result">
-        <iframe id="iframe_x2bc2" height="0" src="about:blank"></iframe>
-        <script id="script_x2bc2">
-          var iframe  = document.getElementById('iframe_x2bc2');
-          var context = iframe.contentWindow.document;
-          var script  = document.getElementById('script_x2bc2');
-          context.open();
-          context.write('<!doctype html>'
-            +'<html>'
-            +'    <head>'
-            +'        <link rel="stylesheet" href="../../css/rocket.css">'                                
-            +'        <script src="/js/jquery-extra-selectors.js"><\/script><script src="/js/polyfill-ie8.js"><\/script><script src="/js/script.js"><\/script><script src="/js/singularity-grid-helper.js"><\/script>'
-            +'    </head>'
-            +'    <body>'
-            +'        .foo{@include fontsize($size:1.6, $line: $size * 1.5);  }@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);@import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);generel fontstacks---------------------$sans-serif : "Helvetica Neue", Helvetica, Arial, sans-serif;  $serif: "Droid Serif", Georgia, serif;  $monospace  : "Monaco", "Courier New", monospace;  Sitespecific fontstacks---------------------------$foo: "foo", $sans-serif;  Fontstack Placeholders.bar{@extend %foo;} '
-            +'    </body>'
-            +'</html>');
-        context.close();
-          script.parentNode.removeChild(script);
-        </script>
-      </div>
-    
-
-    
-      <div class="source language-markup"><pre><code>.foo{
- @include fontsize($size:1.6, $line: $size * 1.5);  
-}
-
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
-@import url(//fonts.googleapis.com/css?family=Open+Sans+Condensed:300);</code></pre>
-<h2 id="generel-fontstacks">generel fontstacks</h2>
-<p>$sans-serif : &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;<br>$serif: &quot;Droid Serif&quot;, Georgia, serif;<br>$monospace  : &quot;Monaco&quot;, &quot;Courier New&quot;, monospace;  </p>
-<h2 id="sitespecific-fontstacks">Sitespecific fontstacks</h2>
-<p>$foo: &quot;foo&quot;, $sans-serif;<br>Fontstack Placeholders</p>
-<pre><code>.bar{
- @extend %foo;
-} </code></pre>
-</div>
-    
-    </div>
-  
-    <div class="section">
-    
-      <div class="comment"><h2 id="basefont-size-lineheight">basefont size &amp; lineheight</h2>
+<p>set up first with &quot;logical&quot; names for easier reference</p>
 </div>
     
 

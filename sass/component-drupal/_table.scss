@@ -21,6 +21,123 @@ Drupal table
     </table>
 
  */
+$table-headerbg: #ddd;
+$table-headerbg-odd: #efefef;
+$table-headerbg-hover:#ddd;
+
+$table-rowbg:#fafafa;
+$table-rowbg-hover:#f4f4f4;
+$table-row-odd:#ffffff;
+$table-row-odd-hover:#f4f4f4;
+
+$table-row-border-color:#ddd;
+$table-cell-border-color:#f4f4f4;
+
+@include breakpoint($medium-down){
+  table{
+    display: block;
+  }
+  thead{
+    display:block;
+    float:left;
+  }
+  th{
+    display: block;
+    text-align:right;
+  }
+  tbody{
+    display: block;
+    width: auto;
+    overflow-x:auto;
+    position:relative;
+    white-space: nowrap; 
+  }
+  tbody tr{
+    display: inline-block;
+    vertical-align: top;
+  }
+  td{
+    display:block;
+
+  }
+  
+  //------------theme 
+  tbody{
+    cursor: ew-resize; 
+  }
+  th,td{
+    line-height:3rem;
+    vertical-align: bottom;
+    padding:0 1rem;
+    border-bottom:1px solid $table-cell-border-color;
+    border-right:1px solid $table-cell-border-color;
+  }
+  th{
+    background:$table-headerbg;
+    border-right:2px solid darken($table-cell-border-color, 20%);
+    text-transform: uppercase;
+  }
+  th:nth-of-type(odd){
+    background:$table-headerbg-odd;
+  }
+  tr{
+    background:$table-rowbg;
+  }
+  tr:nth-of-type(odd){
+    background:$table-row-odd;
+  }  
+}//breaktpoint: $medium-down
+
+@include breakpoint($large){
+  table{
+    width:100%;
+    border:1px solid $table-row-border-color;
+    margin:2rem 0;
+  }
+  //header
+  th{
+    font-weight:bold;
+    background: $table-headerbg;
+    text-transform: uppercase
+  }
+  th:nth-of-type(odd){
+    background:$table-headerbg-odd;
+  }
+  th:hover{
+    background:$table-headerbg-hover;
+  }
+  th:nth-of-type(odd){
+    // background:#ddd;
+  }
+  //rows
+  tr{
+    border-bottom:1px solid $table-row-border-color;
+    background:$table-rowbg;
+  }
+  tr:hover{
+    background:$table-rowbg-hover;
+  }
+  tr:nth-of-type(odd){
+    background:$table-row-odd;
+  }
+  tr:nth-of-type(odd):hover{
+    background:$table-row-odd-hover;
+  }
+  //datacell
+  th,td{
+    padding:1rem;
+    border-left:1px solid $table-cell-border-color;
+  }
+
+  //datacell width
+  th:nth-of-type(1){ }
+  th:nth-of-type(2){ }
+  th:nth-of-type(3){ }
+  th:nth-of-type(4){ }
+  th:nth-of-type(5){ }
+  th:nth-of-type(6){ }
+
+}//breaktpoint: $large
 
 /*
 Drupal tabledrag

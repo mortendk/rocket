@@ -1,83 +1,86 @@
 /*
+Mobile Menu icons
+===============================
 
-# Mobile Menu
+Mobile menu icons
 --------------------------------------------------------------------------------
-file: allerbase/sass/component/_menu-mobile.scss
---------------------------------------
+A quick & easy way to add a menu handler for mobile devices
 
-Sets the mobile menu
+    <header role="bannerinfo">
+      <div class="l-smalldevice-top">
+        <a href="/"><div class="smalldevice-logo">$sitename </div></a>
+        <div class="smalldevice-icon"> = </div>
+      </div>
+      
+      <nav>
+        <ul>
+          <li> menu item</li>
+          <li> menu item</li>
+          <li> menu item</li>
+        </ul>            
+      </nav>
+    
+*/
 
---------------------------------------
-mixin properties:
-$foo - foo is
-$foo - foo is
-
---------------------------------------
-Markup:
-<div class="mobilemenu">
-  <a href="/"><div class="mobilemenu-logo"><?php print $sitename ?></div></a>
-  <div class="mobilemenu-icon"> = </div>
-</div>
-
---------------------------------------
-example:
-.foo{
-
-}
-
---------------------------------------
+/*
 Drupal templates:
-allerbase/templates/panes/panels-pane--system-main-menu.tpl.php
-
+--------------------------------------
+templates/panes/panels-pane--system-main-menu.tpl.php
 @todo: add breakpoints
- */
+*/
 
-@media screen and (max-width: 600px) {
-  //-- mobile menu Structure
-  .mobilemenu {
-    display: block;
-    width: 100%;
+//-- mobile menu Structure
+.l-smalldevice-top{
+  display: block;
+  width: 100%;
+  height:5rem;
+  background:#fff;
+
+  //hide it from all bigger devices
+  @include breakpoint($medium-up) {
+    display: none;
   }
+}
 
-  //-- mobile menu skin---------------------------------------
-  .mobilemenu {
-    padding:10px;
-    height:60px;
-  }
+.smalldevice-logo{
+  float:left;
+  overflow:hidden;
+  background: transparent url(../images/logo-small.png) no-repeat center center;
+  text-indent:-999px;
+  width:84%;
+  height:5rem;
+  display:block;
+}
 
-  .mobilemenu-logo{
-    float:left;
-    overflow:hidden;
-    width:230px;
-    height:40px;
-    background: transparent url(../images/mobile-logo.png) no-repeat center center;
-    text-indent:-999px;
-  }
+.smalldevice-icon{
+    @extend .fa;
+    @extend .fa-plus-square;
+    @include a-linkcolor(black, gray , none);
 
-  .mobilemenu-icon{
-    display: block;
     float:right;
-    margin-top:20px;
-    padding-right:50px;
-    width:20%;
-    height:24px;
-    background: transparent url(../images/mobile-menu.svg) no-repeat center center;
-    background-size: 100% 70%;
-    text-indent:-999px;
+    display: block;
+    margin:1rem 1% 0 0;
+    width:2rem;
+    height:2rem;
+    font-size: 2rem;
+    line-height:2rem;
     cursor: pointer;
-  }
-
-  .mobilemenu-icon-active{ } // anything sexy when icon is active
-
-  .menu_i_hazcontent > a{ } //test if child has any content
-
-  li.active > a, li.active-trail > a, li.active-hover > a{
-    font-weight:bold;
-  }
-
-
 }
 
-@media screen and (min-width: 601px) {
-  .mobilemenu { display: none; }
+.smalldevice-icon.active{ 
+   @extend .fa-minus-square;
+   @include a-linkcolor(black, gray , none);
 }
+
+header[role="banner"] nav{
+  @include breakpoint($small) {
+    display: none;
+    li{display:block}
+    li a{
+      display:block;
+      border-bottom:3px solid  $graylight2;
+      padding:1rem;
+    }
+  }
+}
+

@@ -7,5 +7,32 @@ Colors
 This file is not "in use" but its used for showing off the colorscheme for 
 the style guide
 
- */
+  <section class="l-fourth"> 
+    <header><h2>Colors</h2></header>
+    <div class="colortest red">red</div> 
+    <div class="colortest blue">blue</div> 
+    <div class="colortest green">green</div> 
+    <div class="colortest purple">purple</div> 
+    <div class="colortest yellow">yello</div> 
 
+    <div class="colortest red">red</div> 
+    <div class="colortest blue">blue</div> 
+    <div class="colortest green">green</div> 
+    <div class="colortest purple">purple</div> 
+    <div class="colortest yellow">yello</div> 
+  <div>
+ */
+.colortest{
+  width:100px;
+  height:100px;
+  display:inline-block;
+  color:$black;
+  font-size:1rem;
+  text-align:center
+}
+
+.red{background: $red}
+.blue{background: $blue}
+.green{background: $green}
+.purple{background: $purple}
+.yellow{background: $yellow}

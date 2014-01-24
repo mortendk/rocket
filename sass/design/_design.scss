@@ -1,27 +1,250 @@
 body{
-   // background: $backgroundcolor;  
+   background: $bgcolor;  
+}
+/*
+body{
+  @include breakpoint($small) {background: red}
+  @include breakpoint($medium){background:teal}
+  @include breakpoint($large) {background: lightgray}
+}
+*/
+/*
+Header & navigation animation
+
+Menu for small devices is defined in component/_menu-mobile.scss
+ */
+header[role="banner"]{
+  background:rgba(255,255,255,0.8);
+  border-bottom: 1px solid $graylight; 
+  border-top:0.5rem solid $graylight2;
+
+  @include breakpoint($medium-up) {
+    position: fixed;
+    z-index: 100;  
+    width:100%;
+    top:0;
+    nav li{
+      padding-right:0rem;
+    }
+    nav a{
+      display: block;
+      padding:0.5rem;
+    }
+    nav a:hover{
+      background:$graylight2;
+      @include border-radius(3px);
+      text-decoration: none
+    }
+ 
+  } //$medium-up;
+
 }
 
-header[role="banner"]{
-  border-top:5px solid #ededed;
+.logo{ 
+  background: transparent url('../images/logo.png') no-repeat top left;
+  display:block;
+  text-indent: -999px;
 }
+
+
+/*
+menu animation
+ */
+@include breakpoint($medium-up) {
+  header[role="banner"]{
+    //transitions
+    transition: height 1s;
+    nav{transition: padding-top 1s;}
+    .logo {transition: all 1s;}
+    .btn{transition: margin-top 1s;}
+  }
+  //animation from headlarge to headsmall
+  header[role="banner"].headlarge{
+    height:10rem;
+    .logo{
+      height:10rem;
+      background-size: 214px 62px;
+    }
+    nav{
+      height:6rem;
+      padding-top:3rem;
+    }
+    .btn{
+      margin-top:2rem;
+    }
+  }
+  
+  header[role="banner"].headsmall{
+    height:5rem;
+    .logo{
+      height:3rem;
+      background-size: 107px 31px;
+    }
+    box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
+    nav{
+      height:4rem;
+      padding-top:1rem;
+    }
+    .btn{
+      margin-top:0rem;
+    }
+
+  }
+
+} //$medium-up;
+
+
 
 footer[role="contentinfo"]{
-  min-height:400px;
+  min-height:40rem;
   background: $black;
-  border-top: 4px solid #eee;
+  border-top: 2rem solid $black-30;
+  padding-top:3rem;
+  color:$gray;
+  @include linkcolor($fontcolor, $graylight);  
+ 
+  h1,h2,h3{ 
+    color:$fontcolor;
+    @include linkcolor($fontcolor, $graylight);
+  }
+}
+
+/*
+Belts
+============================
+A full wide background with content in it
+
+    <section class="belt blue">
+      <div>
+      FOOBAR
+      </div>
+    <section>
+ */
+%belt,
+.belt{
+  min-height: 10rem;
+  // padding:1rem 0;
+  // margin: 1rem 0;
+  background:$gray;
+  color: $white;
+  
+  & > div{
+    @extend %l-width;
+  }
+
+  h1,h2,h3{
+    color:$white
+  }
+  p{color:$white}
+
+}
+%belt-blue,
+.belt-blue{
+  background:$blue;
+  border-top:4px solid darken($blue, 5%);
+  @include background-image(linear-gradient($blue, lighten($blue, 2%) ));
+}
+
+%belt-black,
+.belt-black{
+  background:$black;
+  border-top:4px solid $black-10;
+  @include background-image(linear-gradient($black, $black-10 ));
+}
+%belt-black2,
+.belt-black2{
+  background:$black;
+  border-top:4px solid $black-10;
+  border-bottom:4px solid $black-50;
+  @include background-image(linear-gradient($black, $black-10 ));
+
+  h1{
+    border-bottom:4px $blue solid;
+    display:inline;
+    padding-bottom:1.6rem;
+  }
+}
+
+
+/*
+image teasers
+==================================
+@todo: image teasers
+
+    <div class="gallery-zoom">
+      <figure>
+         <img src="../images/test-bimse.jpg">
+         <h2>foobar name</h2>
+      </figure> 
+    
+      <strong>a title or whatever</strong>
+      <p> 
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven
+      </p>
+
+      <div class="icons">
+         <a href="twitter">@twitter</a>
+         <a href="facebook">@fb</a>           
+         <a href="linkedin">@fb</a>           
+       </div>   
+    </div>
+ */
+
+%gallery-zoom,
+.gallery-zoom{
+  border:1px solid $gray;
+  @include border-radius(3px);
+    
+  figure{
+    position:relative;
+    padding:0.1rem;
+    overflow: hidden;
+  }
+  img{
+    transition: all 0.5s;
+    @include border-radius(3px);
+  }
+  img:hover{
+    @include transform(scale(1.1) );
+  }
+  
+  h2{ 
+    position:absolute;
+    left:0;
+    bottom:1rem;
+    z-index:10;
+  
+    background:rgba($black, 0.9);
+    text-transform: uppercase;
+    padding:1rem 1.5rem 1rem 0.5rem;
+    margin-left:0.1rem;
+  
+    color:$white;
+    font-family: $fontbody;
+    font-weight: 700;
+    font-size:2rem;
+    letter-spacing: -1px;
+  }
 
 }
 
 
-//TODO: move outta rocket
-.lead {
-  margin-bottom: 20px;
-  font-size: 21px;
-  font-weight: 200;
-  line-height: 30px;
-  color: $textgray;
+
+
+/*
+Divider lines between sections on the frontpage
+ */
+%s-divider,
+.s-divider {
+ 
+  // background: transparent url(../images/divider.png) repeat-x bottom center;
+  background-image: url(../images/divider.png);
+  background-repeat: repeat-x;
+  background-position: bottom center;
 }
+
+
 
 /* 
 Featured box
@@ -83,12 +306,14 @@ Featured box
 
     </section>
 */
+
+
 %featurebox,
 .featurebox{
   @include border-radius(8px);
-  border-bottom: 1px solid #DFDFDF; //@todo: define as color var
-  border-left:  1px solid #ECECEC;  //@todo: define as color var
-  border-right: 1px solid #ECECEC;//@todo: define as color var
+  border-bottom: 1px solid #DFDFDF;//@todo: define as color var
+  border-left:  1px solid #ECECEC; //@todo: define as color var
+  border-right: 1px solid #ECECEC; //@todo: define as color var
   background:#fff;
   @include box-shadow(0 1px 5px 0 rgba(0, 0, 0, 0.04));
   @include background-image(linear-gradient(center top, #fff, #f9f9f9 98%));
@@ -100,6 +325,8 @@ Featured box
     border-top: 3px solid #666;
     border-top-width: 4px;
     padding: 3rem 1rem;
+    min-height:30rem;
+
   }
   .icon{
     @extend .fa;
@@ -123,7 +350,7 @@ Featured box
 }
 
 //colors
-.featurebox.c-1{ 
+.featurebox.red{ 
   & > div{ border-top-color: $red;}
   h2{ color:$red; }
   .icon{ 
@@ -132,7 +359,7 @@ Featured box
   }
 }
 
-.featurebox.c-2{ 
+.featurebox.blue{ 
   & > div{ border-top-color: $blue;}
   h2{ color:$blue; }
   .icon{ 
@@ -140,7 +367,7 @@ Featured box
     background-color: $blue;
   }
 }
-.featurebox.c-3{ 
+.featurebox.green{ 
   & > div{ border-top-color: $green;}
   h2{ color:$green; }
   .icon{ 
@@ -148,7 +375,7 @@ Featured box
     background-color: $green;
   }
 }
-.featurebox.c-4{ 
+.featurebox.purple{ 
   & > div{ border-top-color: $purple;}
   h2{ color:$purple; }
   .icon{ 
@@ -157,20 +384,3 @@ Featured box
   }
 }
 
-
-/*
-Belt
-
-
- */  
-.belt{
-  width:100%;
-  background:$black;
-  padding:3rem;
-}
-
-.btn { 
-  @include sassy-button("shiny", 6px, 2rem, $blue, lighten($blue, 10%), #fff);
-  @include a-linkcolor(#fff,#fff,none);
-  // @include sassy-button(gradient-style, border-radius, font-size, first-color, second-color, text-color, text-style, auto-states)
- }

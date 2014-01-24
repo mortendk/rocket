@@ -10,17 +10,21 @@ The grids settings are created in _config.scsss
 */
 
 
-
 /*
 Container
 ===========
 
     <div class="l-container">
+    ...
     </div>
  */
 
 .l-container{ }
 
+.messages{
+  @extend %l-width;
+  @extend %cf;
+}
 
 /*
 Header
@@ -33,41 +37,44 @@ templates:
  */
 
 header[role="banner"]{
+  @extend %cf;
+
+  .header{
+    @extend %l-width;
+  }
+    .logo{ 
+      @include breakpoint($small) { display:none }
+      @include breakpoint($medium){ @include grid-span(2,1,8);}
+      @include breakpoint($large) { @include grid-span(3,1,12); } 
+    }
+    nav.mainmenu{
+      @include breakpoint($small) { display:none }
+      @include breakpoint($medium){ @include grid-span(5,3,8); background:teal}
+      @include breakpoint($large) { @include grid-span(6,4,12); } 
+    }
+    nav.usermenu,
+    .createaccount{
+      @include breakpoint($small) { display:none }
+      @include breakpoint($medium){ @include grid-span(2,7,8); text-align:right}
+      @include breakpoint($large) { @include grid-span(3,10,12); text-align:right} 
+    }
+}
+
+/*
+l-pagetop
+---------------------------------------------
+ */
+.l-pagetop{
   margin:0 auto;
   @extend %cf;
-  
-  @include breakpoint($mobile) {width: 100%}
-  @include breakpoint($tablet) {width: 90%}
-  @include breakpoint($desktop){width: 1200px} 
+  @extend %belt;
+  @extend %belt-black2;
 
-  #logo{ //@todo: logo needs to be a class ... were not barbarians
-    @include breakpoint($mobile) {@include grid-span(4,1,4);}
-    @include breakpoint($tablet) {@include grid-span(4,1,8);}
-    @include breakpoint($desktop){@include grid-span(4,1,12);} 
+  @include breakpoint($medium_up) {
+    margin-top:10rem;
   }
-  nav.mainmenu{
-    @include breakpoint($mobile) {@include grid-span(4,1,4);}
-    @include breakpoint($tablet) {@include grid-span(2,5,8);}
-    @include breakpoint($desktop){@include grid-span(4,5,12);} 
-  }
-  nav.usermenu{
-    @include breakpoint($mobile) {@include grid-span(4,1,4);}
-    @include breakpoint($tablet) {@include grid-span(2,7,8);}
-    @include breakpoint($desktop){@include grid-span(2,9,12);} 
-  }
+
 }
-
-main{
-  margin:0 auto;
-  @include breakpoint($mobile) {width: 100%}
-  @include breakpoint($tablet) {width: 90%}
-  @include breakpoint($desktop){width: 1200px} 
-}  
-
-footer[role="contentinfo"]{
-  width:100%
-}
-
 
 /*
 Main
@@ -77,7 +84,134 @@ Main
       <div> lorem ipsum ...</div>
     </main>
  */
-main{  }
+
+main{
+  margin:0 auto;
+  @include breakpoint($small) {width: 100%}
+  @include breakpoint($medium){width: 100%}
+}  
+
+
+
+/*
+Page layouts
+==============================
+
+
+Frontpage
+---------------------------
+ */
+.frontpage h1 {
+  @include breakpoint($medium_up){
+    font-size:8rem;  
+  }
+}
+  .hero{
+    @extend %l-width;
+  }
+  .faq{
+    @extend %l-third;
+    @extend %s-divider;
+  }
+  .signup{
+    @extend %belt;
+    @extend %belt-black;
+    .lr{
+      @extend %l-half;
+    }
+    .lc-1{
+      @include grid-span(3,1);
+    }
+    .lc-2{
+      @include grid-span(1,4);
+      text-align:right;
+    }
+  }
+
+  .examples{
+    @extend %l-fourth;  
+  }
+  .benefits{
+    @extend %belt;
+    @extend %belt-blue;
+    .lr{ 
+      @extend %l-fourth; 
+    }
+  }
+
+  .partnersignup{
+    @extend %l-half;
+    @extend %s-divider;
+
+    div{
+      h2,h3,h4{ color: $blue;}
+    }
+  }
+  .economicteaser{
+    @extend %l-width;
+    @extend %s-divider;  
+  }
+
+/*
+basic pages
+------------------------------------------
+move to grid ?
+
+*/
+.lr-1col{
+  @extend %cf;
+  @extend %l-width;
+
+}
+
+.lr-2col{
+  @extend %cf;
+  @extend %l-width;
+
+  .l-top{ }
+
+  @include breakpoint($medium) {
+    .l-main    { @include grid-span(9,1, $grid:12);}
+    .l-sidebar { @include grid-span(3, 10, $grid:12);}
+    .l-bottom  { @include isolation-span(12, 1, 'both',$grid:12); background:red}    
+  }
+  @include breakpoint($large) {
+    .l-main    { @include grid-span(9,1,12);}
+    .l-sidebar { @include grid-span(3,10,12);}
+    .l-bottom  { @include isolation-span(12, 1, 'both');  background:blue}
+  }
+
+}
+
+
+.lr-3col{
+  @extend %cf;
+  @extend %l-width;
+
+  @include breakpoint($medium) {
+    .l-main{     @include float-span(12,'last'); }
+    .l-sidebar { @include float-span(6, $grid:12);}
+    .l-sidebar2{ @include float-span(6, 'last',$grid:12);}  
+  }
+  @include breakpoint($large) {
+    .l-main{     @include grid-span(8,3,12);}
+    .l-sidebar { @include grid-span(2,1,12);}
+    .l-sidebar2{ @include grid-span(2,11,12);}  
+  }
+}
+
+
+
+/*
+Views lister
+-----------------------------------------------------------------
+
+ */
+.view-display-id-panel_pane_2{
+  @extend %lf-4;
+
+}
+
 
 
 /*
@@ -85,16 +219,19 @@ Footer
 ------------------------------
 
     <footer role="contentinfo">
-      <div>
+      <div class="footer">
         <span>Powered by <a href="http://drupal.org">Drupal</a></span>
       </div>
     </footer>
 */
-footer[role="contentinfo"]{
-  width:100%;
-  margin:0 auto;
-}
 
+footer[role="contentinfo"]{
+ margin-top:5rem;
+}
+  .footer{
+    @extend %l-width;
+    @extend %l-fourth;
+  }  
 
 
 
@@ -125,23 +262,16 @@ all together now:
  */
 
 
-.l-hero{
-
-}
-
-.economic-splash{
-  @extend %cf;
-  // @include breakpoint($mobile) {@include grid-span(3);}
-  // @include breakpoint($tablet) {@include grid-span(6);}
-  // @include breakpoint($desktop){@include grid-span(12);}    
-}
 
 
 
-
-
+//-----------Small admin fixes -----------------------------------
+//@todo remove this from layouts & lay in its own space
 //default hide drupals admin-menu on smaller devices
 #admin-menu{
   display:none;
-  @include breakpoint($desktop) {display:block}
+  @include breakpoint($large) {display:block}
+}
+@include breakpoint($small){
+  body.admin-menu{ margin-top: 0px !important; }
 }

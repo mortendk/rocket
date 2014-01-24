@@ -34,14 +34,19 @@ function themename_breadcrumb($variables) {
     display: inline-block;
     margin: 0;
     padding: 0;
-  }
 
+  }
+  li:after{
+    content: "/";
+  }
+  li:last-child:after{
+    content:"";
+  }
   li a{
-    
-    @include remfix(padding-right,1);
-    @include remfix(padding-left,1);
-    @include remfix(margin-right,0.5);
+    padding-right:1rem;
+    padding-left:1rem;
   }
-  li a:first-child{ padding-left:0; }
-
+  li a:first-child{ 
+    padding-left:0; 
+  }
 }

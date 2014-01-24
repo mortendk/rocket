@@ -46,11 +46,11 @@ stylesheets[all][] = css/rocket.css
 ;stylesheets[all][] = donteverloadmeagain.css
 
 ;-------------- JS -------------
-scripts[] = js/script.js
+scripts[] = js/rocket.js
 scripts[] = js/singularity-grid-helper.js
 
 ;-------------- BREAKPOINTS -------------
-breakpoints[mobile] = (min-width: 320px)
+breakpoints[small] = (min-width: 320px)
 ;breakpoints[mobile_only] = (min-width: 320px) and (max-width: 767px)
 ;breakpoints[mobile_landscape] = (min-width: 480px)
 breakpoints[mobile_landscape_only] = (min-width: 480px) and (max-width: 767px)

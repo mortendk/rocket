@@ -70,51 +70,11 @@ Body
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, quae, eos incidunt nisi architecto molestiae consequuntur laborum veritatis necessitatibus nostrum provident a doloribus id. Itaque dignissimos architecto debitis vitae dicta.
     <body>
 */
-
 body{
   @extend %bodyfont;
   color: $fontcolor;
   font-size: $fontsize;
-
 }
-
-/*
-content
----------------------------
-basic content 
-    <div class="content">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      <a href="#">read more</a>  Lorem ipsum dolor sit amet, consectetur adipisicing elit.  
-    </div>  
- */
-.content{ 
-  
-}
-
-
-/*
-links
------------------------------------------
-mixin: linkcolor($linkcolor, $linkcolorhover, underline);
-     
-    <a href="#">foo</a>
-    
-    <hr>
-
-    <div class="content">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-      <a href="#">read more</a>  Lorem ipsum dolor sit amet, consectetur adipisicing elit.  
-    </div>  
-
- */
-@include linkcolor($linkcolor, $linkcolorhover, underline);
-
-.content{
-  @include linkcolor($linkcolor, $linkcolorhover, underline);
-}
-
-:focus{outline:0;}
-
 
 /*
 Headings
@@ -141,8 +101,6 @@ Headings with links
     <h6><a href="foo">h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h6>
 
 */
-
-
 h1,h2, h3, h4, h5, h6{
   @include linkcolor($titlecolor, $linkcolorhover);
   line-height:1;
@@ -151,7 +109,7 @@ h1,h2, h3, h4, h5, h6{
   font-weight:200;
 }
 h1{
-  font-size:8rem;
+  font-size:4rem;  
 }
 h2{
   font-size:3.5rem;
@@ -160,14 +118,142 @@ h3{
   font-size:3rem;
 }
 h4 {
- font-size:2.5rem;
+ font-size:2rem;
 }
 h5 {
  font-size:2rem;
 }
 h6 {
- font-size:1.6rem;
+ font-size:2rem;
 }
+
+
+
+/*
+H's in header
+==========
+
+    <header>
+      <h1><a href="foo">h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h1>
+      <h2><a href="foo">h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+      <h3><a href="foo">h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+      <h4><a href="foo">h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+      <h5><a href="foo">h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h5>
+      <h6><a href="foo">h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h6>
+    </header>
+
+    <header role="bannerinfo">
+      <h1><a href="foo">h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h1>
+      <h2><a href="foo">h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+      <h3><a href="foo">h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+      <h4><a href="foo">h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+      <h5><a href="foo">h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h5>
+      <h6><a href="foo">h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h6>
+    </header>
+
+*/
+header{
+  h1,h2,h3{ text-align:center}
+}
+header[role="bannerinfo"]{
+  h1,h2,h3{}
+}
+
+/*
+H's in footer
+==========
+
+    <footer role="contentinfo">
+      <h1><a href="foo">h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h1>
+      <h2><a href="foo">h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+      <h3><a href="foo">h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+      <h4><a href="foo">h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+      <h5><a href="foo">h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h5>
+      <h6><a href="foo">h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h6>
+    </footer>
+*/
+footer[role="contentinfo"]{
+  h1,h2,h3{}
+}
+
+
+
+/*
+content  & P
+===================================
+
+basic content 
+
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      <a href="#">read more</a>  Lorem ipsum dolor sit amet, consectetur adipisicing elit.  
+      </p>
+    </div>  
+ */
+.content{ 
+  
+}
+
+/*
+links
+-----------------------------------------
+mixin: linkcolor($linkcolor, $linkcolorhover, underline);
+     
+    <a href="#">foo</a>
+    
+    <hr>
+
+    <div class="content">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      <a href="#">read more</a>  Lorem ipsum dolor sit amet, consectetur adipisicing elit.  
+    </div>  
+
+ */
+@include linkcolor($linkcolor, $linkcolorhover, underline);
+
+.content{
+  @include linkcolor($linkcolor, $linkcolorhover, underline);
+}
+:focus{outline:0;}
+
+
+
+/*
+Paragraphs
+------------------------------------
+    
+    <p>
+    Lorem
+    </p>
+
+ */
+p{
+  color: $fontcolor;
+}
+
+/*
+
+Font style: .lead
+-------------------------------------
+
+    <div class="lead">
+      <h1>This is <strong>a bold</strong>test on a title</h1> 
+      <p>Lorem---</p>
+    </div>
+
+*/
+
+%lead,
+.lead {
+  h1{ text-align:center}
+  p{  
+    // width:60%;
+    // margin:0 auto;
+    margin-bottom: 2rem;
+  }
+}
+
+
 
 /*
 Selection colors
@@ -176,13 +262,10 @@ Selection colors
  */
 
 // -- Selection colors
-::-moz-selection { background: #d72751; color: #fff;}
-::selection      { background: #d72751; color: #fff;}
+::-moz-selection { background: $selectioncolor-bg; color: $selectioncolor;}
+::selection      { background: $selectioncolor-bg; color: $selectioncolor;}
 
 // -- placeholder colors
 :-moz-placeholder { color: #ccc;}
 ::-webkit-input-placeholder { color: #ccc;}
-
-
-
 

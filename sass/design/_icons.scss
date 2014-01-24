@@ -10,3 +10,63 @@ new markers etc.
 
  */
 
+.icon_example{
+  @extend .fa;
+  width:2rem;
+  height:2rem;
+  font-size: 2rem;
+  line-height:2rem;
+  background: red;
+  color: white;
+}
+
+/*
+Menu icons
+=============================
+
+ */
+
+a[href="/user"]{
+  @extend .fa;
+  @extend .fa-user;
+}
+a[href="/user/logout"]{
+  @extend .fa;
+  @extend .fa-arrow-circle-right;
+}
+
+%icon-mail,
+.icon-mail{
+  @extend .fa;
+  @extend .fa-envelope;
+}
+%icon-twitter,
+.icon-twitter{
+    @extend .fa;
+    @extend .fa-twitter;
+}
+%icon-facebook,
+.icon-facebook{
+  @extend .fa;
+  @extend .fa-facebook;
+}
+%icon-linkedin,
+.icon-linkedin{
+  @extend .fa;
+  @extend .fa-linkedin;
+}
+%icon-address,
+.icon-address{
+  @extend .fa;
+  @extend .fa-compass;
+}
+%icon-phone,
+.icon-phone{
+  @extend .fa;
+  @extend .fa-phone;
+}
+%icon-pen,
+.icon-pen{
+  @extend .fa;
+  @extend .fa-pencil
+}

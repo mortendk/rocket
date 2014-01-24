@@ -45,7 +45,7 @@ input[type="submit"]{
 */    
 
 .btn { 
-  @include sassy-button("shiny", 6px, 2rem, $blue, lighten($blue, 10%), #fff);
+  @include sassy-button("shiny", 6px, 1.5rem, $blue, lighten($blue, 10%), #fff);
   @include a-linkcolor(#fff,#fff,none);
   // @include sassy-button(gradient-style, border-radius, font-size, first-color, second-color, text-color, text-style, auto-states)
 }

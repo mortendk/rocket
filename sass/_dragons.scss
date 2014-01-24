@@ -11,3 +11,14 @@ All the dirty small elements that needs to be added
 
 
 
+
+//-----------Small admin fixes -----------------------------------
+//@todo remove this from layouts & lay in its own space
+//default hide drupals admin-menu on smaller devices
+#admin-menu{
+  display:none;
+  @include breakpoint($large) {display:block}
+}
+@include breakpoint($small){
+  body.admin-menu{ margin-top: 0px !important; }
+}
